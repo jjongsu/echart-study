@@ -1,0 +1,274 @@
+{
+  "response": [
+    {
+      "name": "2025-04-23 08:00",
+      "data": {
+        "rate": 4.14,
+        "wardPatients": 150,
+        "newPatients": 137,
+        "followUpPatients": 80
+      }
+    },
+    {
+      "name": "2025-04-23 08:30",
+      "data": {
+        "rate": 52.04,
+        "wardPatients": 60,
+        "newPatients": 73,
+        "followUpPatients": 113
+      }
+    },
+    {
+      "name": "2025-04-23 09:00",
+      "data": {
+        "rate": 11.71,
+        "wardPatients": 75,
+        "newPatients": 97,
+        "followUpPatients": 126
+      }
+    },
+    {
+      "name": "2025-04-23 09:30",
+      "data": {
+        "rate": 65.96,
+        "wardPatients": 140,
+        "newPatients": 87,
+        "followUpPatients": 152
+      }
+    },
+    {
+      "name": "2025-04-23 10:00",
+      "data": {
+        "rate": 66.6,
+        "wardPatients": 80,
+        "newPatients": 180,
+        "followUpPatients": 152
+      }
+    },
+    {
+      "name": "2025-04-23 10:30",
+      "data": {
+        "rate": 11.09,
+        "wardPatients": 108,
+        "newPatients": 121,
+        "followUpPatients": 107
+      }
+    },
+    {
+      "name": "2025-04-23 11:00",
+      "data": {
+        "rate": 12.75,
+        "wardPatients": 127,
+        "newPatients": 138,
+        "followUpPatients": 61
+      }
+    },
+    {
+      "name": "2025-04-23 11:30",
+      "data": {
+        "rate": 15.95,
+        "wardPatients": 118,
+        "newPatients": 133,
+        "followUpPatients": 52
+      }
+    },
+    {
+      "name": "2025-04-23 12:00",
+      "data": {
+        "rate": 21.15,
+        "wardPatients": 121,
+        "newPatients": 144,
+        "followUpPatients": 144
+      }
+    },
+    {
+      "name": "2025-04-23 12:30",
+      "data": {
+        "rate": 45.69,
+        "wardPatients": 121,
+        "newPatients": 112,
+        "followUpPatients": 122
+      }
+    },
+    {
+      "name": "2025-04-23 13:00",
+      "data": {
+        "rate": 40.4,
+        "wardPatients": 172,
+        "newPatients": 123,
+        "followUpPatients": 76
+      }
+    },
+    {
+      "name": "2025-04-23 13:30",
+      "data": {
+        "rate": 27.08,
+        "wardPatients": 124,
+        "newPatients": 76,
+        "followUpPatients": 161
+      }
+    },
+    {
+      "name": "2025-04-23 14:00",
+      "data": {
+        "rate": 0.31,
+        "wardPatients": 157,
+        "newPatients": 97,
+        "followUpPatients": 162
+      }
+    },
+    {
+      "name": "2025-04-23 14:30",
+      "data": {
+        "rate": 31.44,
+        "wardPatients": 51,
+        "newPatients": 56,
+        "followUpPatients": 149
+      }
+    },
+    {
+      "name": "2025-04-23 15:00",
+      "data": {
+        "rate": 45.22,
+        "wardPatients": 159,
+        "newPatients": 174,
+        "followUpPatients": 180
+      }
+    },
+    {
+      "name": "2025-04-23 15:30",
+      "data": {
+        "rate": 25.45,
+        "wardPatients": 82,
+        "newPatients": 59,
+        "followUpPatients": 159
+      }
+    },
+    {
+      "name": "2025-04-23 16:00",
+      "data": {
+        "rate": 27.25,
+        "wardPatients": 75,
+        "newPatients": 113,
+        "followUpPatients": 59
+      }
+    },
+    {
+      "name": "2025-04-23 16:30",
+      "data": {
+        "rate": 22.36,
+        "wardPatients": 115,
+        "newPatients": 149,
+        "followUpPatients": 83
+      }
+    },
+    {
+      "name": "2025-04-23 17:00",
+      "data": {
+        "rate": 55.68,
+        "wardPatients": 160,
+        "newPatients": 61,
+        "followUpPatients": 81
+      }
+    },
+    {
+      "name": "2025-04-23 17:30",
+      "data": {
+        "rate": 24.9,
+        "wardPatients": 82,
+        "newPatients": 84,
+        "followUpPatients": 176
+      }
+    },
+    {
+      "name": "2025-04-23 18:00",
+      "data": {
+        "rate": 20.05,
+        "wardPatients": 137,
+        "newPatients": 94,
+        "followUpPatients": 81
+      }
+    },
+    {
+      "name": "2025-04-23 18:30",
+      "data": {
+        "rate": 58.39,
+        "wardPatients": 162,
+        "newPatients": 120,
+        "followUpPatients": 94
+      }
+    },
+    {
+      "name": "2025-04-23 19:00",
+      "data": {
+        "rate": 33.09,
+        "wardPatients": 86,
+        "newPatients": 147,
+        "followUpPatients": 84
+      }
+    },
+    {
+      "name": "2025-04-23 19:30",
+      "data": {
+        "rate": 58.26,
+        "wardPatients": 88,
+        "newPatients": 131,
+        "followUpPatients": 141
+      }
+    },
+    {
+      "name": "2025-04-23 20:00",
+      "data": {
+        "rate": 14.6,
+        "wardPatients": 107,
+        "newPatients": 152,
+        "followUpPatients": 114
+      }
+    },
+    {
+      "name": "2025-04-23 20:30",
+      "data": {
+        "rate": 42.96,
+        "wardPatients": 86,
+        "newPatients": 133,
+        "followUpPatients": 91
+      }
+    },
+    {
+      "name": "2025-04-23 21:00",
+      "data": {
+        "rate": 21.01,
+        "wardPatients": 64,
+        "newPatients": 137,
+        "followUpPatients": 132
+      }
+    },
+    {
+      "name": "2025-04-23 21:30",
+      "data": {
+        "rate": 18.22,
+        "wardPatients": 82,
+        "newPatients": 180,
+        "followUpPatients": 88
+      }
+    },
+    {
+      "name": "2025-04-23 22:00",
+      "data": {
+        "rate": 50.6,
+        "wardPatients": 112,
+        "newPatients": 81,
+        "followUpPatients": 111
+      }
+    },
+    {
+      "name": "2025-04-23 22:30",
+      "data": {
+        "rate": 28.62,
+        "wardPatients": 57,
+        "newPatients": 164,
+        "followUpPatients": 159
+      }
+    }
+  ]
+}

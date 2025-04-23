@@ -1,9 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>OJT-echarts</title>
+	<script src="./echarts.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+<link />
+	</head>
+	<body>
+		<div id="board" class="grid-container">
+			<!-- <div id="section-0" style="width: 600px; height: 400px"></div> -->
+			<div id="section-0" class="grid-item" ></div>
+			<div id="section-1" class="grid-item" ></div>
+			<div id="section-2" class="grid-item" style="display: flex; justify-content: center; align-items: center;" >
+				<div id="section-2-1" style="width: 100%; height: 100%;" ></div>
+			</div>
+			<!-- <div id="section-3" class="grid-item" ></div> -->
+			<!-- <div id="section-4" class="grid-item" ></div> -->
+			<!-- <div id="section-5" class="grid-item" ></div> -->
+			<!-- <div id="section-6" class="grid-item" ></div> -->
+		</div>
+
+		<!-- <div id="section-1" style="width: 600px; height: 400px"></div> -->
+		<!-- <script type="text/javascript">
+			// Initialize the echarts instance based on the prepared dom
+			var myChart = echarts.init(document.getElementById('main'));
+
+			// Specify the configuration items and data for the chart
+			var option = {
+				title: {
+					text: 'ECharts Getting Started Example',
+				},
+				tooltip: {},
+				legend: {
+					data: ['sales'],
+				},
+				xAxis: {
+					data: ['Shirts', 'Cardigans', 'Chiffons', 'Pants', 'Heels', 'Socks'],
+				},
+				yAxis: {},
+				series: [
+					{
+						name: 'sales',
+						type: 'bar',
+						data: [5, 20, 36, 10, 10, 20],
+					},
+				],
+			};
+
+			// Display the chart using the configuration items and data just specified.
+			myChart.setOption(option);
+		</script> -->
+		<script type="module" src="./main.js"></script>
+	</body>
 </html>

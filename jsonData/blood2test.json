@@ -1,0 +1,634 @@
+{
+  "response": [
+    {
+      "time": "2025-04-23 08:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 10
+        },
+        {
+          "name": "center2F",
+          "value": 10
+        },
+        {
+          "name": "cancer1F",
+          "value": 10
+        },
+        {
+          "name": "cancer2F",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 08:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 6
+        },
+        {
+          "name": "center2F",
+          "value": 10
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 09:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 8
+        },
+        {
+          "name": "center2F",
+          "value": 10
+        },
+        {
+          "name": "cancer1F",
+          "value": 9
+        },
+        {
+          "name": "cancer2F",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 09:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 8
+        },
+        {
+          "name": "center2F",
+          "value": 9
+        },
+        {
+          "name": "cancer1F",
+          "value": 5
+        },
+        {
+          "name": "cancer2F",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 10:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 7
+        },
+        {
+          "name": "center2F",
+          "value": 4
+        },
+        {
+          "name": "cancer1F",
+          "value": 8
+        },
+        {
+          "name": "cancer2F",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 10:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 1
+        },
+        {
+          "name": "center2F",
+          "value": 9
+        },
+        {
+          "name": "cancer1F",
+          "value": 6
+        },
+        {
+          "name": "cancer2F",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 11:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 9
+        },
+        {
+          "name": "center2F",
+          "value": 7
+        },
+        {
+          "name": "cancer1F",
+          "value": 6
+        },
+        {
+          "name": "cancer2F",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 11:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 4
+        },
+        {
+          "name": "center2F",
+          "value": 10
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 12:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 6
+        },
+        {
+          "name": "center2F",
+          "value": 6
+        },
+        {
+          "name": "cancer1F",
+          "value": 3
+        },
+        {
+          "name": "cancer2F",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 12:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 1
+        },
+        {
+          "name": "center2F",
+          "value": 7
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 13:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 10
+        },
+        {
+          "name": "center2F",
+          "value": 10
+        },
+        {
+          "name": "cancer1F",
+          "value": 7
+        },
+        {
+          "name": "cancer2F",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 13:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 10
+        },
+        {
+          "name": "center2F",
+          "value": 9
+        },
+        {
+          "name": "cancer1F",
+          "value": 5
+        },
+        {
+          "name": "cancer2F",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 14:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 2
+        },
+        {
+          "name": "center2F",
+          "value": 6
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 14:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 7
+        },
+        {
+          "name": "center2F",
+          "value": 7
+        },
+        {
+          "name": "cancer1F",
+          "value": 7
+        },
+        {
+          "name": "cancer2F",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 15:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 6
+        },
+        {
+          "name": "center2F",
+          "value": 10
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 15:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 9
+        },
+        {
+          "name": "center2F",
+          "value": 6
+        },
+        {
+          "name": "cancer1F",
+          "value": 10
+        },
+        {
+          "name": "cancer2F",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 16:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 3
+        },
+        {
+          "name": "center2F",
+          "value": 1
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 16:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 10
+        },
+        {
+          "name": "center2F",
+          "value": 2
+        },
+        {
+          "name": "cancer1F",
+          "value": 3
+        },
+        {
+          "name": "cancer2F",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 17:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 8
+        },
+        {
+          "name": "center2F",
+          "value": 2
+        },
+        {
+          "name": "cancer1F",
+          "value": 8
+        },
+        {
+          "name": "cancer2F",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 17:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 6
+        },
+        {
+          "name": "center2F",
+          "value": 3
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 18:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 5
+        },
+        {
+          "name": "center2F",
+          "value": 2
+        },
+        {
+          "name": "cancer1F",
+          "value": 6
+        },
+        {
+          "name": "cancer2F",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 18:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 2
+        },
+        {
+          "name": "center2F",
+          "value": 10
+        },
+        {
+          "name": "cancer1F",
+          "value": 8
+        },
+        {
+          "name": "cancer2F",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 19:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 2
+        },
+        {
+          "name": "center2F",
+          "value": 8
+        },
+        {
+          "name": "cancer1F",
+          "value": 10
+        },
+        {
+          "name": "cancer2F",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 19:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 6
+        },
+        {
+          "name": "center2F",
+          "value": 5
+        },
+        {
+          "name": "cancer1F",
+          "value": 10
+        },
+        {
+          "name": "cancer2F",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 20:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 8
+        },
+        {
+          "name": "center2F",
+          "value": 7
+        },
+        {
+          "name": "cancer1F",
+          "value": 5
+        },
+        {
+          "name": "cancer2F",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 20:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 1
+        },
+        {
+          "name": "center2F",
+          "value": 3
+        },
+        {
+          "name": "cancer1F",
+          "value": 9
+        },
+        {
+          "name": "cancer2F",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 21:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 9
+        },
+        {
+          "name": "center2F",
+          "value": 7
+        },
+        {
+          "name": "cancer1F",
+          "value": 2
+        },
+        {
+          "name": "cancer2F",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 21:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 3
+        },
+        {
+          "name": "center2F",
+          "value": 1
+        },
+        {
+          "name": "cancer1F",
+          "value": 10
+        },
+        {
+          "name": "cancer2F",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 22:00",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 10
+        },
+        {
+          "name": "center2F",
+          "value": 1
+        },
+        {
+          "name": "cancer1F",
+          "value": 8
+        },
+        {
+          "name": "cancer2F",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "time": "2025-04-23 22:30",
+      "data": [
+        {
+          "name": "center1F",
+          "value": 3
+        },
+        {
+          "name": "center2F",
+          "value": 3
+        },
+        {
+          "name": "cancer1F",
+          "value": 8
+        },
+        {
+          "name": "cancer2F",
+          "value": 8
+        }
+      ]
+    }
+  ]
+}
