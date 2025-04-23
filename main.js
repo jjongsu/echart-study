@@ -1,6 +1,6 @@
-import BasicClass from './classes/basicClass.js';
-import CTClass from './classes/ctClass.js';
-import BloodClass from './classes/bloodClass.js';
+import BasicClass from "./classes/basicClass.js";
+import CTClass from "./classes/ctClass.js";
+import BloodClass from "./classes/bloodClass.js";
 
 // // 조직도
 // fetch('./jsonData/treemap.json')
@@ -133,123 +133,96 @@ import BloodClass from './classes/bloodClass.js';
 // 		});
 // 	});
 
-const hours = ['12a', '1a', '2a', '3a', '4a', '5a', '6a'];
+fetch("./jsonData/blood2test.json")
+    .then((res) => {
+        if (!res.ok) {
+            throw new Error("json 파일 읽기 실패!");
+        }
 
-const days = ['본관 F1', '본관 F2', '암병원 F1', '암병원 F2'];
-const data = [
-	[0, 0, 5],
-	[0, 1, 1],
-	[0, 2, 0],
-	[0, 3, 0],
-	[0, 4, 0],
-	[0, 5, 0],
-	[0, 6, 0],
-	[1, 0, 7],
-	[1, 1, 0],
-	[1, 2, 0],
-	[1, 3, 0],
-	[1, 4, 0],
-	[1, 5, 0],
-	[1, 6, 0],
-	[2, 0, 1],
-	[2, 1, 1],
-	[2, 2, 0],
-	[2, 3, 0],
-	[2, 4, 0],
-	[2, 5, 0],
-	[2, 6, 0],
-	[3, 0, 7],
-	[3, 1, 3],
-	[3, 2, 0],
-	[3, 3, 0],
-	[3, 4, 0],
-	[3, 5, 0],
-	[3, 6, 0],
-	[4, 0, 1],
-	[4, 1, 3],
-	[4, 2, 0],
-	[4, 3, 0],
-	[4, 4, 0],
-	[4, 5, 1],
-	[4, 6, 0],
-	[5, 0, 2],
-	[5, 1, 1],
-	[5, 2, 0],
-	[5, 3, 3],
-	[5, 4, 0],
-	[5, 5, 0],
-	[5, 6, 0],
-	[6, 0, 1],
-	[6, 1, 0],
-	[6, 2, 0],
-	[6, 3, 0],
-	[6, 4, 0],
-	[6, 5, 0],
-	[6, 6, 0],
-].map(function (item) {
-	return [item[1], item[0], item[2] || '-'];
-});
+        return res.json();
+    })
+    .then(({ response }) => {
+        const titleIndex = {
+            0: { en: "cancer2F", ko: "암병원 2F" },
+            1: { en: "cancer1F", ko: "암병원 1F" },
+            2: { en: "center2F", ko: "본관 2F" },
+            3: { en: "center1F", ko: "본관 1F" },
+        };
+        const title = Object.values(titleIndex).map((el) => el.ko);
+        const timeData = response.map(
+            (el) => `${new Date(el.time).getHours().toString().padStart(2, "0")}:${new Date(el.time).getMinutes().toString().padStart(2, "0")}`
+        );
 
-fetch('./jsonData/bloodtest.json')
-	.then((res) => {
-		if (!res.ok) {
-			throw new Error('json 파일 읽기 실패!');
-		}
-
-		return res.json();
-	})
-	.then(({ response }) => {
-		const stackCommonOptions = { type: 'bar', yAxisIndex: 0 };
-		const lineOptions = { type: 'line', yAxisIndex: 1 };
-
-		new BloodClass({
-			elementId: 'section-2-1',
-			options: {
-				tooltip: {
-					position: 'top',
-				},
-				grid: {
-					height: '50%',
-					top: '10%',
-				},
-				xAxis: {
-					type: 'category',
-					data: hours,
-					splitArea: {
-						show: true,
-					},
-				},
-				yAxis: {
-					type: 'category',
-					data: days,
-					splitArea: {
-						show: true,
-					},
-				},
-				visualMap: {
-					min: 0,
-					max: 10,
-					calculable: true,
-					orient: 'horizontal',
-					left: 'center',
-					bottom: '15%',
-				},
-				series: [
-					{
-						name: 'Punch Card',
-						type: 'heatmap',
-						data: data,
-						label: {
-							show: true,
-						},
-						emphasis: {
-							itemStyle: {
-								shadowBlur: 10,
-								shadowColor: 'rgba(0, 0, 0, 0.5)',
-							},
-						},
-					},
-				],
-			},
-		});
-	});
+        const heatmapData = response.reduce((a, b, i) => {
+            const _data = [];
+            for (let index = 0; index < 4; index++) {
+                const elementData = [i, index, b.data[titleIndex[index].en] || "-"];
+                _data.push(elementData);
+            }
+            return [...a, ..._data];
+        }, []);
+        new BloodClass({
+            elementId: "section-2-1",
+            options: {
+                tooltip: {
+                    position: "top",
+                },
+                grid: {
+                    height: "50%",
+                    top: "10%",
+                },
+                xAxis: {
+                    type: "category",
+                    data: timeData,
+                    splitArea: {
+                        show: true,
+                    },
+                },
+                yAxis: {
+                    type: "category",
+                    data: title,
+                    splitArea: {
+                        show: true,
+                    },
+                },
+                visualMap: {
+                    //   type: "continuous",
+                    //   min: 0,
+                    //   max: 10,
+                    //   calculable: true,
+                    //   top: "center",
+                    //   inRange: {
+                    //     color: ["#104361", "#1D3F73", "#293A84", "#363696", "#4331A7", "#4F2DB9", "#5C28CA", "#6924DC", "#751FED", "#821BFF", "#a50026"],
+                    //   },
+                    type: "piecewise",
+                    splitNumber: 10,
+                    min: 0,
+                    max: 10,
+                    top: "top",
+                    calculable: true,
+                    realtime: false,
+                    inRange: {
+                        color: ["#104361", "#1D3F73", "#293A84", "#363696", "#4331A7", "#4F2DB9", "#5C28CA", "#6924DC", "#751FED", "#821BFF", "#a50026"],
+                    },
+                    showLabel: false,
+                    itemGap: 0,
+                    itemSymbol: "rect",
+                },
+                series: [
+                    {
+                        type: "heatmap",
+                        data: heatmapData,
+                        label: {
+                            show: false,
+                        },
+                        emphasis: {
+                            itemStyle: {
+                                shadowBlur: 10,
+                                shadowColor: "rgba(0, 0, 0, 0.5)",
+                            },
+                        },
+                    },
+                ],
+            },
+        });
+    });
