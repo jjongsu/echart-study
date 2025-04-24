@@ -23,13 +23,12 @@ for (let i = 0; i < totalCount; i++) {
 	)} ${String(currentTime.getHours()).padStart(2, '0')}:${String(currentTime.getMinutes()).padStart(2, '0')}`;
 
 	const rate = parseFloat((Math.random() * 70).toFixed(2));
-	const wardPatients = getRandomInt();
 	const newPatients = getRandomInt();
 	const followUpPatients = getRandomInt();
 
 	response.push({
 		name: formattedTime,
-		data: { rate, wardPatients, newPatients, followUpPatients },
+		data: { rate, newPatients, followUpPatients },
 	});
 }
 
