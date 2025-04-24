@@ -10,7 +10,7 @@ const totalCount = 30;
 
 const response = [];
 
-function getRandomInt(min = 200, max = 330) {
+function getRandomInt(min = 200, max = 1500) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -22,13 +22,14 @@ for (let i = 0; i < totalCount; i++) {
 		'0'
 	)} ${String(currentTime.getHours()).padStart(2, '0')}:${String(currentTime.getMinutes()).padStart(2, '0')}`;
 
-	const rate = parseFloat((Math.random() * 30).toFixed(2));
-	const wardPatients = getRandomInt();
-	const newPatients = getRandomInt();
+	const year = getRandomInt();
+	const month = getRandomInt();
+	const week = getRandomInt();
+	const day = getRandomInt();
 
 	response.push({
 		name: formattedTime,
-		data: { rate, wardPatients, newPatients },
+		data: { year, month, week, day },
 	});
 }
 
