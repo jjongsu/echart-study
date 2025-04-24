@@ -3,6 +3,7 @@ import CTClass from './classes/ctClass.js';
 import BloodClass from './classes/bloodClass.js';
 import SankeyClass from './classes/sankeyClass.js';
 import OperateClass from './classes/operateClass.js';
+import PatientsClass from './classes/patientsClass.js';
 
 // 조직도
 fetch('./jsonData/treemap.json')
@@ -437,8 +438,6 @@ fetch('./jsonData/operateData.json')
 		return res.json();
 	})
 	.then(({ response }) => {
-		console.log(response);
-
 		const barOptions = { type: 'bar' };
 		const lineOptions = { type: 'line' };
 
@@ -507,6 +506,113 @@ fetch('./jsonData/operateData.json')
 							color: '#f5e076',
 						},
 						// data: response.map((el) => el.data.rate),
+					},
+				],
+			},
+		});
+	});
+
+fetch('./jsonData/patients.json')
+	.then((res) => {
+		if (!res.ok) {
+			throw new Error('json 파일 읽기 실패!');
+		}
+
+		return res.json();
+	})
+	.then(({ response }) => {
+		// const locationIndex = {
+		// 	mainBuilding:0,
+		// 	annexBuilding:1,
+		// 	cancerCenter:2,
+		// 	protonTherapyCenter:3,
+		// }
+		const mainBuildingList = [];
+		const annexBuildingList = [];
+		const cancerCenterList = [];
+		const protonTherapyCenterList = [];
+		response.forEach((el) => {
+			const [_hour, _min] = el.time?.split(' ')?.[1]?.split(':') || [8, 0];
+			const x = Number(_hour) * 60 + Number(_min);
+			if (el.data?.mainBuilding) {
+				mainBuildingList.push([x, el.data?.mainBuilding]);
+			}
+			if (el.data?.annexBuilding) {
+				annexBuildingList.push([x, el.data?.annexBuilding]);
+			}
+			if (el.data?.cancerCenter) {
+				cancerCenterList.push([x, el.data?.cancerCenter]);
+			}
+			if (el.data?.protonTherapyCenter) {
+				protonTherapyCenterList.push([x, el.data?.protonTherapyCenter]);
+			}
+		});
+
+		const xAxisData = Array.from({ length: 8 }, (_, index) => (index * 2 + 8).toString().padStart(2, '0'));
+
+		const scatterOptions = { type: 'scatter', symbolSize: 5, yAxisIndex: 0, xAxisIndex: 1 };
+		new PatientsClass({
+			elementId: 'section-5',
+			options: {
+				legend: {
+					data: ['본관', '별관', '암병원', '양성자센터'],
+					icon: 'circle',
+				},
+				xAxis: [
+					{
+						type: 'category',
+						splitLine: {
+							show: false,
+						},
+						boundaryGap: false,
+						data: xAxisData,
+						axisLabel: {},
+					},
+					{
+						type: 'value',
+						splitLine: {
+							show: false,
+						},
+						axisLabel: {
+							show: false,
+						},
+						min: 8 * 60,
+						max: 22 * 60,
+					},
+				],
+				yAxis: [
+					{
+						type: 'value',
+						min: 100,
+						max: 500,
+						interval: 100,
+						axisLabel: {
+							formatter: function (value) {
+								return `${value}`;
+							},
+						},
+					},
+				],
+				series: [
+					{
+						...scatterOptions,
+						name: '본관',
+						data: mainBuildingList,
+					},
+					{
+						...scatterOptions,
+						name: '별관',
+						data: annexBuildingList,
+					},
+					{
+						...scatterOptions,
+						name: '암병원',
+						data: cancerCenterList,
+					},
+					{
+						...scatterOptions,
+						name: '양성자센터',
+						data: protonTherapyCenterList,
 					},
 				],
 			},

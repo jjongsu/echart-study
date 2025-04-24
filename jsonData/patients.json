@@ -1,0 +1,3421 @@
+{
+  "response": [
+    {
+      "time": "2025-04-24 08:00",
+      "data": {
+        "annexBuilding": 403
+      }
+    },
+    {
+      "time": "2025-04-24 08:01",
+      "data": {
+        "mainBuilding": 392,
+        "annexBuilding": 272,
+        "cancerCenter": 192
+      }
+    },
+    {
+      "time": "2025-04-24 08:02",
+      "data": {
+        "mainBuilding": 131,
+        "annexBuilding": 269,
+        "cancerCenter": 375
+      }
+    },
+    {
+      "time": "2025-04-24 08:04",
+      "data": {
+        "protonTherapyCenter": 401
+      }
+    },
+    {
+      "time": "2025-04-24 08:08",
+      "data": {
+        "protonTherapyCenter": 377
+      }
+    },
+    {
+      "time": "2025-04-24 08:09",
+      "data": {
+        "mainBuilding": 229,
+        "protonTherapyCenter": 279,
+        "cancerCenter": 346,
+        "annexBuilding": 167
+      }
+    },
+    {
+      "time": "2025-04-24 08:10",
+      "data": {
+        "mainBuilding": 352,
+        "annexBuilding": 329,
+        "cancerCenter": 261
+      }
+    },
+    {
+      "time": "2025-04-24 08:13",
+      "data": {
+        "protonTherapyCenter": 214,
+        "cancerCenter": 286
+      }
+    },
+    {
+      "time": "2025-04-24 08:15",
+      "data": {
+        "mainBuilding": 481,
+        "cancerCenter": 168,
+        "annexBuilding": 247
+      }
+    },
+    {
+      "time": "2025-04-24 08:16",
+      "data": {
+        "protonTherapyCenter": 129
+      }
+    },
+    {
+      "time": "2025-04-24 08:17",
+      "data": {
+        "cancerCenter": 176,
+        "protonTherapyCenter": 326,
+        "mainBuilding": 161
+      }
+    },
+    {
+      "time": "2025-04-24 08:18",
+      "data": {
+        "protonTherapyCenter": 355,
+        "annexBuilding": 336,
+        "mainBuilding": 275
+      }
+    },
+    {
+      "time": "2025-04-24 08:20",
+      "data": {
+        "annexBuilding": 264,
+        "cancerCenter": 263,
+        "mainBuilding": 250
+      }
+    },
+    {
+      "time": "2025-04-24 08:21",
+      "data": {
+        "protonTherapyCenter": 214,
+        "cancerCenter": 390
+      }
+    },
+    {
+      "time": "2025-04-24 08:22",
+      "data": {
+        "annexBuilding": 427
+      }
+    },
+    {
+      "time": "2025-04-24 08:32",
+      "data": {
+        "mainBuilding": 376,
+        "annexBuilding": 498,
+        "cancerCenter": 263
+      }
+    },
+    {
+      "time": "2025-04-24 08:35",
+      "data": {
+        "annexBuilding": 334,
+        "mainBuilding": 451
+      }
+    },
+    {
+      "time": "2025-04-24 08:36",
+      "data": {
+        "protonTherapyCenter": 425,
+        "cancerCenter": 442,
+        "annexBuilding": 179,
+        "mainBuilding": 488
+      }
+    },
+    {
+      "time": "2025-04-24 08:38",
+      "data": {
+        "mainBuilding": 367,
+        "annexBuilding": 471,
+        "protonTherapyCenter": 283,
+        "cancerCenter": 125
+      }
+    },
+    {
+      "time": "2025-04-24 08:42",
+      "data": {
+        "mainBuilding": 370,
+        "protonTherapyCenter": 143
+      }
+    },
+    {
+      "time": "2025-04-24 08:43",
+      "data": {
+        "mainBuilding": 214,
+        "cancerCenter": 191,
+        "protonTherapyCenter": 483
+      }
+    },
+    {
+      "time": "2025-04-24 08:44",
+      "data": {
+        "cancerCenter": 233
+      }
+    },
+    {
+      "time": "2025-04-24 08:46",
+      "data": {
+        "cancerCenter": 414,
+        "protonTherapyCenter": 433
+      }
+    },
+    {
+      "time": "2025-04-24 08:48",
+      "data": {
+        "protonTherapyCenter": 372,
+        "cancerCenter": 393,
+        "mainBuilding": 361
+      }
+    },
+    {
+      "time": "2025-04-24 08:49",
+      "data": {
+        "mainBuilding": 396
+      }
+    },
+    {
+      "time": "2025-04-24 08:50",
+      "data": {
+        "cancerCenter": 476,
+        "protonTherapyCenter": 358,
+        "mainBuilding": 393
+      }
+    },
+    {
+      "time": "2025-04-24 08:51",
+      "data": {
+        "cancerCenter": 426
+      }
+    },
+    {
+      "time": "2025-04-24 08:53",
+      "data": {
+        "cancerCenter": 145,
+        "annexBuilding": 261
+      }
+    },
+    {
+      "time": "2025-04-24 08:54",
+      "data": {
+        "protonTherapyCenter": 451,
+        "cancerCenter": 292,
+        "annexBuilding": 138
+      }
+    },
+    {
+      "time": "2025-04-24 08:58",
+      "data": {
+        "cancerCenter": 349,
+        "annexBuilding": 102,
+        "protonTherapyCenter": 289,
+        "mainBuilding": 347
+      }
+    },
+    {
+      "time": "2025-04-24 09:00",
+      "data": {
+        "mainBuilding": 358,
+        "annexBuilding": 271,
+        "cancerCenter": 198
+      }
+    },
+    {
+      "time": "2025-04-24 09:01",
+      "data": {
+        "protonTherapyCenter": 316,
+        "cancerCenter": 252,
+        "annexBuilding": 250
+      }
+    },
+    {
+      "time": "2025-04-24 09:02",
+      "data": {
+        "protonTherapyCenter": 462,
+        "cancerCenter": 325
+      }
+    },
+    {
+      "time": "2025-04-24 09:05",
+      "data": {
+        "annexBuilding": 212,
+        "protonTherapyCenter": 103,
+        "mainBuilding": 132,
+        "cancerCenter": 442
+      }
+    },
+    {
+      "time": "2025-04-24 09:06",
+      "data": {
+        "mainBuilding": 181,
+        "annexBuilding": 249
+      }
+    },
+    {
+      "time": "2025-04-24 09:09",
+      "data": {
+        "protonTherapyCenter": 204
+      }
+    },
+    {
+      "time": "2025-04-24 09:10",
+      "data": {
+        "protonTherapyCenter": 309,
+        "mainBuilding": 308,
+        "annexBuilding": 388,
+        "cancerCenter": 177
+      }
+    },
+    {
+      "time": "2025-04-24 09:11",
+      "data": {
+        "mainBuilding": 421,
+        "protonTherapyCenter": 400,
+        "cancerCenter": 328
+      }
+    },
+    {
+      "time": "2025-04-24 09:13",
+      "data": {
+        "protonTherapyCenter": 464,
+        "cancerCenter": 469
+      }
+    },
+    {
+      "time": "2025-04-24 09:15",
+      "data": {
+        "mainBuilding": 150,
+        "protonTherapyCenter": 306
+      }
+    },
+    {
+      "time": "2025-04-24 09:23",
+      "data": {
+        "cancerCenter": 195,
+        "protonTherapyCenter": 477
+      }
+    },
+    {
+      "time": "2025-04-24 09:26",
+      "data": {
+        "protonTherapyCenter": 474,
+        "cancerCenter": 353,
+        "annexBuilding": 485,
+        "mainBuilding": 156
+      }
+    },
+    {
+      "time": "2025-04-24 09:27",
+      "data": {
+        "mainBuilding": 129,
+        "annexBuilding": 117,
+        "cancerCenter": 355
+      }
+    },
+    {
+      "time": "2025-04-24 09:28",
+      "data": {
+        "cancerCenter": 219,
+        "mainBuilding": 281,
+        "annexBuilding": 434,
+        "protonTherapyCenter": 197
+      }
+    },
+    {
+      "time": "2025-04-24 09:29",
+      "data": {
+        "annexBuilding": 425,
+        "protonTherapyCenter": 454,
+        "cancerCenter": 156
+      }
+    },
+    {
+      "time": "2025-04-24 09:31",
+      "data": {
+        "mainBuilding": 147,
+        "annexBuilding": 473
+      }
+    },
+    {
+      "time": "2025-04-24 09:34",
+      "data": {
+        "cancerCenter": 427,
+        "annexBuilding": 290,
+        "mainBuilding": 457
+      }
+    },
+    {
+      "time": "2025-04-24 09:35",
+      "data": {
+        "protonTherapyCenter": 307,
+        "cancerCenter": 403
+      }
+    },
+    {
+      "time": "2025-04-24 09:38",
+      "data": {
+        "mainBuilding": 223,
+        "annexBuilding": 412,
+        "cancerCenter": 308,
+        "protonTherapyCenter": 416
+      }
+    },
+    {
+      "time": "2025-04-24 09:39",
+      "data": {
+        "protonTherapyCenter": 358,
+        "cancerCenter": 248,
+        "annexBuilding": 202,
+        "mainBuilding": 233
+      }
+    },
+    {
+      "time": "2025-04-24 09:41",
+      "data": {
+        "mainBuilding": 456,
+        "annexBuilding": 223,
+        "protonTherapyCenter": 235,
+        "cancerCenter": 179
+      }
+    },
+    {
+      "time": "2025-04-24 09:43",
+      "data": {
+        "protonTherapyCenter": 342
+      }
+    },
+    {
+      "time": "2025-04-24 09:46",
+      "data": {
+        "mainBuilding": 342,
+        "annexBuilding": 216,
+        "protonTherapyCenter": 183,
+        "cancerCenter": 119
+      }
+    },
+    {
+      "time": "2025-04-24 09:49",
+      "data": {
+        "mainBuilding": 102,
+        "cancerCenter": 234,
+        "protonTherapyCenter": 345,
+        "annexBuilding": 415
+      }
+    },
+    {
+      "time": "2025-04-24 09:50",
+      "data": {
+        "annexBuilding": 469
+      }
+    },
+    {
+      "time": "2025-04-24 09:51",
+      "data": {
+        "protonTherapyCenter": 377
+      }
+    },
+    {
+      "time": "2025-04-24 09:52",
+      "data": {
+        "annexBuilding": 103,
+        "cancerCenter": 500
+      }
+    },
+    {
+      "time": "2025-04-24 09:55",
+      "data": {
+        "cancerCenter": 362,
+        "annexBuilding": 306,
+        "mainBuilding": 392
+      }
+    },
+    {
+      "time": "2025-04-24 09:56",
+      "data": {
+        "mainBuilding": 146,
+        "annexBuilding": 389,
+        "cancerCenter": 238,
+        "protonTherapyCenter": 273
+      }
+    },
+    {
+      "time": "2025-04-24 09:59",
+      "data": {
+        "protonTherapyCenter": 170,
+        "mainBuilding": 200
+      }
+    },
+    {
+      "time": "2025-04-24 10:00",
+      "data": {
+        "protonTherapyCenter": 212
+      }
+    },
+    {
+      "time": "2025-04-24 10:03",
+      "data": {
+        "protonTherapyCenter": 103,
+        "cancerCenter": 231,
+        "annexBuilding": 283,
+        "mainBuilding": 145
+      }
+    },
+    {
+      "time": "2025-04-24 10:04",
+      "data": {
+        "annexBuilding": 158,
+        "mainBuilding": 112,
+        "protonTherapyCenter": 238
+      }
+    },
+    {
+      "time": "2025-04-24 10:05",
+      "data": {
+        "mainBuilding": 208,
+        "annexBuilding": 415,
+        "cancerCenter": 342
+      }
+    },
+    {
+      "time": "2025-04-24 10:11",
+      "data": {
+        "protonTherapyCenter": 420
+      }
+    },
+    {
+      "time": "2025-04-24 10:12",
+      "data": {
+        "annexBuilding": 367,
+        "mainBuilding": 429,
+        "cancerCenter": 110
+      }
+    },
+    {
+      "time": "2025-04-24 10:13",
+      "data": {
+        "mainBuilding": 493,
+        "annexBuilding": 424
+      }
+    },
+    {
+      "time": "2025-04-24 10:15",
+      "data": {
+        "mainBuilding": 222,
+        "protonTherapyCenter": 273,
+        "annexBuilding": 431
+      }
+    },
+    {
+      "time": "2025-04-24 10:17",
+      "data": {
+        "mainBuilding": 273,
+        "annexBuilding": 413,
+        "protonTherapyCenter": 413,
+        "cancerCenter": 247
+      }
+    },
+    {
+      "time": "2025-04-24 10:19",
+      "data": {
+        "cancerCenter": 104,
+        "annexBuilding": 452,
+        "protonTherapyCenter": 479,
+        "mainBuilding": 495
+      }
+    },
+    {
+      "time": "2025-04-24 10:20",
+      "data": {
+        "mainBuilding": 351,
+        "annexBuilding": 216,
+        "cancerCenter": 383
+      }
+    },
+    {
+      "time": "2025-04-24 10:21",
+      "data": {
+        "protonTherapyCenter": 429,
+        "cancerCenter": 109,
+        "mainBuilding": 183,
+        "annexBuilding": 435
+      }
+    },
+    {
+      "time": "2025-04-24 10:22",
+      "data": {
+        "protonTherapyCenter": 367
+      }
+    },
+    {
+      "time": "2025-04-24 10:25",
+      "data": {
+        "cancerCenter": 491,
+        "annexBuilding": 141,
+        "mainBuilding": 307
+      }
+    },
+    {
+      "time": "2025-04-24 10:29",
+      "data": {
+        "mainBuilding": 226,
+        "cancerCenter": 199
+      }
+    },
+    {
+      "time": "2025-04-24 10:33",
+      "data": {
+        "protonTherapyCenter": 297,
+        "cancerCenter": 323,
+        "annexBuilding": 171
+      }
+    },
+    {
+      "time": "2025-04-24 10:35",
+      "data": {
+        "cancerCenter": 374,
+        "protonTherapyCenter": 309
+      }
+    },
+    {
+      "time": "2025-04-24 10:38",
+      "data": {
+        "protonTherapyCenter": 446,
+        "cancerCenter": 246
+      }
+    },
+    {
+      "time": "2025-04-24 10:41",
+      "data": {
+        "mainBuilding": 141,
+        "protonTherapyCenter": 423
+      }
+    },
+    {
+      "time": "2025-04-24 10:42",
+      "data": {
+        "protonTherapyCenter": 361,
+        "mainBuilding": 302,
+        "cancerCenter": 412
+      }
+    },
+    {
+      "time": "2025-04-24 10:44",
+      "data": {
+        "annexBuilding": 169,
+        "protonTherapyCenter": 217,
+        "mainBuilding": 349,
+        "cancerCenter": 100
+      }
+    },
+    {
+      "time": "2025-04-24 10:46",
+      "data": {
+        "cancerCenter": 376,
+        "protonTherapyCenter": 146
+      }
+    },
+    {
+      "time": "2025-04-24 10:48",
+      "data": {
+        "mainBuilding": 224,
+        "annexBuilding": 312
+      }
+    },
+    {
+      "time": "2025-04-24 10:49",
+      "data": {
+        "cancerCenter": 337,
+        "mainBuilding": 421,
+        "annexBuilding": 288
+      }
+    },
+    {
+      "time": "2025-04-24 10:50",
+      "data": {
+        "mainBuilding": 426,
+        "cancerCenter": 261
+      }
+    },
+    {
+      "time": "2025-04-24 10:52",
+      "data": {
+        "annexBuilding": 243,
+        "protonTherapyCenter": 379
+      }
+    },
+    {
+      "time": "2025-04-24 10:55",
+      "data": {
+        "mainBuilding": 230
+      }
+    },
+    {
+      "time": "2025-04-24 10:56",
+      "data": {
+        "annexBuilding": 138,
+        "cancerCenter": 466
+      }
+    },
+    {
+      "time": "2025-04-24 10:57",
+      "data": {
+        "annexBuilding": 273,
+        "mainBuilding": 376
+      }
+    },
+    {
+      "time": "2025-04-24 10:58",
+      "data": {
+        "mainBuilding": 150,
+        "protonTherapyCenter": 208,
+        "annexBuilding": 406
+      }
+    },
+    {
+      "time": "2025-04-24 11:05",
+      "data": {
+        "mainBuilding": 307,
+        "annexBuilding": 394,
+        "cancerCenter": 483,
+        "protonTherapyCenter": 490
+      }
+    },
+    {
+      "time": "2025-04-24 11:06",
+      "data": {
+        "protonTherapyCenter": 211,
+        "cancerCenter": 263,
+        "annexBuilding": 245
+      }
+    },
+    {
+      "time": "2025-04-24 11:12",
+      "data": {
+        "protonTherapyCenter": 421,
+        "mainBuilding": 350,
+        "annexBuilding": 126,
+        "cancerCenter": 241
+      }
+    },
+    {
+      "time": "2025-04-24 11:13",
+      "data": {
+        "protonTherapyCenter": 190,
+        "cancerCenter": 132
+      }
+    },
+    {
+      "time": "2025-04-24 11:14",
+      "data": {
+        "mainBuilding": 460,
+        "annexBuilding": 482,
+        "cancerCenter": 106
+      }
+    },
+    {
+      "time": "2025-04-24 11:15",
+      "data": {
+        "protonTherapyCenter": 147,
+        "cancerCenter": 422,
+        "annexBuilding": 354,
+        "mainBuilding": 467
+      }
+    },
+    {
+      "time": "2025-04-24 11:16",
+      "data": {
+        "mainBuilding": 432
+      }
+    },
+    {
+      "time": "2025-04-24 11:18",
+      "data": {
+        "annexBuilding": 427
+      }
+    },
+    {
+      "time": "2025-04-24 11:19",
+      "data": {
+        "protonTherapyCenter": 363
+      }
+    },
+    {
+      "time": "2025-04-24 11:20",
+      "data": {
+        "mainBuilding": 278
+      }
+    },
+    {
+      "time": "2025-04-24 11:22",
+      "data": {
+        "mainBuilding": 325
+      }
+    },
+    {
+      "time": "2025-04-24 11:23",
+      "data": {
+        "protonTherapyCenter": 260,
+        "cancerCenter": 232
+      }
+    },
+    {
+      "time": "2025-04-24 11:24",
+      "data": {
+        "cancerCenter": 260,
+        "annexBuilding": 259
+      }
+    },
+    {
+      "time": "2025-04-24 11:26",
+      "data": {
+        "protonTherapyCenter": 367,
+        "cancerCenter": 468
+      }
+    },
+    {
+      "time": "2025-04-24 11:30",
+      "data": {
+        "mainBuilding": 145,
+        "annexBuilding": 208,
+        "cancerCenter": 230
+      }
+    },
+    {
+      "time": "2025-04-24 11:33",
+      "data": {
+        "mainBuilding": 104
+      }
+    },
+    {
+      "time": "2025-04-24 11:36",
+      "data": {
+        "mainBuilding": 150,
+        "annexBuilding": 225
+      }
+    },
+    {
+      "time": "2025-04-24 11:37",
+      "data": {
+        "mainBuilding": 267
+      }
+    },
+    {
+      "time": "2025-04-24 11:38",
+      "data": {
+        "cancerCenter": 303,
+        "annexBuilding": 360
+      }
+    },
+    {
+      "time": "2025-04-24 11:39",
+      "data": {
+        "cancerCenter": 281,
+        "annexBuilding": 309,
+        "protonTherapyCenter": 481,
+        "mainBuilding": 361
+      }
+    },
+    {
+      "time": "2025-04-24 11:44",
+      "data": {
+        "annexBuilding": 185
+      }
+    },
+    {
+      "time": "2025-04-24 11:46",
+      "data": {
+        "protonTherapyCenter": 145,
+        "mainBuilding": 463
+      }
+    },
+    {
+      "time": "2025-04-24 11:47",
+      "data": {
+        "annexBuilding": 493
+      }
+    },
+    {
+      "time": "2025-04-24 11:48",
+      "data": {
+        "mainBuilding": 384,
+        "protonTherapyCenter": 234,
+        "annexBuilding": 325,
+        "cancerCenter": 237
+      }
+    },
+    {
+      "time": "2025-04-24 11:51",
+      "data": {
+        "protonTherapyCenter": 136,
+        "annexBuilding": 329,
+        "mainBuilding": 143
+      }
+    },
+    {
+      "time": "2025-04-24 11:52",
+      "data": {
+        "annexBuilding": 184,
+        "mainBuilding": 497,
+        "protonTherapyCenter": 109,
+        "cancerCenter": 279
+      }
+    },
+    {
+      "time": "2025-04-24 11:53",
+      "data": {
+        "cancerCenter": 239
+      }
+    },
+    {
+      "time": "2025-04-24 11:57",
+      "data": {
+        "annexBuilding": 365,
+        "cancerCenter": 451,
+        "protonTherapyCenter": 392,
+        "mainBuilding": 462
+      }
+    },
+    {
+      "time": "2025-04-24 11:58",
+      "data": {
+        "annexBuilding": 196,
+        "mainBuilding": 460,
+        "cancerCenter": 245
+      }
+    },
+    {
+      "time": "2025-04-24 11:59",
+      "data": {
+        "mainBuilding": 370,
+        "protonTherapyCenter": 132,
+        "annexBuilding": 347,
+        "cancerCenter": 360
+      }
+    },
+    {
+      "time": "2025-04-24 12:01",
+      "data": {
+        "protonTherapyCenter": 233,
+        "cancerCenter": 101,
+        "annexBuilding": 192
+      }
+    },
+    {
+      "time": "2025-04-24 12:02",
+      "data": {
+        "mainBuilding": 219,
+        "annexBuilding": 434,
+        "protonTherapyCenter": 334
+      }
+    },
+    {
+      "time": "2025-04-24 12:03",
+      "data": {
+        "cancerCenter": 492,
+        "annexBuilding": 129,
+        "mainBuilding": 202
+      }
+    },
+    {
+      "time": "2025-04-24 12:04",
+      "data": {
+        "protonTherapyCenter": 443,
+        "mainBuilding": 223,
+        "annexBuilding": 205,
+        "cancerCenter": 175
+      }
+    },
+    {
+      "time": "2025-04-24 12:07",
+      "data": {
+        "protonTherapyCenter": 470,
+        "cancerCenter": 191,
+        "annexBuilding": 404
+      }
+    },
+    {
+      "time": "2025-04-24 12:09",
+      "data": {
+        "mainBuilding": 107,
+        "protonTherapyCenter": 247
+      }
+    },
+    {
+      "time": "2025-04-24 12:10",
+      "data": {
+        "annexBuilding": 163
+      }
+    },
+    {
+      "time": "2025-04-24 12:14",
+      "data": {
+        "mainBuilding": 311,
+        "annexBuilding": 441,
+        "protonTherapyCenter": 351,
+        "cancerCenter": 399
+      }
+    },
+    {
+      "time": "2025-04-24 12:15",
+      "data": {
+        "protonTherapyCenter": 320,
+        "cancerCenter": 416,
+        "annexBuilding": 292,
+        "mainBuilding": 228
+      }
+    },
+    {
+      "time": "2025-04-24 12:19",
+      "data": {
+        "protonTherapyCenter": 176,
+        "cancerCenter": 176
+      }
+    },
+    {
+      "time": "2025-04-24 12:21",
+      "data": {
+        "protonTherapyCenter": 418,
+        "cancerCenter": 118
+      }
+    },
+    {
+      "time": "2025-04-24 12:23",
+      "data": {
+        "mainBuilding": 109
+      }
+    },
+    {
+      "time": "2025-04-24 12:24",
+      "data": {
+        "cancerCenter": 307,
+        "annexBuilding": 350,
+        "protonTherapyCenter": 173,
+        "mainBuilding": 437
+      }
+    },
+    {
+      "time": "2025-04-24 12:26",
+      "data": {
+        "mainBuilding": 187,
+        "annexBuilding": 402
+      }
+    },
+    {
+      "time": "2025-04-24 12:28",
+      "data": {
+        "protonTherapyCenter": 252
+      }
+    },
+    {
+      "time": "2025-04-24 12:32",
+      "data": {
+        "annexBuilding": 486,
+        "mainBuilding": 135
+      }
+    },
+    {
+      "time": "2025-04-24 12:34",
+      "data": {
+        "mainBuilding": 217,
+        "annexBuilding": 344,
+        "protonTherapyCenter": 318,
+        "cancerCenter": 397
+      }
+    },
+    {
+      "time": "2025-04-24 12:37",
+      "data": {
+        "cancerCenter": 291,
+        "annexBuilding": 444,
+        "protonTherapyCenter": 275,
+        "mainBuilding": 333
+      }
+    },
+    {
+      "time": "2025-04-24 12:39",
+      "data": {
+        "cancerCenter": 190,
+        "annexBuilding": 293,
+        "mainBuilding": 153,
+        "protonTherapyCenter": 164
+      }
+    },
+    {
+      "time": "2025-04-24 12:40",
+      "data": {
+        "mainBuilding": 381,
+        "annexBuilding": 108,
+        "cancerCenter": 111,
+        "protonTherapyCenter": 101
+      }
+    },
+    {
+      "time": "2025-04-24 12:41",
+      "data": {
+        "protonTherapyCenter": 302,
+        "cancerCenter": 300,
+        "annexBuilding": 111,
+        "mainBuilding": 457
+      }
+    },
+    {
+      "time": "2025-04-24 12:45",
+      "data": {
+        "protonTherapyCenter": 488,
+        "cancerCenter": 462,
+        "mainBuilding": 175
+      }
+    },
+    {
+      "time": "2025-04-24 12:46",
+      "data": {
+        "mainBuilding": 185,
+        "annexBuilding": 116,
+        "cancerCenter": 142,
+        "protonTherapyCenter": 327
+      }
+    },
+    {
+      "time": "2025-04-24 12:48",
+      "data": {
+        "mainBuilding": 439,
+        "annexBuilding": 180
+      }
+    },
+    {
+      "time": "2025-04-24 12:51",
+      "data": {
+        "protonTherapyCenter": 214,
+        "cancerCenter": 176
+      }
+    },
+    {
+      "time": "2025-04-24 12:52",
+      "data": {
+        "mainBuilding": 206,
+        "annexBuilding": 200,
+        "protonTherapyCenter": 228,
+        "cancerCenter": 106
+      }
+    },
+    {
+      "time": "2025-04-24 12:56",
+      "data": {
+        "annexBuilding": 118
+      }
+    },
+    {
+      "time": "2025-04-24 12:57",
+      "data": {
+        "protonTherapyCenter": 475,
+        "cancerCenter": 373,
+        "annexBuilding": 386
+      }
+    },
+    {
+      "time": "2025-04-24 12:58",
+      "data": {
+        "cancerCenter": 312,
+        "protonTherapyCenter": 408,
+        "annexBuilding": 442
+      }
+    },
+    {
+      "time": "2025-04-24 12:59",
+      "data": {
+        "protonTherapyCenter": 182
+      }
+    },
+    {
+      "time": "2025-04-24 13:00",
+      "data": {
+        "cancerCenter": 365,
+        "annexBuilding": 185,
+        "mainBuilding": 213
+      }
+    },
+    {
+      "time": "2025-04-24 13:01",
+      "data": {
+        "cancerCenter": 469,
+        "annexBuilding": 252
+      }
+    },
+    {
+      "time": "2025-04-24 13:06",
+      "data": {
+        "protonTherapyCenter": 468,
+        "cancerCenter": 357
+      }
+    },
+    {
+      "time": "2025-04-24 13:07",
+      "data": {
+        "protonTherapyCenter": 276,
+        "cancerCenter": 408,
+        "annexBuilding": 405
+      }
+    },
+    {
+      "time": "2025-04-24 13:08",
+      "data": {
+        "annexBuilding": 372,
+        "mainBuilding": 263
+      }
+    },
+    {
+      "time": "2025-04-24 13:10",
+      "data": {
+        "protonTherapyCenter": 345,
+        "cancerCenter": 254,
+        "annexBuilding": 349
+      }
+    },
+    {
+      "time": "2025-04-24 13:11",
+      "data": {
+        "protonTherapyCenter": 471,
+        "cancerCenter": 386
+      }
+    },
+    {
+      "time": "2025-04-24 13:15",
+      "data": {
+        "mainBuilding": 482,
+        "annexBuilding": 419,
+        "cancerCenter": 174,
+        "protonTherapyCenter": 215
+      }
+    },
+    {
+      "time": "2025-04-24 13:16",
+      "data": {
+        "cancerCenter": 159,
+        "mainBuilding": 212
+      }
+    },
+    {
+      "time": "2025-04-24 13:20",
+      "data": {
+        "cancerCenter": 359,
+        "mainBuilding": 361,
+        "protonTherapyCenter": 463,
+        "annexBuilding": 495
+      }
+    },
+    {
+      "time": "2025-04-24 13:21",
+      "data": {
+        "protonTherapyCenter": 186
+      }
+    },
+    {
+      "time": "2025-04-24 13:24",
+      "data": {
+        "mainBuilding": 218
+      }
+    },
+    {
+      "time": "2025-04-24 13:27",
+      "data": {
+        "mainBuilding": 448,
+        "annexBuilding": 340,
+        "cancerCenter": 284
+      }
+    },
+    {
+      "time": "2025-04-24 13:28",
+      "data": {
+        "mainBuilding": 324,
+        "annexBuilding": 270,
+        "protonTherapyCenter": 228,
+        "cancerCenter": 328
+      }
+    },
+    {
+      "time": "2025-04-24 13:29",
+      "data": {
+        "mainBuilding": 484,
+        "annexBuilding": 173,
+        "cancerCenter": 339
+      }
+    },
+    {
+      "time": "2025-04-24 13:32",
+      "data": {
+        "cancerCenter": 393,
+        "mainBuilding": 477,
+        "annexBuilding": 328,
+        "protonTherapyCenter": 139
+      }
+    },
+    {
+      "time": "2025-04-24 13:33",
+      "data": {
+        "mainBuilding": 313,
+        "annexBuilding": 457
+      }
+    },
+    {
+      "time": "2025-04-24 13:37",
+      "data": {
+        "cancerCenter": 220,
+        "annexBuilding": 246,
+        "protonTherapyCenter": 123
+      }
+    },
+    {
+      "time": "2025-04-24 13:41",
+      "data": {
+        "mainBuilding": 343,
+        "annexBuilding": 277
+      }
+    },
+    {
+      "time": "2025-04-24 13:42",
+      "data": {
+        "mainBuilding": 210,
+        "annexBuilding": 354,
+        "cancerCenter": 324,
+        "protonTherapyCenter": 292
+      }
+    },
+    {
+      "time": "2025-04-24 13:43",
+      "data": {
+        "protonTherapyCenter": 262,
+        "cancerCenter": 429,
+        "annexBuilding": 321,
+        "mainBuilding": 360
+      }
+    },
+    {
+      "time": "2025-04-24 13:44",
+      "data": {
+        "protonTherapyCenter": 292,
+        "cancerCenter": 459,
+        "mainBuilding": 314
+      }
+    },
+    {
+      "time": "2025-04-24 13:45",
+      "data": {
+        "cancerCenter": 119,
+        "mainBuilding": 357,
+        "protonTherapyCenter": 449,
+        "annexBuilding": 116
+      }
+    },
+    {
+      "time": "2025-04-24 13:50",
+      "data": {
+        "protonTherapyCenter": 196,
+        "cancerCenter": 370,
+        "annexBuilding": 479,
+        "mainBuilding": 373
+      }
+    },
+    {
+      "time": "2025-04-24 13:51",
+      "data": {
+        "annexBuilding": 250,
+        "protonTherapyCenter": 232,
+        "mainBuilding": 163,
+        "cancerCenter": 275
+      }
+    },
+    {
+      "time": "2025-04-24 13:52",
+      "data": {
+        "cancerCenter": 403,
+        "protonTherapyCenter": 185,
+        "annexBuilding": 378
+      }
+    },
+    {
+      "time": "2025-04-24 13:53",
+      "data": {
+        "mainBuilding": 360,
+        "annexBuilding": 225
+      }
+    },
+    {
+      "time": "2025-04-24 13:56",
+      "data": {
+        "annexBuilding": 385,
+        "mainBuilding": 231
+      }
+    },
+    {
+      "time": "2025-04-24 13:57",
+      "data": {
+        "protonTherapyCenter": 485,
+        "mainBuilding": 179,
+        "annexBuilding": 196,
+        "cancerCenter": 145
+      }
+    },
+    {
+      "time": "2025-04-24 13:58",
+      "data": {
+        "protonTherapyCenter": 209,
+        "cancerCenter": 257,
+        "annexBuilding": 449,
+        "mainBuilding": 406
+      }
+    },
+    {
+      "time": "2025-04-24 14:01",
+      "data": {
+        "mainBuilding": 231,
+        "protonTherapyCenter": 329,
+        "annexBuilding": 379,
+        "cancerCenter": 411
+      }
+    },
+    {
+      "time": "2025-04-24 14:02",
+      "data": {
+        "mainBuilding": 453,
+        "annexBuilding": 311
+      }
+    },
+    {
+      "time": "2025-04-24 14:04",
+      "data": {
+        "annexBuilding": 254,
+        "mainBuilding": 228
+      }
+    },
+    {
+      "time": "2025-04-24 14:06",
+      "data": {
+        "annexBuilding": 391
+      }
+    },
+    {
+      "time": "2025-04-24 14:09",
+      "data": {
+        "annexBuilding": 339
+      }
+    },
+    {
+      "time": "2025-04-24 14:11",
+      "data": {
+        "cancerCenter": 123,
+        "protonTherapyCenter": 374,
+        "annexBuilding": 155,
+        "mainBuilding": 282
+      }
+    },
+    {
+      "time": "2025-04-24 14:13",
+      "data": {
+        "cancerCenter": 344,
+        "protonTherapyCenter": 301,
+        "annexBuilding": 235
+      }
+    },
+    {
+      "time": "2025-04-24 14:15",
+      "data": {
+        "cancerCenter": 373,
+        "protonTherapyCenter": 182,
+        "mainBuilding": 198,
+        "annexBuilding": 455
+      }
+    },
+    {
+      "time": "2025-04-24 14:17",
+      "data": {
+        "annexBuilding": 497,
+        "protonTherapyCenter": 381,
+        "mainBuilding": 292
+      }
+    },
+    {
+      "time": "2025-04-24 14:18",
+      "data": {
+        "mainBuilding": 434
+      }
+    },
+    {
+      "time": "2025-04-24 14:20",
+      "data": {
+        "protonTherapyCenter": 278,
+        "cancerCenter": 209
+      }
+    },
+    {
+      "time": "2025-04-24 14:24",
+      "data": {
+        "annexBuilding": 133,
+        "cancerCenter": 280,
+        "mainBuilding": 262
+      }
+    },
+    {
+      "time": "2025-04-24 14:25",
+      "data": {
+        "protonTherapyCenter": 275
+      }
+    },
+    {
+      "time": "2025-04-24 14:26",
+      "data": {
+        "mainBuilding": 131,
+        "annexBuilding": 418
+      }
+    },
+    {
+      "time": "2025-04-24 14:29",
+      "data": {
+        "mainBuilding": 441,
+        "annexBuilding": 423
+      }
+    },
+    {
+      "time": "2025-04-24 14:36",
+      "data": {
+        "mainBuilding": 243,
+        "protonTherapyCenter": 415
+      }
+    },
+    {
+      "time": "2025-04-24 14:38",
+      "data": {
+        "protonTherapyCenter": 270,
+        "cancerCenter": 313,
+        "annexBuilding": 275,
+        "mainBuilding": 405
+      }
+    },
+    {
+      "time": "2025-04-24 14:40",
+      "data": {
+        "protonTherapyCenter": 182,
+        "cancerCenter": 431,
+        "annexBuilding": 397,
+        "mainBuilding": 436
+      }
+    },
+    {
+      "time": "2025-04-24 14:41",
+      "data": {
+        "protonTherapyCenter": 422
+      }
+    },
+    {
+      "time": "2025-04-24 14:42",
+      "data": {
+        "cancerCenter": 185
+      }
+    },
+    {
+      "time": "2025-04-24 14:43",
+      "data": {
+        "protonTherapyCenter": 117,
+        "cancerCenter": 461,
+        "annexBuilding": 119
+      }
+    },
+    {
+      "time": "2025-04-24 14:45",
+      "data": {
+        "protonTherapyCenter": 311,
+        "cancerCenter": 461
+      }
+    },
+    {
+      "time": "2025-04-24 14:46",
+      "data": {
+        "mainBuilding": 470
+      }
+    },
+    {
+      "time": "2025-04-24 14:47",
+      "data": {
+        "protonTherapyCenter": 373,
+        "cancerCenter": 442,
+        "annexBuilding": 469
+      }
+    },
+    {
+      "time": "2025-04-24 14:49",
+      "data": {
+        "mainBuilding": 492,
+        "annexBuilding": 413,
+        "protonTherapyCenter": 371
+      }
+    },
+    {
+      "time": "2025-04-24 14:52",
+      "data": {
+        "mainBuilding": 465,
+        "annexBuilding": 396,
+        "cancerCenter": 354,
+        "protonTherapyCenter": 306
+      }
+    },
+    {
+      "time": "2025-04-24 14:54",
+      "data": {
+        "protonTherapyCenter": 309
+      }
+    },
+    {
+      "time": "2025-04-24 14:55",
+      "data": {
+        "mainBuilding": 459,
+        "annexBuilding": 354,
+        "cancerCenter": 478,
+        "protonTherapyCenter": 102
+      }
+    },
+    {
+      "time": "2025-04-24 14:56",
+      "data": {
+        "protonTherapyCenter": 317
+      }
+    },
+    {
+      "time": "2025-04-24 14:58",
+      "data": {
+        "protonTherapyCenter": 483
+      }
+    },
+    {
+      "time": "2025-04-24 15:00",
+      "data": {
+        "annexBuilding": 358,
+        "mainBuilding": 262,
+        "protonTherapyCenter": 291
+      }
+    },
+    {
+      "time": "2025-04-24 15:02",
+      "data": {
+        "mainBuilding": 354
+      }
+    },
+    {
+      "time": "2025-04-24 15:03",
+      "data": {
+        "mainBuilding": 239,
+        "protonTherapyCenter": 438,
+        "annexBuilding": 392,
+        "cancerCenter": 135
+      }
+    },
+    {
+      "time": "2025-04-24 15:05",
+      "data": {
+        "cancerCenter": 421
+      }
+    },
+    {
+      "time": "2025-04-24 15:09",
+      "data": {
+        "protonTherapyCenter": 445,
+        "mainBuilding": 217,
+        "cancerCenter": 330,
+        "annexBuilding": 261
+      }
+    },
+    {
+      "time": "2025-04-24 15:13",
+      "data": {
+        "mainBuilding": 119,
+        "annexBuilding": 418,
+        "protonTherapyCenter": 211
+      }
+    },
+    {
+      "time": "2025-04-24 15:14",
+      "data": {
+        "mainBuilding": 132,
+        "annexBuilding": 167,
+        "protonTherapyCenter": 136
+      }
+    },
+    {
+      "time": "2025-04-24 15:15",
+      "data": {
+        "cancerCenter": 224
+      }
+    },
+    {
+      "time": "2025-04-24 15:16",
+      "data": {
+        "mainBuilding": 356,
+        "annexBuilding": 342,
+        "protonTherapyCenter": 289,
+        "cancerCenter": 326
+      }
+    },
+    {
+      "time": "2025-04-24 15:18",
+      "data": {
+        "protonTherapyCenter": 207,
+        "cancerCenter": 217,
+        "mainBuilding": 312
+      }
+    },
+    {
+      "time": "2025-04-24 15:20",
+      "data": {
+        "protonTherapyCenter": 138
+      }
+    },
+    {
+      "time": "2025-04-24 15:24",
+      "data": {
+        "protonTherapyCenter": 105
+      }
+    },
+    {
+      "time": "2025-04-24 15:27",
+      "data": {
+        "protonTherapyCenter": 353,
+        "cancerCenter": 397,
+        "annexBuilding": 256,
+        "mainBuilding": 383
+      }
+    },
+    {
+      "time": "2025-04-24 15:29",
+      "data": {
+        "mainBuilding": 425,
+        "annexBuilding": 327,
+        "cancerCenter": 469,
+        "protonTherapyCenter": 358
+      }
+    },
+    {
+      "time": "2025-04-24 15:30",
+      "data": {
+        "protonTherapyCenter": 174
+      }
+    },
+    {
+      "time": "2025-04-24 15:31",
+      "data": {
+        "protonTherapyCenter": 267,
+        "annexBuilding": 272,
+        "mainBuilding": 386,
+        "cancerCenter": 354
+      }
+    },
+    {
+      "time": "2025-04-24 15:34",
+      "data": {
+        "annexBuilding": 417,
+        "cancerCenter": 173
+      }
+    },
+    {
+      "time": "2025-04-24 15:36",
+      "data": {
+        "cancerCenter": 123,
+        "annexBuilding": 155,
+        "mainBuilding": 493,
+        "protonTherapyCenter": 234
+      }
+    },
+    {
+      "time": "2025-04-24 15:37",
+      "data": {
+        "protonTherapyCenter": 148
+      }
+    },
+    {
+      "time": "2025-04-24 15:39",
+      "data": {
+        "cancerCenter": 103,
+        "protonTherapyCenter": 405
+      }
+    },
+    {
+      "time": "2025-04-24 15:41",
+      "data": {
+        "cancerCenter": 216,
+        "annexBuilding": 110,
+        "protonTherapyCenter": 233,
+        "mainBuilding": 328
+      }
+    },
+    {
+      "time": "2025-04-24 15:44",
+      "data": {
+        "mainBuilding": 218,
+        "annexBuilding": 289,
+        "cancerCenter": 382
+      }
+    },
+    {
+      "time": "2025-04-24 15:47",
+      "data": {
+        "mainBuilding": 256,
+        "annexBuilding": 287
+      }
+    },
+    {
+      "time": "2025-04-24 15:48",
+      "data": {
+        "mainBuilding": 119,
+        "annexBuilding": 486,
+        "protonTherapyCenter": 160
+      }
+    },
+    {
+      "time": "2025-04-24 15:49",
+      "data": {
+        "protonTherapyCenter": 372,
+        "mainBuilding": 178,
+        "annexBuilding": 198,
+        "cancerCenter": 408
+      }
+    },
+    {
+      "time": "2025-04-24 15:50",
+      "data": {
+        "mainBuilding": 264,
+        "annexBuilding": 171
+      }
+    },
+    {
+      "time": "2025-04-24 15:53",
+      "data": {
+        "cancerCenter": 100,
+        "annexBuilding": 140,
+        "protonTherapyCenter": 103,
+        "mainBuilding": 411
+      }
+    },
+    {
+      "time": "2025-04-24 15:54",
+      "data": {
+        "mainBuilding": 199,
+        "annexBuilding": 284,
+        "cancerCenter": 459
+      }
+    },
+    {
+      "time": "2025-04-24 15:57",
+      "data": {
+        "annexBuilding": 425,
+        "protonTherapyCenter": 416,
+        "mainBuilding": 257,
+        "cancerCenter": 219
+      }
+    },
+    {
+      "time": "2025-04-24 15:59",
+      "data": {
+        "mainBuilding": 313
+      }
+    },
+    {
+      "time": "2025-04-24 16:00",
+      "data": {
+        "mainBuilding": 145,
+        "protonTherapyCenter": 313,
+        "annexBuilding": 105,
+        "cancerCenter": 323
+      }
+    },
+    {
+      "time": "2025-04-24 16:02",
+      "data": {
+        "mainBuilding": 326
+      }
+    },
+    {
+      "time": "2025-04-24 16:03",
+      "data": {
+        "cancerCenter": 189,
+        "protonTherapyCenter": 149,
+        "annexBuilding": 120,
+        "mainBuilding": 259
+      }
+    },
+    {
+      "time": "2025-04-24 16:08",
+      "data": {
+        "mainBuilding": 388,
+        "annexBuilding": 391,
+        "protonTherapyCenter": 436,
+        "cancerCenter": 457
+      }
+    },
+    {
+      "time": "2025-04-24 16:11",
+      "data": {
+        "mainBuilding": 397
+      }
+    },
+    {
+      "time": "2025-04-24 16:14",
+      "data": {
+        "mainBuilding": 325,
+        "protonTherapyCenter": 313
+      }
+    },
+    {
+      "time": "2025-04-24 16:15",
+      "data": {
+        "annexBuilding": 106,
+        "mainBuilding": 390
+      }
+    },
+    {
+      "time": "2025-04-24 16:16",
+      "data": {
+        "mainBuilding": 436
+      }
+    },
+    {
+      "time": "2025-04-24 16:17",
+      "data": {
+        "cancerCenter": 307
+      }
+    },
+    {
+      "time": "2025-04-24 16:18",
+      "data": {
+        "protonTherapyCenter": 178,
+        "cancerCenter": 403,
+        "annexBuilding": 147,
+        "mainBuilding": 138
+      }
+    },
+    {
+      "time": "2025-04-24 16:21",
+      "data": {
+        "protonTherapyCenter": 260,
+        "cancerCenter": 211
+      }
+    },
+    {
+      "time": "2025-04-24 16:22",
+      "data": {
+        "mainBuilding": 100,
+        "annexBuilding": 149,
+        "protonTherapyCenter": 329,
+        "cancerCenter": 430
+      }
+    },
+    {
+      "time": "2025-04-24 16:24",
+      "data": {
+        "mainBuilding": 487,
+        "annexBuilding": 266,
+        "cancerCenter": 166
+      }
+    },
+    {
+      "time": "2025-04-24 16:29",
+      "data": {
+        "annexBuilding": 429,
+        "cancerCenter": 320,
+        "mainBuilding": 127
+      }
+    },
+    {
+      "time": "2025-04-24 16:30",
+      "data": {
+        "mainBuilding": 241,
+        "cancerCenter": 452,
+        "protonTherapyCenter": 478,
+        "annexBuilding": 133
+      }
+    },
+    {
+      "time": "2025-04-24 16:32",
+      "data": {
+        "mainBuilding": 116,
+        "annexBuilding": 499,
+        "cancerCenter": 388,
+        "protonTherapyCenter": 403
+      }
+    },
+    {
+      "time": "2025-04-24 16:33",
+      "data": {
+        "mainBuilding": 248,
+        "cancerCenter": 224
+      }
+    },
+    {
+      "time": "2025-04-24 16:34",
+      "data": {
+        "protonTherapyCenter": 153,
+        "cancerCenter": 286
+      }
+    },
+    {
+      "time": "2025-04-24 16:35",
+      "data": {
+        "cancerCenter": 353,
+        "annexBuilding": 181,
+        "mainBuilding": 225,
+        "protonTherapyCenter": 282
+      }
+    },
+    {
+      "time": "2025-04-24 16:36",
+      "data": {
+        "mainBuilding": 276,
+        "annexBuilding": 416,
+        "cancerCenter": 227
+      }
+    },
+    {
+      "time": "2025-04-24 16:37",
+      "data": {
+        "protonTherapyCenter": 212,
+        "mainBuilding": 113
+      }
+    },
+    {
+      "time": "2025-04-24 16:38",
+      "data": {
+        "mainBuilding": 272,
+        "protonTherapyCenter": 448,
+        "annexBuilding": 332
+      }
+    },
+    {
+      "time": "2025-04-24 16:39",
+      "data": {
+        "mainBuilding": 164,
+        "annexBuilding": 238
+      }
+    },
+    {
+      "time": "2025-04-24 16:42",
+      "data": {
+        "mainBuilding": 217,
+        "annexBuilding": 413
+      }
+    },
+    {
+      "time": "2025-04-24 16:47",
+      "data": {
+        "protonTherapyCenter": 270,
+        "cancerCenter": 287,
+        "annexBuilding": 176,
+        "mainBuilding": 408
+      }
+    },
+    {
+      "time": "2025-04-24 16:48",
+      "data": {
+        "mainBuilding": 289
+      }
+    },
+    {
+      "time": "2025-04-24 16:56",
+      "data": {
+        "cancerCenter": 500,
+        "protonTherapyCenter": 108,
+        "mainBuilding": 104,
+        "annexBuilding": 158
+      }
+    },
+    {
+      "time": "2025-04-24 16:57",
+      "data": {
+        "protonTherapyCenter": 259,
+        "cancerCenter": 325,
+        "mainBuilding": 135
+      }
+    },
+    {
+      "time": "2025-04-24 16:58",
+      "data": {
+        "mainBuilding": 396
+      }
+    },
+    {
+      "time": "2025-04-24 16:59",
+      "data": {
+        "mainBuilding": 490,
+        "protonTherapyCenter": 242
+      }
+    },
+    {
+      "time": "2025-04-24 17:00",
+      "data": {
+        "protonTherapyCenter": 260,
+        "cancerCenter": 409,
+        "annexBuilding": 394
+      }
+    },
+    {
+      "time": "2025-04-24 17:01",
+      "data": {
+        "annexBuilding": 107
+      }
+    },
+    {
+      "time": "2025-04-24 17:05",
+      "data": {
+        "cancerCenter": 275,
+        "protonTherapyCenter": 419
+      }
+    },
+    {
+      "time": "2025-04-24 17:06",
+      "data": {
+        "protonTherapyCenter": 164,
+        "cancerCenter": 471
+      }
+    },
+    {
+      "time": "2025-04-24 17:07",
+      "data": {
+        "protonTherapyCenter": 456
+      }
+    },
+    {
+      "time": "2025-04-24 17:10",
+      "data": {
+        "cancerCenter": 291,
+        "annexBuilding": 403
+      }
+    },
+    {
+      "time": "2025-04-24 17:11",
+      "data": {
+        "mainBuilding": 153,
+        "annexBuilding": 287,
+        "protonTherapyCenter": 314,
+        "cancerCenter": 276
+      }
+    },
+    {
+      "time": "2025-04-24 17:13",
+      "data": {
+        "mainBuilding": 287,
+        "protonTherapyCenter": 196,
+        "annexBuilding": 493,
+        "cancerCenter": 375
+      }
+    },
+    {
+      "time": "2025-04-24 17:15",
+      "data": {
+        "cancerCenter": 364
+      }
+    },
+    {
+      "time": "2025-04-24 17:21",
+      "data": {
+        "protonTherapyCenter": 251,
+        "cancerCenter": 402
+      }
+    },
+    {
+      "time": "2025-04-24 17:22",
+      "data": {
+        "mainBuilding": 131,
+        "annexBuilding": 316,
+        "cancerCenter": 295,
+        "protonTherapyCenter": 328
+      }
+    },
+    {
+      "time": "2025-04-24 17:23",
+      "data": {
+        "mainBuilding": 348,
+        "annexBuilding": 391,
+        "cancerCenter": 444
+      }
+    },
+    {
+      "time": "2025-04-24 17:26",
+      "data": {
+        "annexBuilding": 360,
+        "mainBuilding": 327
+      }
+    },
+    {
+      "time": "2025-04-24 17:29",
+      "data": {
+        "mainBuilding": 331,
+        "annexBuilding": 261,
+        "protonTherapyCenter": 421,
+        "cancerCenter": 193
+      }
+    },
+    {
+      "time": "2025-04-24 17:30",
+      "data": {
+        "cancerCenter": 204
+      }
+    },
+    {
+      "time": "2025-04-24 17:31",
+      "data": {
+        "mainBuilding": 386,
+        "cancerCenter": 335,
+        "protonTherapyCenter": 340
+      }
+    },
+    {
+      "time": "2025-04-24 17:32",
+      "data": {
+        "protonTherapyCenter": 294,
+        "mainBuilding": 250,
+        "annexBuilding": 438
+      }
+    },
+    {
+      "time": "2025-04-24 17:34",
+      "data": {
+        "protonTherapyCenter": 202,
+        "annexBuilding": 136,
+        "mainBuilding": 236
+      }
+    },
+    {
+      "time": "2025-04-24 17:35",
+      "data": {
+        "mainBuilding": 409,
+        "annexBuilding": 476,
+        "cancerCenter": 240,
+        "protonTherapyCenter": 450
+      }
+    },
+    {
+      "time": "2025-04-24 17:36",
+      "data": {
+        "cancerCenter": 351,
+        "mainBuilding": 188,
+        "annexBuilding": 435
+      }
+    },
+    {
+      "time": "2025-04-24 17:37",
+      "data": {
+        "protonTherapyCenter": 338,
+        "mainBuilding": 172,
+        "annexBuilding": 264,
+        "cancerCenter": 205
+      }
+    },
+    {
+      "time": "2025-04-24 17:39",
+      "data": {
+        "cancerCenter": 356,
+        "protonTherapyCenter": 380,
+        "annexBuilding": 213
+      }
+    },
+    {
+      "time": "2025-04-24 17:40",
+      "data": {
+        "mainBuilding": 354,
+        "annexBuilding": 285
+      }
+    },
+    {
+      "time": "2025-04-24 17:43",
+      "data": {
+        "mainBuilding": 189
+      }
+    },
+    {
+      "time": "2025-04-24 17:47",
+      "data": {
+        "mainBuilding": 199,
+        "protonTherapyCenter": 487,
+        "annexBuilding": 366,
+        "cancerCenter": 399
+      }
+    },
+    {
+      "time": "2025-04-24 17:49",
+      "data": {
+        "mainBuilding": 116
+      }
+    },
+    {
+      "time": "2025-04-24 17:53",
+      "data": {
+        "mainBuilding": 379
+      }
+    },
+    {
+      "time": "2025-04-24 17:57",
+      "data": {
+        "mainBuilding": 111
+      }
+    },
+    {
+      "time": "2025-04-24 17:58",
+      "data": {
+        "annexBuilding": 461
+      }
+    },
+    {
+      "time": "2025-04-24 17:59",
+      "data": {
+        "mainBuilding": 430,
+        "annexBuilding": 151,
+        "cancerCenter": 273
+      }
+    },
+    {
+      "time": "2025-04-24 18:02",
+      "data": {
+        "protonTherapyCenter": 441,
+        "mainBuilding": 396,
+        "annexBuilding": 493,
+        "cancerCenter": 147
+      }
+    },
+    {
+      "time": "2025-04-24 18:06",
+      "data": {
+        "annexBuilding": 179,
+        "cancerCenter": 206,
+        "mainBuilding": 411
+      }
+    },
+    {
+      "time": "2025-04-24 18:08",
+      "data": {
+        "protonTherapyCenter": 466,
+        "annexBuilding": 344,
+        "cancerCenter": 318,
+        "mainBuilding": 357
+      }
+    },
+    {
+      "time": "2025-04-24 18:09",
+      "data": {
+        "protonTherapyCenter": 258,
+        "mainBuilding": 127,
+        "annexBuilding": 100,
+        "cancerCenter": 420
+      }
+    },
+    {
+      "time": "2025-04-24 18:10",
+      "data": {
+        "protonTherapyCenter": 334,
+        "cancerCenter": 375
+      }
+    },
+    {
+      "time": "2025-04-24 18:14",
+      "data": {
+        "protonTherapyCenter": 124,
+        "mainBuilding": 165,
+        "annexBuilding": 250,
+        "cancerCenter": 488
+      }
+    },
+    {
+      "time": "2025-04-24 18:16",
+      "data": {
+        "annexBuilding": 466,
+        "cancerCenter": 202
+      }
+    },
+    {
+      "time": "2025-04-24 18:17",
+      "data": {
+        "mainBuilding": 349,
+        "annexBuilding": 232,
+        "cancerCenter": 496
+      }
+    },
+    {
+      "time": "2025-04-24 18:18",
+      "data": {
+        "protonTherapyCenter": 221,
+        "cancerCenter": 203
+      }
+    },
+    {
+      "time": "2025-04-24 18:22",
+      "data": {
+        "annexBuilding": 101
+      }
+    },
+    {
+      "time": "2025-04-24 18:24",
+      "data": {
+        "annexBuilding": 346,
+        "mainBuilding": 481,
+        "protonTherapyCenter": 306,
+        "cancerCenter": 385
+      }
+    },
+    {
+      "time": "2025-04-24 18:25",
+      "data": {
+        "protonTherapyCenter": 321,
+        "cancerCenter": 488
+      }
+    },
+    {
+      "time": "2025-04-24 18:26",
+      "data": {
+        "annexBuilding": 228,
+        "protonTherapyCenter": 469,
+        "mainBuilding": 405
+      }
+    },
+    {
+      "time": "2025-04-24 18:29",
+      "data": {
+        "annexBuilding": 223
+      }
+    },
+    {
+      "time": "2025-04-24 18:30",
+      "data": {
+        "mainBuilding": 164,
+        "annexBuilding": 399
+      }
+    },
+    {
+      "time": "2025-04-24 18:31",
+      "data": {
+        "cancerCenter": 297,
+        "protonTherapyCenter": 424,
+        "mainBuilding": 443
+      }
+    },
+    {
+      "time": "2025-04-24 18:32",
+      "data": {
+        "protonTherapyCenter": 481,
+        "mainBuilding": 476,
+        "annexBuilding": 352
+      }
+    },
+    {
+      "time": "2025-04-24 18:34",
+      "data": {
+        "protonTherapyCenter": 413,
+        "annexBuilding": 226,
+        "mainBuilding": 347
+      }
+    },
+    {
+      "time": "2025-04-24 18:38",
+      "data": {
+        "protonTherapyCenter": 450,
+        "annexBuilding": 347,
+        "cancerCenter": 363
+      }
+    },
+    {
+      "time": "2025-04-24 18:40",
+      "data": {
+        "mainBuilding": 425
+      }
+    },
+    {
+      "time": "2025-04-24 18:41",
+      "data": {
+        "protonTherapyCenter": 459,
+        "annexBuilding": 154
+      }
+    },
+    {
+      "time": "2025-04-24 18:42",
+      "data": {
+        "cancerCenter": 374
+      }
+    },
+    {
+      "time": "2025-04-24 18:44",
+      "data": {
+        "cancerCenter": 335,
+        "protonTherapyCenter": 286,
+        "mainBuilding": 198,
+        "annexBuilding": 171
+      }
+    },
+    {
+      "time": "2025-04-24 18:46",
+      "data": {
+        "protonTherapyCenter": 434,
+        "mainBuilding": 150
+      }
+    },
+    {
+      "time": "2025-04-24 18:47",
+      "data": {
+        "mainBuilding": 404
+      }
+    },
+    {
+      "time": "2025-04-24 18:48",
+      "data": {
+        "protonTherapyCenter": 149,
+        "cancerCenter": 220
+      }
+    },
+    {
+      "time": "2025-04-24 18:53",
+      "data": {
+        "protonTherapyCenter": 420,
+        "cancerCenter": 480,
+        "annexBuilding": 438,
+        "mainBuilding": 229
+      }
+    },
+    {
+      "time": "2025-04-24 18:54",
+      "data": {
+        "protonTherapyCenter": 409,
+        "mainBuilding": 463,
+        "annexBuilding": 272,
+        "cancerCenter": 299
+      }
+    },
+    {
+      "time": "2025-04-24 18:55",
+      "data": {
+        "mainBuilding": 200,
+        "cancerCenter": 240,
+        "annexBuilding": 229,
+        "protonTherapyCenter": 395
+      }
+    },
+    {
+      "time": "2025-04-24 18:57",
+      "data": {
+        "protonTherapyCenter": 247
+      }
+    },
+    {
+      "time": "2025-04-24 19:00",
+      "data": {
+        "mainBuilding": 473,
+        "annexBuilding": 466,
+        "cancerCenter": 499
+      }
+    },
+    {
+      "time": "2025-04-24 19:03",
+      "data": {
+        "annexBuilding": 108,
+        "mainBuilding": 347,
+        "protonTherapyCenter": 410,
+        "cancerCenter": 169
+      }
+    },
+    {
+      "time": "2025-04-24 19:04",
+      "data": {
+        "mainBuilding": 179,
+        "protonTherapyCenter": 178,
+        "annexBuilding": 326
+      }
+    },
+    {
+      "time": "2025-04-24 19:07",
+      "data": {
+        "cancerCenter": 238,
+        "protonTherapyCenter": 361,
+        "mainBuilding": 364,
+        "annexBuilding": 126
+      }
+    },
+    {
+      "time": "2025-04-24 19:09",
+      "data": {
+        "mainBuilding": 236,
+        "annexBuilding": 134,
+        "cancerCenter": 163
+      }
+    },
+    {
+      "time": "2025-04-24 19:11",
+      "data": {
+        "mainBuilding": 193,
+        "cancerCenter": 137,
+        "protonTherapyCenter": 187
+      }
+    },
+    {
+      "time": "2025-04-24 19:16",
+      "data": {
+        "mainBuilding": 418
+      }
+    },
+    {
+      "time": "2025-04-24 19:19",
+      "data": {
+        "protonTherapyCenter": 473,
+        "cancerCenter": 114,
+        "annexBuilding": 239,
+        "mainBuilding": 229
+      }
+    },
+    {
+      "time": "2025-04-24 19:20",
+      "data": {
+        "cancerCenter": 271,
+        "annexBuilding": 118,
+        "mainBuilding": 400
+      }
+    },
+    {
+      "time": "2025-04-24 19:22",
+      "data": {
+        "cancerCenter": 384,
+        "annexBuilding": 418
+      }
+    },
+    {
+      "time": "2025-04-24 19:24",
+      "data": {
+        "protonTherapyCenter": 394,
+        "cancerCenter": 236,
+        "annexBuilding": 484
+      }
+    },
+    {
+      "time": "2025-04-24 19:26",
+      "data": {
+        "protonTherapyCenter": 148,
+        "cancerCenter": 419
+      }
+    },
+    {
+      "time": "2025-04-24 19:27",
+      "data": {
+        "mainBuilding": 392,
+        "annexBuilding": 225,
+        "protonTherapyCenter": 462
+      }
+    },
+    {
+      "time": "2025-04-24 19:28",
+      "data": {
+        "protonTherapyCenter": 216,
+        "cancerCenter": 350,
+        "annexBuilding": 188,
+        "mainBuilding": 276
+      }
+    },
+    {
+      "time": "2025-04-24 19:30",
+      "data": {
+        "mainBuilding": 169,
+        "annexBuilding": 351
+      }
+    },
+    {
+      "time": "2025-04-24 19:32",
+      "data": {
+        "protonTherapyCenter": 375,
+        "cancerCenter": 109,
+        "annexBuilding": 189,
+        "mainBuilding": 475
+      }
+    },
+    {
+      "time": "2025-04-24 19:33",
+      "data": {
+        "mainBuilding": 374,
+        "annexBuilding": 276,
+        "cancerCenter": 441
+      }
+    },
+    {
+      "time": "2025-04-24 19:34",
+      "data": {
+        "protonTherapyCenter": 464,
+        "cancerCenter": 346,
+        "mainBuilding": 188,
+        "annexBuilding": 340
+      }
+    },
+    {
+      "time": "2025-04-24 19:37",
+      "data": {
+        "annexBuilding": 437,
+        "cancerCenter": 189
+      }
+    },
+    {
+      "time": "2025-04-24 19:40",
+      "data": {
+        "protonTherapyCenter": 361,
+        "cancerCenter": 429,
+        "annexBuilding": 457,
+        "mainBuilding": 167
+      }
+    },
+    {
+      "time": "2025-04-24 19:41",
+      "data": {
+        "cancerCenter": 447,
+        "protonTherapyCenter": 399
+      }
+    },
+    {
+      "time": "2025-04-24 19:43",
+      "data": {
+        "annexBuilding": 338,
+        "cancerCenter": 456,
+        "protonTherapyCenter": 333
+      }
+    },
+    {
+      "time": "2025-04-24 19:44",
+      "data": {
+        "annexBuilding": 286
+      }
+    },
+    {
+      "time": "2025-04-24 19:48",
+      "data": {
+        "annexBuilding": 225,
+        "protonTherapyCenter": 476,
+        "cancerCenter": 116,
+        "mainBuilding": 162
+      }
+    },
+    {
+      "time": "2025-04-24 19:51",
+      "data": {
+        "mainBuilding": 193,
+        "annexBuilding": 130,
+        "cancerCenter": 316
+      }
+    },
+    {
+      "time": "2025-04-24 19:52",
+      "data": {
+        "protonTherapyCenter": 409,
+        "cancerCenter": 384,
+        "annexBuilding": 384,
+        "mainBuilding": 165
+      }
+    },
+    {
+      "time": "2025-04-24 19:54",
+      "data": {
+        "mainBuilding": 344,
+        "annexBuilding": 254,
+        "cancerCenter": 357
+      }
+    },
+    {
+      "time": "2025-04-24 19:55",
+      "data": {
+        "annexBuilding": 483
+      }
+    },
+    {
+      "time": "2025-04-24 19:56",
+      "data": {
+        "cancerCenter": 286,
+        "annexBuilding": 272,
+        "mainBuilding": 287,
+        "protonTherapyCenter": 273
+      }
+    },
+    {
+      "time": "2025-04-24 19:57",
+      "data": {
+        "protonTherapyCenter": 239,
+        "cancerCenter": 431,
+        "annexBuilding": 282,
+        "mainBuilding": 181
+      }
+    },
+    {
+      "time": "2025-04-24 20:00",
+      "data": {
+        "cancerCenter": 495
+      }
+    },
+    {
+      "time": "2025-04-24 20:01",
+      "data": {
+        "mainBuilding": 317
+      }
+    },
+    {
+      "time": "2025-04-24 20:02",
+      "data": {
+        "mainBuilding": 233,
+        "protonTherapyCenter": 404
+      }
+    },
+    {
+      "time": "2025-04-24 20:04",
+      "data": {
+        "annexBuilding": 395,
+        "mainBuilding": 246,
+        "protonTherapyCenter": 135,
+        "cancerCenter": 157
+      }
+    },
+    {
+      "time": "2025-04-24 20:06",
+      "data": {
+        "cancerCenter": 306,
+        "annexBuilding": 448,
+        "mainBuilding": 108,
+        "protonTherapyCenter": 303
+      }
+    },
+    {
+      "time": "2025-04-24 20:08",
+      "data": {
+        "cancerCenter": 242,
+        "protonTherapyCenter": 261,
+        "annexBuilding": 335
+      }
+    },
+    {
+      "time": "2025-04-24 20:09",
+      "data": {
+        "cancerCenter": 473,
+        "annexBuilding": 443
+      }
+    },
+    {
+      "time": "2025-04-24 20:15",
+      "data": {
+        "protonTherapyCenter": 318,
+        "annexBuilding": 148
+      }
+    },
+    {
+      "time": "2025-04-24 20:20",
+      "data": {
+        "mainBuilding": 472
+      }
+    },
+    {
+      "time": "2025-04-24 20:21",
+      "data": {
+        "protonTherapyCenter": 191,
+        "mainBuilding": 269,
+        "annexBuilding": 377
+      }
+    },
+    {
+      "time": "2025-04-24 20:22",
+      "data": {
+        "annexBuilding": 420,
+        "mainBuilding": 483
+      }
+    },
+    {
+      "time": "2025-04-24 20:26",
+      "data": {
+        "mainBuilding": 312,
+        "protonTherapyCenter": 369,
+        "annexBuilding": 291,
+        "cancerCenter": 441
+      }
+    },
+    {
+      "time": "2025-04-24 20:27",
+      "data": {
+        "annexBuilding": 361,
+        "protonTherapyCenter": 228,
+        "mainBuilding": 259,
+        "cancerCenter": 240
+      }
+    },
+    {
+      "time": "2025-04-24 20:28",
+      "data": {
+        "protonTherapyCenter": 136,
+        "cancerCenter": 290
+      }
+    },
+    {
+      "time": "2025-04-24 20:29",
+      "data": {
+        "protonTherapyCenter": 371,
+        "mainBuilding": 387,
+        "annexBuilding": 288
+      }
+    },
+    {
+      "time": "2025-04-24 20:34",
+      "data": {
+        "protonTherapyCenter": 404,
+        "cancerCenter": 371
+      }
+    },
+    {
+      "time": "2025-04-24 20:35",
+      "data": {
+        "protonTherapyCenter": 153
+      }
+    },
+    {
+      "time": "2025-04-24 20:37",
+      "data": {
+        "mainBuilding": 133
+      }
+    },
+    {
+      "time": "2025-04-24 20:39",
+      "data": {
+        "protonTherapyCenter": 456,
+        "annexBuilding": 254,
+        "cancerCenter": 148
+      }
+    },
+    {
+      "time": "2025-04-24 20:42",
+      "data": {
+        "cancerCenter": 485,
+        "annexBuilding": 163
+      }
+    },
+    {
+      "time": "2025-04-24 20:44",
+      "data": {
+        "cancerCenter": 447,
+        "annexBuilding": 279,
+        "mainBuilding": 287
+      }
+    },
+    {
+      "time": "2025-04-24 20:46",
+      "data": {
+        "mainBuilding": 201
+      }
+    },
+    {
+      "time": "2025-04-24 20:48",
+      "data": {
+        "protonTherapyCenter": 192,
+        "cancerCenter": 464
+      }
+    },
+    {
+      "time": "2025-04-24 20:49",
+      "data": {
+        "mainBuilding": 378
+      }
+    },
+    {
+      "time": "2025-04-24 20:50",
+      "data": {
+        "cancerCenter": 242
+      }
+    },
+    {
+      "time": "2025-04-24 20:51",
+      "data": {
+        "mainBuilding": 405,
+        "annexBuilding": 267,
+        "cancerCenter": 166
+      }
+    },
+    {
+      "time": "2025-04-24 20:52",
+      "data": {
+        "mainBuilding": 433,
+        "annexBuilding": 284
+      }
+    },
+    {
+      "time": "2025-04-24 20:55",
+      "data": {
+        "annexBuilding": 245
+      }
+    },
+    {
+      "time": "2025-04-24 20:56",
+      "data": {
+        "mainBuilding": 433
+      }
+    },
+    {
+      "time": "2025-04-24 20:58",
+      "data": {
+        "protonTherapyCenter": 284,
+        "cancerCenter": 383
+      }
+    },
+    {
+      "time": "2025-04-24 21:01",
+      "data": {
+        "cancerCenter": 448,
+        "annexBuilding": 291,
+        "protonTherapyCenter": 301
+      }
+    },
+    {
+      "time": "2025-04-24 21:03",
+      "data": {
+        "mainBuilding": 162,
+        "annexBuilding": 397
+      }
+    },
+    {
+      "time": "2025-04-24 21:04",
+      "data": {
+        "mainBuilding": 351,
+        "cancerCenter": 252
+      }
+    },
+    {
+      "time": "2025-04-24 21:05",
+      "data": {
+        "mainBuilding": 220
+      }
+    },
+    {
+      "time": "2025-04-24 21:07",
+      "data": {
+        "protonTherapyCenter": 462,
+        "cancerCenter": 493
+      }
+    },
+    {
+      "time": "2025-04-24 21:08",
+      "data": {
+        "mainBuilding": 236,
+        "annexBuilding": 412,
+        "cancerCenter": 251
+      }
+    },
+    {
+      "time": "2025-04-24 21:09",
+      "data": {
+        "protonTherapyCenter": 333,
+        "mainBuilding": 325,
+        "cancerCenter": 261
+      }
+    },
+    {
+      "time": "2025-04-24 21:11",
+      "data": {
+        "mainBuilding": 107,
+        "annexBuilding": 270,
+        "cancerCenter": 205,
+        "protonTherapyCenter": 450
+      }
+    },
+    {
+      "time": "2025-04-24 21:15",
+      "data": {
+        "protonTherapyCenter": 142,
+        "cancerCenter": 367
+      }
+    },
+    {
+      "time": "2025-04-24 21:16",
+      "data": {
+        "mainBuilding": 160,
+        "protonTherapyCenter": 390,
+        "annexBuilding": 475
+      }
+    },
+    {
+      "time": "2025-04-24 21:17",
+      "data": {
+        "protonTherapyCenter": 467
+      }
+    },
+    {
+      "time": "2025-04-24 21:19",
+      "data": {
+        "cancerCenter": 109,
+        "annexBuilding": 256,
+        "mainBuilding": 340
+      }
+    },
+    {
+      "time": "2025-04-24 21:22",
+      "data": {
+        "annexBuilding": 142,
+        "mainBuilding": 125,
+        "cancerCenter": 142
+      }
+    },
+    {
+      "time": "2025-04-24 21:24",
+      "data": {
+        "protonTherapyCenter": 271,
+        "cancerCenter": 457
+      }
+    },
+    {
+      "time": "2025-04-24 21:29",
+      "data": {
+        "protonTherapyCenter": 358,
+        "annexBuilding": 388,
+        "cancerCenter": 377,
+        "mainBuilding": 382
+      }
+    },
+    {
+      "time": "2025-04-24 21:33",
+      "data": {
+        "cancerCenter": 308,
+        "annexBuilding": 416
+      }
+    },
+    {
+      "time": "2025-04-24 21:34",
+      "data": {
+        "annexBuilding": 194,
+        "protonTherapyCenter": 326,
+        "mainBuilding": 100,
+        "cancerCenter": 336
+      }
+    },
+    {
+      "time": "2025-04-24 21:35",
+      "data": {
+        "protonTherapyCenter": 421,
+        "annexBuilding": 165
+      }
+    },
+    {
+      "time": "2025-04-24 21:37",
+      "data": {
+        "cancerCenter": 174,
+        "protonTherapyCenter": 434,
+        "annexBuilding": 417,
+        "mainBuilding": 259
+      }
+    },
+    {
+      "time": "2025-04-24 21:38",
+      "data": {
+        "mainBuilding": 118
+      }
+    },
+    {
+      "time": "2025-04-24 21:39",
+      "data": {
+        "mainBuilding": 244,
+        "cancerCenter": 319
+      }
+    },
+    {
+      "time": "2025-04-24 21:40",
+      "data": {
+        "mainBuilding": 457
+      }
+    },
+    {
+      "time": "2025-04-24 21:41",
+      "data": {
+        "cancerCenter": 450,
+        "annexBuilding": 437
+      }
+    },
+    {
+      "time": "2025-04-24 21:45",
+      "data": {
+        "mainBuilding": 279,
+        "annexBuilding": 401,
+        "cancerCenter": 159,
+        "protonTherapyCenter": 452
+      }
+    },
+    {
+      "time": "2025-04-24 21:46",
+      "data": {
+        "mainBuilding": 263,
+        "annexBuilding": 229
+      }
+    },
+    {
+      "time": "2025-04-24 21:48",
+      "data": {
+        "protonTherapyCenter": 162,
+        "annexBuilding": 380,
+        "mainBuilding": 402,
+        "cancerCenter": 459
+      }
+    },
+    {
+      "time": "2025-04-24 21:53",
+      "data": {
+        "mainBuilding": 469,
+        "annexBuilding": 105
+      }
+    },
+    {
+      "time": "2025-04-24 21:56",
+      "data": {
+        "protonTherapyCenter": 263,
+        "cancerCenter": 443,
+        "annexBuilding": 400,
+        "mainBuilding": 489
+      }
+    },
+    {
+      "time": "2025-04-24 21:57",
+      "data": {
+        "protonTherapyCenter": 252
+      }
+    },
+    {
+      "time": "2025-04-24 21:58",
+      "data": {
+        "cancerCenter": 340,
+        "protonTherapyCenter": 144
+      }
+    },
+    {
+      "time": "2025-04-24 22:02",
+      "data": {
+        "mainBuilding": 341,
+        "annexBuilding": 136,
+        "cancerCenter": 382,
+        "protonTherapyCenter": 416
+      }
+    },
+    {
+      "time": "2025-04-24 22:06",
+      "data": {
+        "mainBuilding": 397,
+        "annexBuilding": 207,
+        "cancerCenter": 354,
+        "protonTherapyCenter": 112
+      }
+    },
+    {
+      "time": "2025-04-24 22:07",
+      "data": {
+        "annexBuilding": 325,
+        "mainBuilding": 126,
+        "cancerCenter": 204,
+        "protonTherapyCenter": 495
+      }
+    },
+    {
+      "time": "2025-04-24 22:11",
+      "data": {
+        "mainBuilding": 270,
+        "annexBuilding": 138,
+        "protonTherapyCenter": 241
+      }
+    },
+    {
+      "time": "2025-04-24 22:12",
+      "data": {
+        "mainBuilding": 405,
+        "annexBuilding": 148,
+        "protonTherapyCenter": 221
+      }
+    },
+    {
+      "time": "2025-04-24 22:14",
+      "data": {
+        "protonTherapyCenter": 496,
+        "cancerCenter": 317,
+        "annexBuilding": 138
+      }
+    },
+    {
+      "time": "2025-04-24 22:15",
+      "data": {
+        "cancerCenter": 271
+      }
+    },
+    {
+      "time": "2025-04-24 22:18",
+      "data": {
+        "protonTherapyCenter": 141,
+        "mainBuilding": 384
+      }
+    },
+    {
+      "time": "2025-04-24 22:20",
+      "data": {
+        "protonTherapyCenter": 407,
+        "cancerCenter": 286
+      }
+    },
+    {
+      "time": "2025-04-24 22:21",
+      "data": {
+        "cancerCenter": 111,
+        "annexBuilding": 350,
+        "protonTherapyCenter": 373,
+        "mainBuilding": 174
+      }
+    },
+    {
+      "time": "2025-04-24 22:23",
+      "data": {
+        "protonTherapyCenter": 142,
+        "cancerCenter": 345
+      }
+    },
+    {
+      "time": "2025-04-24 22:24",
+      "data": {
+        "protonTherapyCenter": 114,
+        "cancerCenter": 397
+      }
+    },
+    {
+      "time": "2025-04-24 22:25",
+      "data": {
+        "annexBuilding": 248,
+        "protonTherapyCenter": 152
+      }
+    },
+    {
+      "time": "2025-04-24 22:26",
+      "data": {
+        "mainBuilding": 217,
+        "annexBuilding": 296,
+        "cancerCenter": 187,
+        "protonTherapyCenter": 121
+      }
+    },
+    {
+      "time": "2025-04-24 22:27",
+      "data": {
+        "mainBuilding": 177,
+        "annexBuilding": 320,
+        "cancerCenter": 324,
+        "protonTherapyCenter": 477
+      }
+    },
+    {
+      "time": "2025-04-24 22:31",
+      "data": {
+        "mainBuilding": 310
+      }
+    },
+    {
+      "time": "2025-04-24 22:32",
+      "data": {
+        "cancerCenter": 139,
+        "protonTherapyCenter": 444,
+        "annexBuilding": 223
+      }
+    },
+    {
+      "time": "2025-04-24 22:34",
+      "data": {
+        "cancerCenter": 499
+      }
+    },
+    {
+      "time": "2025-04-24 22:36",
+      "data": {
+        "protonTherapyCenter": 399,
+        "cancerCenter": 348
+      }
+    },
+    {
+      "time": "2025-04-24 22:38",
+      "data": {
+        "mainBuilding": 122,
+        "protonTherapyCenter": 118,
+        "annexBuilding": 136,
+        "cancerCenter": 227
+      }
+    },
+    {
+      "time": "2025-04-24 22:41",
+      "data": {
+        "protonTherapyCenter": 127
+      }
+    },
+    {
+      "time": "2025-04-24 22:43",
+      "data": {
+        "mainBuilding": 375,
+        "cancerCenter": 211,
+        "annexBuilding": 479,
+        "protonTherapyCenter": 150
+      }
+    },
+    {
+      "time": "2025-04-24 22:45",
+      "data": {
+        "protonTherapyCenter": 341,
+        "cancerCenter": 447,
+        "annexBuilding": 453,
+        "mainBuilding": 499
+      }
+    },
+    {
+      "time": "2025-04-24 22:50",
+      "data": {
+        "protonTherapyCenter": 262
+      }
+    },
+    {
+      "time": "2025-04-24 22:51",
+      "data": {
+        "mainBuilding": 231,
+        "annexBuilding": 374,
+        "protonTherapyCenter": 357
+      }
+    },
+    {
+      "time": "2025-04-24 22:52",
+      "data": {
+        "annexBuilding": 171,
+        "protonTherapyCenter": 161,
+        "mainBuilding": 447
+      }
+    },
+    {
+      "time": "2025-04-24 22:54",
+      "data": {
+        "annexBuilding": 456,
+        "protonTherapyCenter": 229,
+        "mainBuilding": 253
+      }
+    },
+    {
+      "time": "2025-04-24 22:55",
+      "data": {
+        "mainBuilding": 226,
+        "annexBuilding": 109
+      }
+    },
+    {
+      "time": "2025-04-24 22:57",
+      "data": {
+        "protonTherapyCenter": 418,
+        "cancerCenter": 163,
+        "annexBuilding": 114,
+        "mainBuilding": 369
+      }
+    },
+    {
+      "time": "2025-04-24 22:58",
+      "data": {
+        "protonTherapyCenter": 200,
+        "mainBuilding": 207
+      }
+    }
+  ]
+}
