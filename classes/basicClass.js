@@ -8,10 +8,12 @@ export default class BasicClass {
 	}
 
 	setInit() {
+		if (!document.getElementById(this.elementId)) return;
 		this.myChart = echarts.init(document.getElementById(this.elementId));
 	}
 
 	setOptions() {
+		if (!this.myChart) return;
 		this.myChart.setOption(this.options);
 	}
 }

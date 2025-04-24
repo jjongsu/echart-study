@@ -2,6 +2,7 @@ import BasicClass from './classes/basicClass.js';
 import CTClass from './classes/ctClass.js';
 import BloodClass from './classes/bloodClass.js';
 import SankeyClass from './classes/sankeyClass.js';
+import OperateClass from './classes/operateClass.js';
 
 // 조직도
 fetch('./jsonData/treemap.json')
@@ -423,6 +424,91 @@ fetch('./jsonData/sankey.json')
 						curveness: 0.5,
 					},
 				},
+			},
+		});
+	});
+
+fetch('./jsonData/operateData.json')
+	.then((res) => {
+		if (!res.ok) {
+			throw new Error('json 파일 읽기 실패!');
+		}
+
+		return res.json();
+	})
+	.then(({ response }) => {
+		console.log(response);
+
+		const barOptions = { type: 'bar' };
+		const lineOptions = { type: 'line' };
+
+		new OperateClass({
+			elementId: 'section-4',
+			options: {
+				tooltip: {
+					trigger: 'axis',
+				},
+				legend: {
+					data: ['예상 검사/ 수술 수', '실행 검사 / 수술 수', '달성률'],
+					icon: 'circle',
+				},
+				xAxis: [
+					{
+						type: 'category',
+						splitLine: {
+							show: false,
+						},
+						data: response.map(
+							(el) => `${new Date(el.name).getHours().toString().padStart(2, '0')}:${new Date(el.name).getMinutes().toString().padStart(2, '0')}`
+						),
+					},
+				],
+				yAxis: [
+					{
+						type: 'value',
+						min: 0,
+						max: 100,
+						interval: 25,
+						axisLabel: {
+							formatter: function (value) {
+								return `${value}%`;
+							},
+						},
+					},
+				],
+				series: [
+					{
+						...barOptions,
+						barGap: '60%',
+						name: '예상 검사/ 수술 수',
+						data: response.map((el) => ({ name: el.name, value: el.data.expectNum })),
+						itemStyle: {
+							color: '#47575c',
+							borderRadius: [5, 5, 0, 0],
+						},
+						// data: response.map((el) => ({ name: el.name, value: el.data.expectNum })),
+					},
+					{
+						...barOptions,
+						name: '실행 검사 / 수술 수',
+						barGap: '-60%',
+						data: response.map((el) => ({ name: el.name, value: el.data.operateNum })),
+						itemStyle: {
+							color: '#21c8ff',
+							borderRadius: [5, 5, 0, 0],
+						},
+						// data: response.map((el) => el.data.operateNum),
+					},
+					{
+						...lineOptions,
+						name: '달성률',
+						data: response.map((el) => ({ name: el.name, value: el.data.rate })),
+						itemStyle: {
+							color: '#f5e076',
+						},
+						// data: response.map((el) => el.data.rate),
+					},
+				],
 			},
 		});
 	});
