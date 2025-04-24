@@ -36,6 +36,6 @@ const output = {
 	response: response,
 };
 
-fs.writeFileSync('./jsonData/bloodtest.json', JSON.stringify(output, null, 2), 'utf8');
+fs.writeFileSync('./public/jsonData/bloodtest.json', JSON.stringify(output, null, 2), 'utf8');
 
 console.log('bloodtest.json 파일이 생성되었습니다!', output);

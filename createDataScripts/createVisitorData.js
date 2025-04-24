@@ -36,6 +36,6 @@ const output = {
 	response: response,
 };
 
-fs.writeFileSync('./public/jsonData/cttest.json', JSON.stringify(output, null, 2), 'utf8');
+fs.writeFileSync('./public/jsonData/visitors.json', JSON.stringify(output, null, 2), 'utf8');
 
-console.log('cttest.json 파일이 생성되었습니다!', output);
+console.log('visitors.json 파일이 생성되었습니다!', output);

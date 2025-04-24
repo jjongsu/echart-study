@@ -11,28 +11,28 @@ const totalCount = 30;
 const response = [];
 
 function getRandomInt(min = 1, max = 10) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 for (let i = 0; i < totalCount; i++) {
-    const currentTime = new Date(startTime.getTime() + i * intervalMinutes * 60000);
+	const currentTime = new Date(startTime.getTime() + i * intervalMinutes * 60000);
 
-    const formattedTime = `${currentTime.getFullYear()}-${String(currentTime.getMonth() + 1).padStart(2, '0')}-${String(currentTime.getDate()).padStart(
-        2,
-        '0'
-    )} ${String(currentTime.getHours()).padStart(2, '0')}:${String(currentTime.getMinutes()).padStart(2, '0')}`;
-    const value = getRandomInt();
+	const formattedTime = `${currentTime.getFullYear()}-${String(currentTime.getMonth() + 1).padStart(2, '0')}-${String(currentTime.getDate()).padStart(
+		2,
+		'0'
+	)} ${String(currentTime.getHours()).padStart(2, '0')}:${String(currentTime.getMinutes()).padStart(2, '0')}`;
+	const value = getRandomInt();
 
-    response.push({
-        time: formattedTime,
-        data: { center1F: getRandomInt(), center2F: getRandomInt(), cancer1F: getRandomInt(), cancer2F: getRandomInt() },
-    });
+	response.push({
+		time: formattedTime,
+		data: { center1F: getRandomInt(), center2F: getRandomInt(), cancer1F: getRandomInt(), cancer2F: getRandomInt() },
+	});
 }
 
 const output = {
-    response: response,
+	response: response,
 };
 
-fs.writeFileSync('./jsonData/blood2test.json', JSON.stringify(output, null, 2), 'utf8');
+fs.writeFileSync('./public/jsonData/blood2test.json', JSON.stringify(output, null, 2), 'utf8');
 
 console.log('blood2test.json 파일이 생성되었습니다!', output);

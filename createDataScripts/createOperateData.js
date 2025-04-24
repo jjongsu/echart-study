@@ -43,6 +43,6 @@ const output = {
 	response: response,
 };
 
-fs.writeFileSync('./jsonData/operateData.json', JSON.stringify(output, null, 2), 'utf8');
+fs.writeFileSync('./public/jsonData/operateData.json', JSON.stringify(output, null, 2), 'utf8');
 
 console.log('operateData.json 파일이 생성되었습니다!', output);

@@ -67,5 +67,5 @@ const patientsData = {
 	response: generateResponse(),
 };
 
-fs.writeFileSync('./jsonData/patients.json', JSON.stringify(patientsData, null, 2));
+fs.writeFileSync('./public/jsonData/patients.json', JSON.stringify(patientsData, null, 2));
 console.log('patients.json 파일이 생성되었습니다.');

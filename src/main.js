@@ -1,12 +1,12 @@
-import BasicClass from './classes/basicClass.js';
-import CTClass from './classes/ctClass.js';
-import BloodClass from './classes/bloodClass.js';
-import SankeyClass from './classes/sankeyClass.js';
-import OperateClass from './classes/operateClass.js';
-import PatientsClass from './classes/patientsClass.js';
+import BasicClass from './lib/classes/basicClass.js';
+import CTClass from './lib/classes/ctClass.js';
+import BloodClass from './lib/classes/bloodClass.js';
+import SankeyClass from './lib/classes/sankeyClass.js';
+import OperateClass from './lib/classes/operateClass.js';
+import PatientsClass from './lib/classes/patientsClass.js';
 
 // 조직도
-fetch('./jsonData/treemap.json')
+fetch('../public/jsonData/treemap.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
@@ -58,7 +58,7 @@ fetch('./jsonData/treemap.json')
 		});
 	});
 
-fetch('./jsonData/cttest.json')
+fetch('../public/jsonData/cttest.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
@@ -136,7 +136,7 @@ fetch('./jsonData/cttest.json')
 		});
 	});
 
-fetch('./jsonData/bloodtest.json')
+fetch('../public/jsonData/bloodtest.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
@@ -222,7 +222,7 @@ fetch('./jsonData/bloodtest.json')
 		});
 	});
 
-fetch('./jsonData/blood2test.json')
+fetch('../public/jsonData/blood2test.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
@@ -308,7 +308,7 @@ fetch('./jsonData/blood2test.json')
 		});
 	});
 
-fetch('./jsonData/blood2test.json')
+fetch('../public/jsonData/blood2test.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
@@ -394,7 +394,7 @@ fetch('./jsonData/blood2test.json')
 		});
 	});
 
-fetch('./jsonData/sankey.json')
+fetch('../public/jsonData/sankey.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
@@ -429,7 +429,7 @@ fetch('./jsonData/sankey.json')
 		});
 	});
 
-fetch('./jsonData/operateData.json')
+fetch('../public/jsonData/operateData.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
@@ -512,7 +512,7 @@ fetch('./jsonData/operateData.json')
 		});
 	});
 
-fetch('./jsonData/patients.json')
+fetch('../public/jsonData/patients.json')
 	.then((res) => {
 		if (!res.ok) {
 			throw new Error('json 파일 읽기 실패!');
