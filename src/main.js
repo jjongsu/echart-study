@@ -618,3 +618,86 @@ fetch('../public/jsonData/patients.json')
 			},
 		});
 	});
+
+fetch('../public/jsonData/visitors.json')
+	.then((res) => {
+		if (!res.ok) {
+			throw new Error('json 파일 읽기 실패!');
+		}
+
+		return res.json();
+	})
+	.then(({ response }) => {
+		const lineOptions = {
+			type: 'line',
+			smooth: 0.5,
+			smoothMonotone: 'x',
+			areaStyle: {
+				opacity: 0.15,
+			},
+			symbol: 'none',
+		};
+
+		const uniqueOption = {
+			type: 'line',
+			smooth: 0.5,
+			smoothMonotone: 'x',
+			symbolSize: 6,
+		};
+
+		new CTClass({
+			elementId: 'section-6',
+			options: {
+				tooltip: {
+					trigger: 'axis',
+
+					// formatter: '{a1}|{b2}|{c}',
+				},
+				legend: {
+					data: ['year', 'month', 'week', 'day'],
+					icon: 'circle',
+				},
+				xAxis: [
+					{
+						type: 'category',
+						splitLine: {
+							show: false,
+						},
+						data: response.map(
+							(el) => `${new Date(el.name).getHours().toString().padStart(2, '0')}:${new Date(el.name).getMinutes().toString().padStart(2, '0')}`
+						),
+					},
+				],
+				yAxis: [
+					{
+						type: 'value',
+						min: 0,
+						max: 1500,
+						interval: 500,
+					},
+				],
+				series: [
+					{
+						...lineOptions,
+						name: 'year',
+						data: response.map((el) => ({ name: el.name, value: el.data.year })),
+					},
+					{
+						...lineOptions,
+						name: 'month',
+						data: response.map((el) => ({ name: el.name, value: el.data.month })),
+					},
+					{
+						...lineOptions,
+						name: 'week',
+						data: response.map((el) => ({ name: el.name, value: el.data.week })),
+					},
+					{
+						...uniqueOption,
+						name: 'day',
+						data: response.map((el) => ({ name: el.name, value: el.data.day })),
+					},
+				],
+			},
+		});
+	});
