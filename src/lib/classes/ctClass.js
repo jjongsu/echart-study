@@ -1,10 +1,13 @@
 import BasicClass from './basicClass.js';
 
 export default class CTClass extends BasicClass {
+	/** response data 기준으로 parsing하는데 도와주는 상수 */
 	static NAME_INFO = { 병동: 'wardPatients', 신환: 'newPatients', 재환: 'followUpPatients', 달성률: 'rate' };
+	/** 그래프에 들어가는 막대 옵션 */
 	static BAR_OPTIONS = { type: 'bar', stack: 'total', yAxisIndex: 0, barWidth: '100%' };
+	/** 그래프에 들어가는 라인 옵션 */
 	static LINE_OPTIONS = { type: 'line', yAxisIndex: 1 };
-	// 기본 옵션
+	/** 기본 옵션 */
 	static BASE_OPTIONS = {
 		tooltip: {
 			trigger: 'axis',

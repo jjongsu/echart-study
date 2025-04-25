@@ -1,4 +1,4 @@
-import BasicClass from './lib/classes/basicClass.js';
+import CompanyOrgClass from './lib/classes/companyOrgClass.js';
 import CTClass from './lib/classes/ctClass.js';
 import BloodClass from './lib/classes/bloodClass.js';
 import SankeyClass from './lib/classes/sankeyClass.js';
@@ -15,47 +15,11 @@ fetch('../public/jsonData/treemap.json')
 		return res.json();
 	})
 	.then(({ response }) => {
-		new BasicClass({
+		const compayClass = new CompanyOrgClass({
 			elementId: 'section-0',
-			options: {
-				title: {
-					text: '조직도',
-					show: false,
-				},
-				grid: {
-					left: '15%',
-					right: '15%',
-				},
-				tooltip: {
-					formatter: function (info) {
-						const { name: cellName, value: cellCount } = info.data;
-
-						const tooltipString = `<div class="tooltip-title-treemap">${cellName} <span style="font-weight: bold;">${cellCount}</span></div>`;
-
-						return tooltipString;
-					},
-				},
-				series: [
-					{
-						type: 'treemap',
-						visibleMin: 300,
-						label: {
-							show: true,
-							formatter: '{b}',
-						},
-						itemStyle: {
-							borderColor: '#fff',
-						},
-						data: response,
-						roam: false,
-						scaleLimit: {
-							min: 1,
-							max: 1,
-						},
-					},
-				],
-			},
 		});
+
+		compayClass.setData(response);
 	});
 
 fetch('../public/jsonData/cttest.json')
