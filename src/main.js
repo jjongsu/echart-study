@@ -66,74 +66,17 @@ fetch('../public/jsonData/cttest.json')
 
 		return res.json();
 	})
-	.then(({ response }) => {
-		const stackCommonOptions = { type: 'bar', stack: 'total', yAxisIndex: 0, barWidth: '100%' };
-		const lineOptions = { type: 'line', yAxisIndex: 1 };
+	.then((res) => {
+		const response = res.response.filter((_, i) => i < 16);
 
-		new CTClass({
-			elementId: 'section-1',
-			options: {
-				tooltip: {
-					trigger: 'axis',
-				},
-				legend: {
-					data: ['병동', '신환', '재환', '달성률'],
-				},
-				xAxis: [
-					{
-						type: 'category',
-						splitLine: {
-							show: false,
-						},
-						data: response.map(
-							(el) => `${new Date(el.name).getHours().toString().padStart(2, '0')}:${new Date(el.name).getMinutes().toString().padStart(2, '0')}`
-						),
-					},
-				],
-				yAxis: [
-					{
-						type: 'value',
-						name: '',
-						min: 0,
-						max: 1000,
-						interval: 500,
-					},
-					{
-						type: 'value',
-						name: '달성률',
-						min: 0,
-						max: 100,
-						show: false,
-					},
-				],
-				series: [
-					{
-						...stackCommonOptions,
-						name: '병동',
-						data: response.map((el) => ({ name: el.name, value: el.data.wardPatients })),
-						// data: response.map((el) => ({ name: el.name, value: el.data.wardPatients })),
-					},
-					{
-						...stackCommonOptions,
-						name: '신환',
-						data: response.map((el) => ({ name: el.name, value: el.data.newPatients })),
-						// data: response.map((el) => el.data.newPatients),
-					},
-					{
-						...stackCommonOptions,
-						name: '재환',
-						data: response.map((el) => ({ name: el.name, value: el.data.followUpPatients })),
-						// data: response.map((el) => el.data.followUpPatients),
-					},
-					{
-						...lineOptions,
-						name: '달성률',
-						data: response.map((el) => ({ name: el.name, value: el.data.rate })),
-						// data: response.map((el) => el.data.rate),
-					},
-				],
-			},
-		});
+		const ctGraph = new CTClass({ elementId: 'section-1' });
+		ctGraph.setData(response);
+
+		// // test 시간 변경에 따른 데이터 추가
+		// window.setTimeout(() => {
+		// 	const _response = res.response.filter((_, i) => i < 18 && i > 3);
+		// 	ctGraph.setData(_response);
+		// }, 2000);
 	});
 
 fetch('../public/jsonData/bloodtest.json')
