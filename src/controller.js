@@ -9,6 +9,7 @@ export default class Controller {
 	/** fetch data */
 	graphData = {};
 	isFetching = true;
+	modalGroups = [];
 
 	static _preFixSrc = '../public/jsonData';
 	static info = [
@@ -119,11 +120,10 @@ export default class Controller {
 			const buttonElement = element.querySelector('button');
 
 			buttonElement.addEventListener('click', (e) => this._biggerClick(e));
-			console.log(title, element);
 		});
 
 		const smallBtn = document.getElementById('smaller');
-		smallBtn.addEventListener('click', () => this.setModal());
+		smallBtn.addEventListener('click', () => this._setModal());
 	}
 
 	_biggerClick(e) {
@@ -134,21 +134,32 @@ export default class Controller {
 				const target = this.connectInfo.find((el) => el.buttonId === buttonId);
 
 				if (!target) return;
-
-				this.setModal(target.sectionId);
+				// console.log(this.graphInstance[target.elementId].myChart.dispose());
+				this._setModal(target.sectionId);
 			}
 		}
 	}
 
-	setModal(sectionId) {
+	_setModal(sectionId) {
 		if (!sectionId) {
+			// 모달 닫기
 			this.modalState = null;
 
 			const modalElement = document.getElementById('modal');
 
 			modalElement.classList.remove('modal-open');
 			modalElement.classList.add('modal-close');
+
+			// graph 제거
+			this.modalGroups.forEach((graph) => {
+				graph.myChart.dispose();
+			});
+
+			// graph 넣기
+			const graphGroup = document.getElementById('modal-graph-group');
+			graphGroup.innerText = '';
 		} else {
+			// 모달 열기
 			this.modalState = sectionId;
 
 			const modalElement = document.getElementById('modal');
@@ -156,8 +167,24 @@ export default class Controller {
 			modalElement.classList.remove('modal-close');
 			modalElement.classList.add('modal-open');
 
+			// title 넣기
 			const innerText = Controller.titleName[sectionId] || '';
 			document.getElementById('modal-text').innerText = innerText;
+
+			// graph 넣기
+			const graphGroup = document.getElementById('modal-graph-group');
+			const _info = Controller.info.filter((el) => el.sectionId === sectionId);
+			_info.forEach((config, i) => {
+				const newDiv = document.createElement('div');
+				newDiv.id = 'modal-graph-' + i;
+				newDiv.classList.add('graph-item');
+				graphGroup.appendChild(newDiv);
+
+				const graph = new config.classInstance({ elementId: newDiv.id });
+
+				this.modalGroups = [...this.modalGroups, graph];
+				graph.setData(this.graphData[config.elementId]);
+			});
 		}
 	}
 }

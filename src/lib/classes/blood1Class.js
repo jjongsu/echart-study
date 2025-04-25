@@ -23,7 +23,7 @@ export default class Blood1Class extends BasicClass {
 			left: '10%',
 			right: '10%',
 			top: '5%',
-			bottom: '5%',
+			bottom: '15%',
 		},
 		xAxis: {
 			type: 'category',

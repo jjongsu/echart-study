@@ -28,6 +28,11 @@ export default class VisitorClass extends BasicClass {
 			data: ['year', 'month', 'week', 'day'],
 			icon: 'circle',
 		},
+		grid: {
+			left: '10%',
+			right: '10%',
+			bottom: '20%',
+		},
 		xAxis: {
 			type: 'category',
 			splitLine: {
