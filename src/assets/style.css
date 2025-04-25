@@ -19,22 +19,59 @@ body {
 	border: 1px solid #ccc;
 	background-color: #f9f9f9;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	/* justify-content: center; */
+	/* align-items: center; */
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.graph-title {
+	flex: none;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 	align-items: center;
+	padding: 0px 5px;
+	box-sizing: border-box;
+}
+
+.graph-item {
+	flex: 1;
+	box-sizing: border-box;
 }
 
 #section-2 {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
-}
-
-#section-2-1,
-#section-2-2 {
-	width: 100%;
-	height: 50%;
 }
 
 #section-3 {
-	grid-row: span 3; /* 👉 세로로 3칸 차지 */
+	/* 세로로 3칸 차지 */
+	grid-row: span 3;
+}
+
+.modal-close {
+	display: none;
+}
+
+.modal-open {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #ccc;
+}
+
+.modal-title {
+	flex: none;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 5px;
+	box-sizing: border-box;
 }

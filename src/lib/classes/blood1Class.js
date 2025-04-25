@@ -19,6 +19,12 @@ export default class Blood1Class extends BasicClass {
 			orient: 'vertical',
 			formatter: () => '',
 		},
+		grid: {
+			left: '10%',
+			right: '10%',
+			top: '5%',
+			bottom: '5%',
+		},
 		xAxis: {
 			type: 'category',
 			splitLine: {

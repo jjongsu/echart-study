@@ -59,5 +59,7 @@ export default class CompanyOrgClass extends BasicClass {
 		const _options = { series: _seriesData };
 
 		this.setOptions(_options);
+
+		return this;
 	}
 }

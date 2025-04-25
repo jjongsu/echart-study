@@ -10,16 +10,68 @@
 	</head>
 	<body>
 		<div id="board" class="grid-container">
-			<div id="section-0" class="grid-item"></div>
-			<div id="section-1" class="grid-item"></div>
-			<div id="section-2" class="grid-item">
-				<div id="section-2-1" style="width: 100%; height: 100%"></div>
-				<div id="section-2-2" style="width: 100%; height: 100%"></div>
+			<div id="section-0" class="grid-item">
+				<div class="graph-title">
+					<p>조직도</p>
+					<button id="button-0" class="bigger">확대</button>
+				</div>
+				<div id="graph-0" class="graph-item"></div>
 			</div>
-			<div id="section-3" class="grid-item"></div>
-			<div id="section-4" class="grid-item"></div>
-			<div id="section-5" class="grid-item"></div>
-			<div id="section-6" class="grid-item"></div>
+			<div id="section-1" class="grid-item">
+				<div class="graph-title">
+					<p>CT검사</p>
+					<button id="button-1" class="bigger">확대</button>
+				</div>
+				<div id="graph-1" class="graph-item"></div>
+			</div>
+			<div id="section-2" class="grid-item">
+				<div class="graph-title">
+					<p>체혈검사</p>
+					<button id="button-2" class="bigger">확대</button>
+				</div>
+				<div id="graph-2-1" class="graph-item"></div>
+				<div id="graph-2-2" class="graph-item"></div>
+			</div>
+			<div id="section-3" class="grid-item">
+				<div class="graph-title">
+					<p>이동현황</p>
+					<button id="button-3" class="bigger">확대</button>
+				</div>
+				<div id="graph-3" class="graph-item"></div>
+			</div>
+			<div id="section-4" class="grid-item">
+				<div class="graph-title">
+					<p>검사/수술 운영</p>
+					<button id="button-4" class="bigger">확대</button>
+				</div>
+				<div id="graph-4" class="graph-item"></div>
+			</div>
+			<div id="section-5" class="grid-item">
+				<div class="graph-title">
+					<p>병동별 환자 유입/유출</p>
+					<button id="button-5" class="bigger">확대</button>
+				</div>
+				<div id="graph-5" class="graph-item"></div>
+			</div>
+			<div id="section-6" class="grid-item">
+				<div class="graph-title">
+					<p>방문 환자 수</p>
+					<button id="button-6" class="bigger">확대</button>
+				</div>
+				<div id="graph-6" class="graph-item"></div>
+			</div>
+		</div>
+
+		<div id="modal" class="modal-close">
+			<div class="modal-title">
+				<div id="modal-text"></div>
+				<div id="modal-button-group">
+					<button id="save-img" class="smaller">이미지저장</button>
+					<button id="save-pdf" class="smaller">pdf저장</button>
+					<button id="smaller" class="smaller">축소</button>
+				</div>
+			</div>
+			<div id="modal-graph"></div>
 		</div>
 
 		<!-- <script type="text/javascript">
@@ -53,40 +105,40 @@
 		</script> -->
 		<script type="module" src="./src/main.js"></script>
 		<script>
-			const gridItems = document.querySelectorAll('.grid-item');
-			let draggedItem = null;
+			// const gridItems = document.querySelectorAll('.grid-item');
+			// let draggedItem = null;
 
-			gridItems.forEach((item) => {
-				item.setAttribute('draggable', true);
+			// gridItems.forEach((item) => {
+			// 	item.setAttribute('draggable', true);
 
-				item.addEventListener('dragstart', () => {
-					draggedItem = item;
-					item.classList.add('dragging');
-				});
+			// 	item.addEventListener('dragstart', () => {
+			// 		draggedItem = item;
+			// 		item.classList.add('dragging');
+			// 	});
 
-				item.addEventListener('dragend', () => {
-					draggedItem = null;
-					item.classList.remove('dragging');
-				});
+			// 	item.addEventListener('dragend', () => {
+			// 		draggedItem = null;
+			// 		item.classList.remove('dragging');
+			// 	});
 
-				item.addEventListener('dragover', (e) => {
-					e.preventDefault();
-				});
+			// 	item.addEventListener('dragover', (e) => {
+			// 		e.preventDefault();
+			// 	});
 
-				item.addEventListener('drop', (e) => {
-					e.preventDefault();
-					if (draggedItem && draggedItem !== item) {
-						swapElements(draggedItem, item);
-					}
-				});
-			});
+			// 	item.addEventListener('drop', (e) => {
+			// 		e.preventDefault();
+			// 		if (draggedItem && draggedItem !== item) {
+			// 			swapElements(draggedItem, item);
+			// 		}
+			// 	});
+			// });
 
-			function swapElements(el1, el2) {
-				const parent = el1.parentNode;
-				const el1Next = el1.nextSibling === el2 ? el1 : el1.nextSibling;
-				parent.insertBefore(el1, el2);
-				parent.insertBefore(el2, el1Next);
-			}
+			// function swapElements(el1, el2) {
+			// 	const parent = el1.parentNode;
+			// 	const el1Next = el1.nextSibling === el2 ? el1 : el1.nextSibling;
+			// 	parent.insertBefore(el1, el2);
+			// 	parent.insertBefore(el2, el1Next);
+			// }
 		</script>
 	</body>
 </html>

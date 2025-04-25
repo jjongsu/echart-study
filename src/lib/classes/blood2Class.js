@@ -15,8 +15,9 @@ export default class Blood2Class extends BasicClass {
 			position: 'top',
 		},
 		grid: {
-			height: '50%',
+			height: '60%',
 			top: '10%',
+			left: '10%',
 		},
 		xAxis: {
 			type: 'category',
