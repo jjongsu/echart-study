@@ -64,7 +64,8 @@ body {
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	background-color: #ccc;
+	background-color: #ffffff;
+	box-sizing: border-box;
 }
 
 .modal-title {
