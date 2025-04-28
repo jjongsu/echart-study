@@ -19,7 +19,7 @@ export default class Controller {
 	/** fetch data */
 	graphData = {};
 	isFetching = true;
-	modalGroups = [];
+	currentModalGraph;
 
 	static _preFixSrc = '../public/jsonData';
 	static info = [
@@ -163,9 +163,7 @@ export default class Controller {
 			modalElement.classList.add('modal-close');
 
 			// graph 제거
-			this.modalGroups.forEach((graph) => {
-				graph.myChart.dispose();
-			});
+			this.currentModalGraph?.myChart.dispose();
 
 			// graph 넣기
 			const graphGroup = document.getElementById('modal-graph-group');
@@ -194,7 +192,7 @@ export default class Controller {
 
 				const graph = new config.classInstance({ elementId: newDiv.id });
 
-				this.modalGroups = [...this.modalGroups, graph];
+				this.currentModalGraph = graph;
 				graph.setData(this.graphData[config.elementId]);
 			});
 		}
@@ -213,5 +211,13 @@ export default class Controller {
 
 	removeResizeEvent() {
 		window.removeEventListener('resize', this.resizeWindowEvent);
+	}
+
+	makeSaveImgEvent() {
+		const saveImgBtn = document.getElementById('save-img');
+		saveImgBtn.addEventListener('click', () => {
+			const imgElement = this.currentModalGraph.getImage({});
+			console.log(imgElement);
+		});
 	}
 }

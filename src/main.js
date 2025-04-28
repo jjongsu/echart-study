@@ -7,6 +7,8 @@ controller.setData();
 controller.createDragEvent();
 controller.makeBiggerEvent();
 controller.createResizeEvent();
+controller.makeSaveImgEvent();
+
 // // 조직도
 // fetch('../public/jsonData/treemap.json')
 // 	.then((res) => {

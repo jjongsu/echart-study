@@ -33,4 +33,21 @@ export default class BasicClass {
 	resize() {
 		this.myChart.resize();
 	}
+
+	getImage({ pixelRatio, backgroundColor, excludeComponents }) {
+		const img = this.myChart.getDataURL({
+			type: 'png',
+			pixelRatio,
+			backgroundColor,
+			excludeComponents,
+		});
+
+		// 다운로드용 링크 생성
+		const link = document.createElement('a');
+		link.href = img;
+		link.download = 'chart.png';
+		link.click();
+
+		return img;
+	}
 }
