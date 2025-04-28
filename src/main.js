@@ -3,12 +3,13 @@ import { CompanyOrgClass, CTClass, Blood1Class, Blood2Class, SankeyClass, Operat
 
 const controller = new Controller();
 await controller.getData();
-controller.setData();
+// controller.setData();
 controller.createDragEvent();
 controller.makeBiggerEvent();
 controller.createResizeEvent();
 controller.makeSaveImgEvent();
 controller.makeSavePdfEvent();
+controller.createIntervalEvent();
 
 // // 조직도
 // fetch('../public/jsonData/treemap.json')

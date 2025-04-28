@@ -9,12 +9,16 @@ import {
 	SankeyClass,
 	VisitorClass,
 } from './lib/classes/index.js';
+import { filterJsonData } from './lib/utils/helper.js';
 
 export default class Controller {
 	/** graph를 새로 생성해서 해당 데이터를 넣어주기 위한 class들 모음 */
 	graphInstance = {};
 	/** fetch data */
+	responseData = {};
+	/** graph data */
 	graphData = {};
+	repeat = 0;
 	isFetching = true;
 	currentModalGraph;
 
@@ -66,6 +70,8 @@ export default class Controller {
 		const compayClass = new classInstance({ elementId });
 
 		this.graphData[elementId] = response;
+		// [TODO] 1초마다 데이터 통신에 따라서 변경이 필요한 부분
+		this.responseData[elementId] = response;
 		this.graphInstance[elementId] = compayClass;
 
 		return compayClass;
@@ -76,9 +82,22 @@ export default class Controller {
 		this.isFetching = false;
 	}
 
+	createIntervalEvent() {
+		const intervalEvent = setInterval(() => {
+			this.setData();
+			this.repeat += 1;
+
+			if (this.repeat >= 10) {
+				clearInterval(intervalEvent);
+			}
+		}, 1000);
+	}
+
 	setData() {
 		for (const [key, classInstance] of Object.entries(this.graphInstance)) {
+			this.graphData[key] = filterJsonData(this.responseData[key], this.repeat, key === 'graph-5');
 			classInstance.setData(this.graphData[key]);
+			// classInstance.setData(this.responseData[key]);
 		}
 	}
 
