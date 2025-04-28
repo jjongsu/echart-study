@@ -7,8 +7,16 @@ export default class SankeyClass extends BasicClass {
 			{
 				type: 'sankey',
 				layout: 'none',
+				right: '5%',
+				nodeWidth: 50,
+				nodeAlign: 'justify',
+				draggable: false,
 				emphasis: {
 					focus: 'trajectory',
+				},
+				label: {
+					position: 'insideTopLeft',
+					color: '#FFFFFF',
 				},
 				data: [],
 				links: [],
