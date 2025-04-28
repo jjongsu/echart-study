@@ -217,7 +217,14 @@ export default class Controller {
 		const saveImgBtn = document.getElementById('save-img');
 		saveImgBtn.addEventListener('click', () => {
 			const imgElement = this.currentModalGraph.getImage({});
-			console.log(imgElement);
+		});
+	}
+
+	makeSavePdfEvent() {
+		const savePdfBtn = document.getElementById('save-pdf');
+		savePdfBtn.addEventListener('click', () => {
+			console.log('save btn click!!');
+			this.currentModalGraph.getPdf();
 		});
 	}
 }
