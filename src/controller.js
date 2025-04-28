@@ -1,4 +1,14 @@
-import { Blood1Class, Blood2Class, CompanyOrgClass, CTClass, OperateClass, PatientsClass, SankeyClass, VisitorClass } from './lib/classes/index.js';
+import {
+	Blood0Class,
+	Blood1Class,
+	Blood2Class,
+	CompanyOrgClass,
+	CTClass,
+	OperateClass,
+	PatientsClass,
+	SankeyClass,
+	VisitorClass,
+} from './lib/classes/index.js';
 
 export default class Controller {
 	biggerSection = 'graph-3';
@@ -15,8 +25,9 @@ export default class Controller {
 	static info = [
 		{ src: `${this._preFixSrc}/treemap.json`, elementId: 'graph-0', classInstance: CompanyOrgClass, sectionId: 'section-0' },
 		{ src: `${this._preFixSrc}/cttest.json`, elementId: 'graph-1', classInstance: CTClass, sectionId: 'section-1' },
-		{ src: `${this._preFixSrc}/bloodtest.json`, elementId: 'graph-2-1', classInstance: Blood1Class, sectionId: 'section-2' },
-		{ src: `${this._preFixSrc}/blood2test.json`, elementId: 'graph-2-2', classInstance: Blood2Class, sectionId: 'section-2' },
+		{ src: `${this._preFixSrc}/blood0test.json`, elementId: 'graph-2', classInstance: Blood0Class, sectionId: 'section-2' },
+		// { src: `${this._preFixSrc}/bloodtest.json`, elementId: 'graph-2-1', classInstance: Blood1Class, sectionId: 'section-2' },
+		// { src: `${this._preFixSrc}/blood2test.json`, elementId: 'graph-2-2', classInstance: Blood2Class, sectionId: 'section-2' },
 		{ src: `${this._preFixSrc}/sankey.json`, elementId: 'graph-3', classInstance: SankeyClass, sectionId: 'section-3' },
 		{ src: `${this._preFixSrc}/operateData.json`, elementId: 'graph-4', classInstance: OperateClass, sectionId: 'section-4' },
 		{ src: `${this._preFixSrc}/patients.json`, elementId: 'graph-5', classInstance: PatientsClass, sectionId: 'section-5' },
@@ -147,6 +158,7 @@ export default class Controller {
 
 			const modalElement = document.getElementById('modal');
 
+			// css 변경하기 위한 클래스 변경
 			modalElement.classList.remove('modal-open');
 			modalElement.classList.add('modal-close');
 
@@ -186,5 +198,20 @@ export default class Controller {
 				graph.setData(this.graphData[config.elementId]);
 			});
 		}
+	}
+
+	createResizeEvent() {
+		// chart resize event
+		this.resizeWindowEvent = () => {
+			Object.values(this.graphInstance).forEach((instance) => {
+				instance.resize();
+			});
+		};
+
+		window.addEventListener('resize', this.resizeWindowEvent);
+	}
+
+	removeResizeEvent() {
+		window.removeEventListener('resize', this.resizeWindowEvent);
 	}
 }

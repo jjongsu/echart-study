@@ -1,4 +1,5 @@
 export { default as CompanyOrgClass } from './companyOrgClass.js';
+export { default as Blood0Class } from './blood0Class.js';
 export { default as Blood1Class } from './blood1Class.js';
 export { default as Blood2Class } from './blood2Class.js';
 export { default as CTClass } from './ctClass.js';

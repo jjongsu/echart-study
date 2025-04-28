@@ -7,6 +7,7 @@ export default class Blood1Class extends BasicClass {
 	static BAR_OPTIONS = { type: 'bar', yAxisIndex: 0 };
 	/** 그래프에 들어가는 라인 옵션 */
 	static LINE_OPTIONS = { type: 'line', yAxisIndex: 1 };
+
 	/** 기본 옵션 */
 	static BASE_OPTIONS = {
 		tooltip: {
@@ -19,12 +20,16 @@ export default class Blood1Class extends BasicClass {
 			orient: 'vertical',
 			formatter: () => '',
 		},
-		grid: {
-			left: '10%',
-			right: '10%',
-			top: '5%',
-			bottom: '15%',
-		},
+		grid: [
+			{ top: '0%', height: '50%' }, // 첫 번째 차트 위치와 크기
+			{ top: '50%', height: '50%' }, // 두 번째 차트 위치와 크기
+		],
+		// grid: {
+		// 	left: '10%',
+		// 	right: '10%',
+		// 	top: '5%',
+		// 	bottom: '15%',
+		// },
 		xAxis: {
 			type: 'category',
 			splitLine: {
@@ -74,7 +79,6 @@ export default class Blood1Class extends BasicClass {
 			{
 				...Blood1Class.LINE_OPTIONS,
 				name: '달성률',
-				yAxis: 1,
 				data: [],
 			},
 		],

@@ -6,6 +6,7 @@ await controller.getData();
 controller.setData();
 controller.createDragEvent();
 controller.makeBiggerEvent();
+controller.createResizeEvent();
 // // 조직도
 // fetch('../public/jsonData/treemap.json')
 // 	.then((res) => {

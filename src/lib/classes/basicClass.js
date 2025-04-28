@@ -17,6 +17,8 @@ export default class BasicClass {
 			this.myChart.resize();
 		};
 
+		this.element.addEventListener('resize', this.resizeEventFunc);
+
 		// [TODO]: 이벤트 리스너 처리 필요! removeEventListener
 		// window.addEventListener('resize', this.resizeEventFunc);
 	}
@@ -26,5 +28,9 @@ export default class BasicClass {
 
 		this.options = options;
 		this.myChart.setOption(options);
+	}
+
+	resize() {
+		this.myChart.resize();
 	}
 }
