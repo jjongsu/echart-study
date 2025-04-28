@@ -156,6 +156,11 @@ export default class Controller {
 			el1.classList.add('center-section');
 			this.setDraggable();
 
+			const graph1 = `graph-${el1.id.split('-')[1]}`;
+			const graph2 = `graph-${el2.id.split('-')[1]}`;
+			this.graphInstance?.[graph1]?.setType?.('big');
+			this.graphInstance?.[graph2]?.setType?.('small');
+
 			this.resizeWindowEvent();
 		}
 	}
