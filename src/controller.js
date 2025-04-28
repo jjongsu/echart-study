@@ -91,8 +91,6 @@ export default class Controller {
 		let draggedItem = null;
 
 		gridItems.forEach((item) => {
-			item.setAttribute('draggable', true);
-
 			item.addEventListener('dragstart', () => {
 				draggedItem = item;
 				item.classList.add('dragging');
@@ -114,6 +112,21 @@ export default class Controller {
 				}
 			});
 		});
+
+		this.setDraggable();
+	}
+
+	// center-section class를 가지고 있는 것을 제외하고 draggable true
+	setDraggable() {
+		const gridItems = document.querySelectorAll('.grid-item');
+
+		gridItems.forEach((item) => {
+			if (item.classList.contains('center-section')) {
+				item.setAttribute('draggable', false);
+			} else {
+				item.setAttribute('draggable', true);
+			}
+		});
 	}
 
 	_dragSwap(el1, el2) {
@@ -121,6 +134,14 @@ export default class Controller {
 		const el1Next = el1.nextSibling === el2 ? el1 : el1.nextSibling;
 		parent.insertBefore(el1, el2);
 		parent.insertBefore(el2, el1Next);
+
+		if (el2.classList.contains('center-section')) {
+			el2.classList.remove('center-section');
+			el1.classList.add('center-section');
+			this.setDraggable();
+
+			this.resizeWindowEvent();
+		}
 	}
 
 	makeBiggerEvent() {

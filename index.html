@@ -34,7 +34,7 @@
 				<!-- <div id="graph-2-1" class="graph-item"></div> -->
 				<!-- <div id="graph-2-2" class="graph-item"></div> -->
 			</div>
-			<div id="section-3" class="grid-item">
+			<div id="section-3" class="grid-item center-section">
 				<div class="graph-title">
 					<p>이동현황</p>
 					<button id="button-3" class="bigger">확대</button>
@@ -106,41 +106,5 @@
 			myChart.setOption(option);
 		</script> -->
 		<script type="module" src="./src/main.js"></script>
-		<script>
-			// const gridItems = document.querySelectorAll('.grid-item');
-			// let draggedItem = null;
-
-			// gridItems.forEach((item) => {
-			// 	item.setAttribute('draggable', true);
-
-			// 	item.addEventListener('dragstart', () => {
-			// 		draggedItem = item;
-			// 		item.classList.add('dragging');
-			// 	});
-
-			// 	item.addEventListener('dragend', () => {
-			// 		draggedItem = null;
-			// 		item.classList.remove('dragging');
-			// 	});
-
-			// 	item.addEventListener('dragover', (e) => {
-			// 		e.preventDefault();
-			// 	});
-
-			// 	item.addEventListener('drop', (e) => {
-			// 		e.preventDefault();
-			// 		if (draggedItem && draggedItem !== item) {
-			// 			swapElements(draggedItem, item);
-			// 		}
-			// 	});
-			// });
-
-			// function swapElements(el1, el2) {
-			// 	const parent = el1.parentNode;
-			// 	const el1Next = el1.nextSibling === el2 ? el1 : el1.nextSibling;
-			// 	parent.insertBefore(el1, el2);
-			// 	parent.insertBefore(el2, el1Next);
-			// }
-		</script>
 	</body>
 </html>
