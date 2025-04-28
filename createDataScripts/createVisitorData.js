@@ -28,7 +28,7 @@ for (let i = 0; i < totalCount; i++) {
 	const day = getRandomInt();
 
 	response.push({
-		name: formattedTime,
+		time: formattedTime,
 		data: { year, month, week, day },
 	});
 }

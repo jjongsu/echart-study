@@ -148,7 +148,7 @@ export default class Blood0Class extends BasicClass {
 
 	setData(response) {
 		const _xAxis1Data = response.map(
-			(el) => `${new Date(el.name).getHours().toString().padStart(2, '0')}:${new Date(el.name).getMinutes().toString().padStart(2, '0')}`
+			(el) => `${new Date(el.time).getHours().toString().padStart(2, '0')}:${new Date(el.time).getMinutes().toString().padStart(2, '0')}`
 		);
 
 		const _heatmapData = response.reduce((a, b, i) => {
@@ -163,7 +163,7 @@ export default class Blood0Class extends BasicClass {
 		const _seriesData = Blood0Class.BASE_OPTIONS.series.map((el, i) => {
 			if (i <= 2) {
 				const title = Blood0Class.NAME_INFO[el.name || '신환'];
-				return { ...el, data: response.map((el) => ({ name: el.name, value: el.data1[title] })) };
+				return { ...el, data: response.map((el) => ({ name: el.time, value: el.data1[title] })) };
 			} else {
 				return { ...el, data: _heatmapData };
 			}

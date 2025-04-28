@@ -34,7 +34,7 @@ for (let i = 0; i < totalCount; i++) {
 	}
 
 	response.push({
-		name: formattedTime,
+		time: formattedTime,
 		data: { rate: Number(rate.toFixed(2)), expectNum: Number(expectNum.toFixed(2)), operateNum: Number(operateNum.toFixed(2)) },
 	});
 }

@@ -11,9 +11,6 @@ import {
 } from './lib/classes/index.js';
 
 export default class Controller {
-	biggerSection = 'graph-3';
-	/** sectionId를 가지고 있으면 modal을 띄운 상태 / null이면 모달을 띄우지 않은 상태 */
-	modalState = null;
 	/** graph를 새로 생성해서 해당 데이터를 넣어주기 위한 class들 모음 */
 	graphInstance = {};
 	/** fetch data */
@@ -175,8 +172,6 @@ export default class Controller {
 	_setModal(sectionId) {
 		if (!sectionId) {
 			// 모달 닫기
-			this.modalState = null;
-
 			const modalElement = document.getElementById('modal');
 
 			// css 변경하기 위한 클래스 변경
@@ -191,8 +186,6 @@ export default class Controller {
 			graphGroup.innerText = '';
 		} else {
 			// 모달 열기
-			this.modalState = sectionId;
-
 			const modalElement = document.getElementById('modal');
 
 			modalElement.classList.remove('modal-close');
@@ -237,7 +230,7 @@ export default class Controller {
 	makeSaveImgEvent() {
 		const saveImgBtn = document.getElementById('save-img');
 		saveImgBtn.addEventListener('click', () => {
-			const imgElement = this.currentModalGraph.getImage({});
+			this.currentModalGraph.getImage({});
 		});
 	}
 

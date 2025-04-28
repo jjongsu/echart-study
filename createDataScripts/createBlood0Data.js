@@ -27,7 +27,7 @@ for (let i = 0; i < totalCount; i++) {
 	const followUpPatients = getRandomInt();
 
 	response.push({
-		name: formattedTime,
+		time: formattedTime,
 		data1: { rate, newPatients, followUpPatients },
 		data2: { center1F: getRandomInt(1, 10), center2F: getRandomInt(1, 10), cancer1F: getRandomInt(1, 10), cancer2F: getRandomInt(1, 10) },
 	});

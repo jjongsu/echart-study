@@ -87,12 +87,12 @@ export default class OperateClass extends BasicClass {
 
 	setData(response) {
 		const _xAxisData = response.map(
-			(el) => `${new Date(el.name).getHours().toString().padStart(2, '0')}:${new Date(el.name).getMinutes().toString().padStart(2, '0')}`
+			(el) => `${new Date(el.time).getHours().toString().padStart(2, '0')}:${new Date(el.time).getMinutes().toString().padStart(2, '0')}`
 		);
 
 		const _seriesData = OperateClass.BASE_OPTIONS.series.map((el) => {
 			const title = OperateClass.NAME_INFO[el.name || '예상 검사/ 수술 수'];
-			return { ...el, data: response.map((el) => ({ name: el.name, value: el.data[title] })) };
+			return { ...el, data: response.map((el) => ({ name: el.time, value: el.data[title] })) };
 		});
 
 		const _options = { xAxis: { ...this.options.xAxis, data: _xAxisData }, series: _seriesData };

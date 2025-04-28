@@ -25,10 +25,11 @@ for (let i = 0; i < totalCount; i++) {
 	const rate = parseFloat((Math.random() * 30).toFixed(2));
 	const wardPatients = getRandomInt();
 	const newPatients = getRandomInt();
+	const followUpPatients = getRandomInt();
 
 	response.push({
-		name: formattedTime,
-		data: { rate, wardPatients, newPatients },
+		time: formattedTime,
+		data: { rate, wardPatients, newPatients, followUpPatients },
 	});
 }
 

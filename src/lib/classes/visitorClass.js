@@ -29,9 +29,10 @@ export default class VisitorClass extends BasicClass {
 			icon: 'circle',
 		},
 		grid: {
+			top: '10%',
 			left: '10%',
 			right: '10%',
-			bottom: '20%',
+			bottom: '10%',
 		},
 		xAxis: {
 			type: 'category',
@@ -82,14 +83,14 @@ export default class VisitorClass extends BasicClass {
 
 	setData(response) {
 		const _xAxisData = response.map(
-			(el) => `${new Date(el.name).getHours().toString().padStart(2, '0')}:${new Date(el.name).getMinutes().toString().padStart(2, '0')}`
+			(el) => `${new Date(el.time).getHours().toString().padStart(2, '0')}:${new Date(el.time).getMinutes().toString().padStart(2, '0')}`
 		);
 
 		const _seriesData = VisitorClass.BASE_OPTIONS.series.map((el) => {
-			return { ...el, data: response.map((res) => ({ name: res.name, value: res.data[el.name] })) };
+			return { ...el, data: response.map((res) => ({ name: res.time, value: res.data[el.name] })) };
 		});
 
-		const _options = { xAxis: _xAxisData, series: _seriesData };
+		const _options = { xAxis: { data: _xAxisData }, series: _seriesData };
 
 		this.setOptions(_options);
 	}
