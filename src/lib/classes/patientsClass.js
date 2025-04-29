@@ -44,7 +44,12 @@ export default class PatientsClass extends BasicClass {
 				},
 			},
 		},
-
+		grid: {
+			top: '15%',
+			left: '15%',
+			right: '10%',
+			bottom: '10%',
+		},
 		series: [
 			{
 				...PatientsClass.SCATTER_OPTIONS,

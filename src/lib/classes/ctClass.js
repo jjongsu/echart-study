@@ -38,6 +38,12 @@ export default class CTClass extends BasicClass {
 			},
 			data: [],
 		},
+		grid: {
+			top: '15%',
+			left: '15%',
+			right: '10%',
+			bottom: '10%',
+		},
 		series: [
 			{
 				...CTClass.BAR_OPTIONS,

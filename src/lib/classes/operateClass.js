@@ -15,6 +15,8 @@ export default class OperateClass extends BasicClass {
 		legend: {
 			data: ['예상 검사/ 수술 수', '실행 검사 / 수술 수', '달성률'],
 			icon: 'circle',
+			itemGap: 3,
+			itemWidth: 10,
 		},
 		xAxis: {
 			type: 'category',
@@ -36,6 +38,12 @@ export default class OperateClass extends BasicClass {
 				},
 			},
 		],
+		grid: {
+			top: '20%',
+			left: '15%',
+			right: '10%',
+			bottom: '10%',
+		},
 		series: [
 			{
 				...OperateClass.BAR_OPTIONS,

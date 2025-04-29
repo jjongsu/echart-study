@@ -7,10 +7,6 @@ export default class CompanyOrgClass extends BasicClass {
 			text: '조직도',
 			show: false,
 		},
-		grid: {
-			left: '15%',
-			right: '15%',
-		},
 		tooltip: {
 			formatter: function (info) {
 				const { name: cellName, value: cellCount } = info.data;
@@ -24,6 +20,9 @@ export default class CompanyOrgClass extends BasicClass {
 			{
 				type: 'treemap',
 				visibleMin: 300,
+				left: '10%',
+				right: '10%',
+				bottom: '15%',
 				label: {
 					show: true,
 					formatter: '{b}',

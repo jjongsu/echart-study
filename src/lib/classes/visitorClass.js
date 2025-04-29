@@ -33,7 +33,7 @@ export default class VisitorClass extends BasicClass {
 		},
 		grid: {
 			top: '10%',
-			left: '10%',
+			left: '15%',
 			right: '10%',
 			bottom: '10%',
 		},

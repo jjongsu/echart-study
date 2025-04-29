@@ -1,6 +1,8 @@
 import BasicClass from './basicClass.js';
 
 export default class SankeyClass extends BasicClass {
+	/** 강조하고 있는 index */
+	highlightIndex = null;
 	/** 기본 옵션 */
 	static BASE_BIG_OPTIONS = {
 		series: [
@@ -20,10 +22,10 @@ export default class SankeyClass extends BasicClass {
 					color: '#FFFFFF',
 					show: true,
 				},
-				selectedMode: 'single',
-				select: {
-					disabled: false,
-				},
+				// selectedMode: 'single',
+				// select: {
+				// 	disabled: false,
+				// },
 				data: [],
 				links: [],
 				lineStyle: {
@@ -106,5 +108,34 @@ export default class SankeyClass extends BasicClass {
 		if (type === this.type) return;
 		this.type = type;
 		this.setData(this.response);
+	}
+
+	setHighlight(isEnd = false) {
+		if (!this.response) return;
+		const range = this.response.length;
+
+		const _beforeIndex = this.highlightIndex;
+		// 이전 노드 강조 해제
+		if (_beforeIndex !== null) {
+			this.myChart.dispatchAction({
+				type: 'downplay',
+				seriesIndex: 0,
+				dataIndex: _beforeIndex,
+			});
+		}
+
+		if (isEnd) {
+			this.highlightIndex = null;
+			return;
+		}
+
+		this.highlightIndex = Math.floor(Math.random() * range);
+
+		// 현재 노드 강조
+		this.myChart.dispatchAction({
+			type: 'highlight',
+			seriesIndex: 0,
+			dataIndex: this.highlightIndex,
+		});
 	}
 }

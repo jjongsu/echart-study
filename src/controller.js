@@ -99,7 +99,8 @@ export default class Controller {
 	setData() {
 		for (const [key, classInstance] of Object.entries(this.graphInstance)) {
 			this.graphData[key] = filterJsonData(this.responseData[key], this.repeat, key === 'graph-5');
-			classInstance.setData(this.graphData[key]);
+			if (key === 'graph-3' && !!this.repeat) classInstance?.setHighlight?.(this.repeat >= 10);
+			else classInstance.setData(this.graphData[key]);
 			// classInstance.setData(this.responseData[key]);
 		}
 	}
