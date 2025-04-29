@@ -7,6 +7,32 @@ export default class PatientsClass extends BasicClass {
 	static SCATTER_OPTIONS = { type: 'scatter', symbolSize: 5, yAxisIndex: 0, xAxisIndex: 1 };
 	/** 기본 옵션 */
 	static BASE_OPTIONS = {
+		tooltip: {
+			show: true,
+			trigger: 'axis',
+			axisPointer: {
+				label: {
+					formatter: function (value) {
+						const target = new Date(value.value);
+						const yyyy = target.getFullYear();
+						const mm = String(target.getMonth() + 1).padStart(2, '0'); // 월은 0부터 시작
+						const dd = String(target.getDate()).padStart(2, '0');
+						const hh = String(target.getHours()).padStart(2, '0');
+						const min = String(target.getMinutes()).padStart(2, '0');
+
+						const formatted = `${yyyy}-${mm}-${dd} ${hh}:${min}`;
+						return `${formatted}`;
+					},
+				},
+			},
+			formatter: function (value) {
+				const label = value?.[0]?.axisValueLabel;
+				const parsingText = value.reduce((a, b) => {
+					return a + `<br/>${b.seriesName} : ${b.value[1]}`;
+				}, '');
+				return `${label}${parsingText}`;
+			},
+		},
 		legend: {
 			data: ['본관', '별관', '암병원', '양성자센터'],
 			icon: 'circle',
@@ -19,10 +45,10 @@ export default class PatientsClass extends BasicClass {
 				},
 				boundaryGap: false,
 				data: [],
-				axisLabel: {},
 				axisTick: {
 					show: false,
 				},
+				axisLine: { show: false },
 			},
 			{
 				type: 'value',
@@ -32,8 +58,6 @@ export default class PatientsClass extends BasicClass {
 				axisLabel: {
 					show: false,
 				},
-				min: 8 * 60,
-				max: 22 * 60,
 				axisTick: {
 					show: false,
 				},
@@ -63,25 +87,21 @@ export default class PatientsClass extends BasicClass {
 			{
 				...PatientsClass.SCATTER_OPTIONS,
 				name: '본관',
-				// data: mainBuildingList,
 				data: [],
 			},
 			{
 				...PatientsClass.SCATTER_OPTIONS,
 				name: '별관',
-				// data: annexBuildingList,
 				data: [],
 			},
 			{
 				...PatientsClass.SCATTER_OPTIONS,
 				name: '암병원',
-				// data: cancerCenterList,
 				data: [],
 			},
 			{
 				...PatientsClass.SCATTER_OPTIONS,
 				name: '양성자센터',
-				// data: protonTherapyCenterList,
 				data: [],
 			},
 		],
@@ -105,9 +125,12 @@ export default class PatientsClass extends BasicClass {
 			protonTherapyCenter: [],
 		};
 
+		const _min = new Date(response[0].time);
+		_min.setHours(8, 0, 0, 0);
+		const _max = new Date(response[0].time);
+		_max.setHours(22, 0, 0, 0);
 		response.forEach((el) => {
-			const [_hour, _min] = el.time?.split(' ')?.[1]?.split(':') || [8, 0];
-			const x = Number(_hour) * 60 + Number(_min);
+			const x = new Date(el.time).getTime();
 			if (el.data?.mainBuilding) {
 				_list['mainBuilding'] = [..._list['mainBuilding'], [x, el.data?.mainBuilding]];
 			}
@@ -128,7 +151,7 @@ export default class PatientsClass extends BasicClass {
 			if (i === 0) {
 				return { ...el, data: __xAxisData };
 			}
-			return el;
+			return { min: _min.getTime(), max: _max.getTime(), ...el };
 		});
 
 		const _seriesData = PatientsClass.BASE_OPTIONS.series.map((el) => {

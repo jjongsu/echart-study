@@ -13,7 +13,7 @@ function getTodayDateStr() {
 	return now.toISOString().slice(0, 10); // yyyy-MM-dd
 }
 
-function generateTimeStringsPerHour(minPerGroup = 15) {
+function generateTimeStringsPerHour(minPerGroup = 5) {
 	const dateStr = getTodayDateStr();
 	const startHour = 8;
 	const endHour = 22;

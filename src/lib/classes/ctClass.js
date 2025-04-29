@@ -11,6 +11,14 @@ export default class CTClass extends BasicClass {
 	static BASE_OPTIONS = {
 		tooltip: {
 			trigger: 'axis',
+			formatter: function (data) {
+				const title = data[0].axisValue;
+				const parsingText = data.reduce((a, b) => {
+					if (b.seriesName === '달성률') return a;
+					return a + `<br/>${b.seriesName} : ${b.value}`;
+				}, '');
+				return `${title}${parsingText}`;
+			},
 		},
 		legend: {
 			data: ['병동', '신환', '재환', '달성률'],

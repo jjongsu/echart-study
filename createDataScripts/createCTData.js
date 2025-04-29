@@ -14,6 +14,11 @@ function getRandomInt(min = 200, max = 330) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function getRandomDecimal() {
+	const num = Math.random() * 30 - 15; // -15 ~ 15
+	return Math.round(num * 100) / 100; // 소수점 둘째 자리까지 반올림
+}
+
 for (let i = 0; i < totalCount; i++) {
 	const currentTime = new Date(startTime.getTime() + i * intervalMinutes * 60000);
 
@@ -26,6 +31,7 @@ for (let i = 0; i < totalCount; i++) {
 	const wardPatients = getRandomInt();
 	const newPatients = getRandomInt();
 	const followUpPatients = getRandomInt();
+	const compareYesterday = getRandomDecimal();
 
 	response.push({
 		time: formattedTime,

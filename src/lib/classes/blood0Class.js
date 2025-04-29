@@ -1,10 +1,10 @@
 import BasicClass from './basicClass.js';
 
 const titleIndex = {
-	0: { en: 'cancer2F', ko: '암병원 F1' },
-	1: { en: 'cancer1F', ko: '암병원 F1' },
-	2: { en: 'center2F', ko: '본관 F1' },
-	3: { en: 'center1F', ko: '본관 F2' },
+	0: { en: 'cancer2F', ko: '암병원 F2', tooltip: '암병원 2층' },
+	1: { en: 'cancer1F', ko: '암병원 F1', tooltip: '암병원 1층' },
+	2: { en: 'center2F', ko: '본관 F2', tooltip: '본관 2층' },
+	3: { en: 'center1F', ko: '본관 F1', tooltip: '본관 1층' },
 };
 const title = Object.values(titleIndex).map((el) => el.ko);
 
@@ -18,7 +18,8 @@ export default class Blood0Class extends BasicClass {
 	/** 기본 옵션 */
 	static BASE_OPTIONS = {
 		tooltip: {
-			trigger: 'axis',
+			show: true,
+			// trigger: 'axis',
 		},
 		legend: [
 			{
@@ -154,6 +155,12 @@ export default class Blood0Class extends BasicClass {
 					itemStyle: {
 						shadowBlur: 10,
 						shadowColor: 'rgba(0, 0, 0, 0.5)',
+					},
+				},
+				tooltip: {
+					formatter: function (a, b, c) {
+						const position = (titleIndex?.[a.value?.[1]])['tooltip'] || '';
+						return `${position}<br/>혼잡도 : ${a.value[2] * 10}%`;
 					},
 				},
 			},
