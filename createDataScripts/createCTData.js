@@ -35,7 +35,7 @@ for (let i = 0; i < totalCount; i++) {
 
 	response.push({
 		time: formattedTime,
-		data: { rate, wardPatients, newPatients, followUpPatients },
+		data: { rate, wardPatients, newPatients, followUpPatients, compareYesterday },
 	});
 }
 

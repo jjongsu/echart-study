@@ -2,9 +2,10 @@ import BasicClass from './basicClass.js';
 
 export default class CTClass extends BasicClass {
 	/** response data 기준으로 parsing하는데 도와주는 상수 */
-	static NAME_INFO = { 병동: 'wardPatients', 신환: 'newPatients', 재환: 'followUpPatients', 달성률: 'rate' };
+	static NAME_INFO = { 병동: 'wardPatients', 신환: 'newPatients', 재환: 'followUpPatients', 달성률: 'rate', '어제 대비': 'compareYesterday' };
 	/** 그래프에 들어가는 막대 옵션 */
 	static BAR_OPTIONS = { type: 'bar', stack: 'total', yAxisIndex: 0, barWidth: '100%' };
+	static NONE_OPTIONS = { type: 'bar', yAxisIndex: 0, show: false };
 	/** 그래프에 들어가는 라인 옵션 */
 	static LINE_OPTIONS = { type: 'line', yAxisIndex: 1, symbol: 'none' };
 	/** 기본 옵션 */
@@ -15,7 +16,7 @@ export default class CTClass extends BasicClass {
 				const title = data[0].axisValue;
 				const parsingText = data.reduce((a, b) => {
 					if (b.seriesName === '달성률') return a;
-					return a + `<br/>${b.seriesName} : ${b.value}`;
+					return a + `<br/>${b.seriesName} : ${b.value}${b.seriesName === '어제 대비' ? '%' : ''}`;
 				}, '');
 				return `${title}${parsingText}`;
 			},
@@ -74,6 +75,11 @@ export default class CTClass extends BasicClass {
 			{
 				...CTClass.LINE_OPTIONS,
 				name: '달성률',
+				data: [],
+			},
+			{
+				...CTClass.NONE_OPTIONS,
+				name: '어제 대비',
 				data: [],
 			},
 		],
