@@ -19,7 +19,6 @@ export default class Blood0Class extends BasicClass {
 	static BASE_OPTIONS = {
 		tooltip: {
 			show: true,
-			// trigger: 'axis',
 		},
 		legend: [
 			{
@@ -31,8 +30,8 @@ export default class Blood0Class extends BasicClass {
 			},
 		],
 		grid: [
-			{ top: '5%', left: '15%', height: '35%', width: '70%' }, // 첫 번째 차트 위치와 크기
-			{ top: '55%', left: '18%', height: '35%', width: '68%' }, // 두 번째 차트 위치와 크기
+			{ top: '5%', left: '15%', height: '35%', width: '70%', tooltip: { show: true, trigger: 'axis' } }, // 첫 번째 차트 위치와 크기
+			{ top: '55%', left: '18%', height: '35%', width: '68%', tooltip: { show: true } }, // 두 번째 차트 위치와 크기
 		],
 		xAxis: [
 			{

@@ -68,7 +68,7 @@ src
 
 -   controller에서 각 그래프를 쉽게 다룰 수 있는 방법에 대한 고민에서 시작
 -   그러기 위해서는 하나의 `basicClass`에서 확장해서 각 그래프의 특성에 맞게 정의해서 사용하면 어떨지 확장해서 생각
--   또한, 통일된 구조로 추가적인 그래프가 들어왔을 때도 확장성에 대한 고민
+-   또한, 통일된 구조로 추가적인 그래프가 들어왔을 때도 유지 보수성 + 확장성에 대한 고민
 -   결국 `basicClass`에서 공통적인 수행 관련한 것들을 추가하고 각 그래프의 상황에 맞게 class 내부 함수 정의 및 상수를 정의해서 사용하기로 생각
 
 ---
@@ -80,6 +80,7 @@ src
 3. x축에서 시간이 지남에 따라서 참고 동영상과 비슷하게 애니메이션 필요
 4. 지금 현재 라이브러리 내부의 SaveAsImage를 살펴보았는데,
    현재 이미지 저장 기능에서는 이미지 저장 시 browser가 Chrome, Firefox, New Edge일 때만 정상적으로 작동할 것으로 보이는데 SaveAsImage 구조 참고해서 수정
+   browser check는 userAgent 기반에서 확인 필요
 
 ```
 SaveAsImage.prototype.onclick = function (ecModel, api) {

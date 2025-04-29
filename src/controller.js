@@ -40,7 +40,7 @@ export default class Controller {
 	static titleName = {
 		'section-0': '조직도',
 		'section-1': 'CT검사',
-		'section-2': '체혈검사',
+		'section-2': '채혈검사',
 		'section-3': '이동현황',
 		'section-4': '검사/수술 운영',
 		'section-5': '병동별 환자 유입/유출',
