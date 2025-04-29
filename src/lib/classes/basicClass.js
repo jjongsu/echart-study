@@ -12,15 +12,6 @@ export default class BasicClass {
 		this.element = document.getElementById(this.elementId);
 		this.myChart = echarts.init(this.element);
 		this.myChart.setOption(this.options);
-
-		this.resizeEventFunc = () => {
-			this.myChart.resize();
-		};
-
-		this.element.addEventListener('resize', this.resizeEventFunc);
-
-		// [TODO]: 이벤트 리스너 처리 필요! removeEventListener
-		// window.addEventListener('resize', this.resizeEventFunc);
 	}
 
 	setOptions(options) {
@@ -31,9 +22,13 @@ export default class BasicClass {
 	}
 
 	resize() {
+		if (!this.myChart) return;
 		this.myChart.resize();
 	}
 
+	/**
+	 * isPdf의 값에 띠리서 png형태의 이미지 저장하는 함수 / pdf 저장에서 필요한 img element 생성하는 함수
+	 */
 	getImage({ pixelRatio, backgroundColor, excludeComponents, isPdf = false }) {
 		const img = this.myChart.getDataURL({
 			type: 'png',
@@ -57,6 +52,9 @@ export default class BasicClass {
 		}
 	}
 
+	/**
+	 * pdf 파일 저장하는 함수
+	 */
 	getPdf() {
 		if (!this.element) return;
 		// image element 생성

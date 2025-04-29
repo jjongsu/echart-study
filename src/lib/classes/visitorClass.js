@@ -7,7 +7,7 @@ export default class VisitorClass extends BasicClass {
 		smooth: 0.5,
 		smoothMonotone: 'x',
 		areaStyle: {
-			opacity: 0.15,
+			opacity: 0.1,
 		},
 		symbol: 'none',
 	};
@@ -17,6 +17,9 @@ export default class VisitorClass extends BasicClass {
 		smooth: 0.5,
 		smoothMonotone: 'x',
 		symbolSize: 6,
+		areaStyle: {
+			opacity: 0.2,
+		},
 	};
 	/** 기본 옵션 */
 	static BASE_OPTIONS = {
@@ -50,6 +53,11 @@ export default class VisitorClass extends BasicClass {
 		series: [
 			{
 				...VisitorClass.COMMON_OPTIONS,
+				name: 'day',
+				data: [],
+			},
+			{
+				...VisitorClass.UNIQUE_OPTIONS,
 				name: 'year',
 				data: [],
 			},
@@ -61,11 +69,6 @@ export default class VisitorClass extends BasicClass {
 			{
 				...VisitorClass.COMMON_OPTIONS,
 				name: 'week',
-				data: [],
-			},
-			{
-				...VisitorClass.UNIQUE_OPTIONS,
-				name: 'day',
 				data: [],
 			},
 		],

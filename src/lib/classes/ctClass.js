@@ -6,7 +6,7 @@ export default class CTClass extends BasicClass {
 	/** 그래프에 들어가는 막대 옵션 */
 	static BAR_OPTIONS = { type: 'bar', stack: 'total', yAxisIndex: 0, barWidth: '100%' };
 	/** 그래프에 들어가는 라인 옵션 */
-	static LINE_OPTIONS = { type: 'line', yAxisIndex: 1 };
+	static LINE_OPTIONS = { type: 'line', yAxisIndex: 1, symbol: 'none' };
 	/** 기본 옵션 */
 	static BASE_OPTIONS = {
 		tooltip: {

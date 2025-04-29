@@ -22,11 +22,7 @@ export default class OperateClass extends BasicClass {
 				show: false,
 			},
 			data: [],
-			// data: response.map(
-			// 	(el) => `${new Date(el.name).getHours().toString().padStart(2, '0')}:${new Date(el.name).getMinutes().toString().padStart(2, '0')}`
-			// ),
 		},
-
 		yAxis: [
 			{
 				type: 'value',

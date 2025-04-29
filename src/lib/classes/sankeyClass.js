@@ -10,6 +10,7 @@ export default class SankeyClass extends BasicClass {
 				nodeWidth: 50,
 				nodeAlign: 'justify',
 				draggable: false,
+				right: '5%',
 				emphasis: {
 					disabled: false,
 					focus: 'trajectory',
@@ -17,6 +18,7 @@ export default class SankeyClass extends BasicClass {
 				label: {
 					position: 'insideTopLeft',
 					color: '#FFFFFF',
+					show: true,
 				},
 				selectedMode: 'single',
 				select: {
@@ -40,6 +42,7 @@ export default class SankeyClass extends BasicClass {
 				nodeWidth: 10,
 				nodeAlign: 'justify',
 				draggable: false,
+				right: '5%',
 				emphasis: {
 					focus: 'trajectory',
 				},

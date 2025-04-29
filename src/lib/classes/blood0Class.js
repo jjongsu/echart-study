@@ -1,10 +1,10 @@
 import BasicClass from './basicClass.js';
 
 const titleIndex = {
-	0: { en: 'cancer2F', ko: '암병원 2F' },
-	1: { en: 'cancer1F', ko: '암병원 1F' },
-	2: { en: 'center2F', ko: '본관 2F' },
-	3: { en: 'center1F', ko: '본관 1F' },
+	0: { en: 'cancer2F', ko: '암병원 F1' },
+	1: { en: 'cancer1F', ko: '암병원 F1' },
+	2: { en: 'center2F', ko: '본관 F1' },
+	3: { en: 'center1F', ko: '본관 F2' },
 };
 const title = Object.values(titleIndex).map((el) => el.ko);
 
@@ -14,7 +14,7 @@ export default class Blood0Class extends BasicClass {
 	/** 그래프에 들어가는 막대 옵션 */
 	static BAR_OPTIONS = { type: 'bar', xAxisIndex: 0, yAxisIndex: 0 };
 	/** 그래프에 들어가는 라인 옵션 */
-	static LINE_OPTIONS = { type: 'line', xAxisIndex: 0, yAxisIndex: 1 };
+	static LINE_OPTIONS = { type: 'line', xAxisIndex: 0, yAxisIndex: 1, symbol: 'none' };
 	/** 기본 옵션 */
 	static BASE_OPTIONS = {
 		tooltip: {
@@ -24,13 +24,14 @@ export default class Blood0Class extends BasicClass {
 			{
 				data: ['신환', '재환', '달성률'],
 				left: 'right',
+				icon: 'roundRect',
 				orient: 'vertical',
 				formatter: () => '',
 			},
 		],
 		grid: [
 			{ top: '5%', left: '15%', height: '35%', width: '70%' }, // 첫 번째 차트 위치와 크기
-			{ top: '55%', left: '15%', height: '35%', width: '70%' }, // 두 번째 차트 위치와 크기
+			{ top: '55%', left: '18%', height: '35%', width: '68%' }, // 두 번째 차트 위치와 크기
 		],
 		xAxis: [
 			{
@@ -67,6 +68,9 @@ export default class Blood0Class extends BasicClass {
 				splitLine: {
 					show: false,
 				},
+				axisLabel: {
+					formatter: '{value}%',
+				},
 			},
 			{
 				gridIndex: 0,
@@ -83,6 +87,14 @@ export default class Blood0Class extends BasicClass {
 				splitArea: {
 					show: true,
 				},
+				axisLabel: {
+					formatter: function (value) {
+						const text = value.replaceAll(' ', '\n');
+						return text;
+					},
+					// color: '#FFFFFF',
+					fontSize: 8,
+				},
 			},
 		],
 		visualMap: [
@@ -98,6 +110,9 @@ export default class Blood0Class extends BasicClass {
 					color: ['#104361', '#1D3F73', '#293A84', '#363696', '#4331A7', '#4F2DB9', '#5C28CA', '#6924DC', '#751FED', '#821BFF', '#a50026'],
 				},
 				showLabel: false,
+				itemWidth: 12,
+				itemHeight: 8,
+				top: '55%',
 				itemGap: 0,
 				itemSymbol: 'rect',
 			},
@@ -147,7 +162,7 @@ export default class Blood0Class extends BasicClass {
 	}
 
 	setData(response) {
-		const _xAxis1Data = response.map(
+		const _xAxisData = response.map(
 			(el) => `${new Date(el.time).getHours().toString().padStart(2, '0')}:${new Date(el.time).getMinutes().toString().padStart(2, '0')}`
 		);
 
@@ -169,7 +184,7 @@ export default class Blood0Class extends BasicClass {
 			}
 		});
 
-		const _options = { xAxis: [{ ...this.options.xAxis[0], data: _xAxis1Data }], series: _seriesData };
+		const _options = { xAxis: this.options.xAxis.map((el) => ({ ...el, data: _xAxisData })), series: _seriesData };
 
 		this.setOptions(_options);
 	}

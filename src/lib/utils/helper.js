@@ -1,3 +1,10 @@
+/**
+ * 그려질 부분에 대한 데이터만 추출하는 함수
+ * @param {*} json fetching으로 받아온 데이터
+ * @param {number} repeat setData 반복 횟수
+ * @param {boolean | undefined} isAdd 축적하는 형태
+ * @returns
+ */
 export const filterJsonData = (json, repeat, isAdd = false) => {
 	// time관련 json파일이 아닌 경우 그대로 새팅
 	if (!json || !json.length || !json?.[0]?.time) return json;

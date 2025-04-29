@@ -14,12 +14,15 @@ import { filterJsonData } from './lib/utils/helper.js';
 export default class Controller {
 	/** graph를 새로 생성해서 해당 데이터를 넣어주기 위한 class들 모음 */
 	graphInstance = {};
-	/** fetch data */
+	/** 받아온 전체 fetch data */
 	responseData = {};
-	/** graph data */
+	/** 대시보드에서 그리는 graph data */
 	graphData = {};
+	/** 10번 setData 반복 변수 */
 	repeat = 0;
+	/** fetching data 변수 */
 	isFetching = true;
+	/** 현재 모달로 띄워서 그리고 있는 graph */
 	currentModalGraph;
 
 	static _preFixSrc = '../public/jsonData';
@@ -87,7 +90,7 @@ export default class Controller {
 			this.setData();
 			this.repeat += 1;
 
-			if (this.repeat >= 10) {
+			if (this.repeat >= 11) {
 				clearInterval(intervalEvent);
 			}
 		}, 1000);
