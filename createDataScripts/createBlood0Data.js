@@ -14,6 +14,15 @@ function getRandomInt(min = 50, max = 180) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function generateXYPoints() {
+	const points = [];
+	for (let x = 0; x <= 100; x += 10) {
+		const y = Math.random() * 100; // 0 ~ 100 사이의 랜덤 숫자
+		points.push([x, y]);
+	}
+	return points;
+}
+
 for (let i = 0; i < totalCount; i++) {
 	const currentTime = new Date(startTime.getTime() + i * intervalMinutes * 60000);
 
@@ -30,6 +39,7 @@ for (let i = 0; i < totalCount; i++) {
 		time: formattedTime,
 		data1: { rate, newPatients, followUpPatients },
 		data2: { center1F: getRandomInt(1, 10), center2F: getRandomInt(1, 10), cancer1F: getRandomInt(1, 10), cancer2F: getRandomInt(1, 10) },
+		tooltip: { center1F: generateXYPoints(), center2F: generateXYPoints(), cancer1F: generateXYPoints(), cancer2F: generateXYPoints() },
 	});
 }
 

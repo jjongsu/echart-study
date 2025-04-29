@@ -1,3 +1,4 @@
+import { generateSVGPathQuadratic } from '../utils/helper.js';
 import BasicClass from './basicClass.js';
 
 const titleIndex = {
@@ -156,12 +157,29 @@ export default class Blood0Class extends BasicClass {
 						shadowColor: 'rgba(0, 0, 0, 0.5)',
 					},
 				},
-				tooltip: {
-					formatter: function (a, b, c) {
-						const position = (titleIndex?.[a.value?.[1]])['tooltip'] || '';
-						return `${position}<br/>혼잡도 : ${a.value[2] * 10}%`;
-					},
-				},
+				// tooltip: {
+				// 	formatter: function (params) {
+				// 		const position = (titleIndex?.[params.value?.[1]])['tooltip'] || '';
+
+				// 		console.log(params);
+
+				// 		return `<div style="display:flex; flex-direction: column;"><div>${position}<br/>혼잡도 : ${
+				// 			params.value[2] * 10
+				// 		}%</div>${generateSVGPathQuadratic([
+				// 			[0, 10],
+				// 			[10, 30],
+				// 			[20, 5],
+				// 			[30, 60],
+				// 			[40, 65],
+				// 			[50, 35],
+				// 		])}`;
+				// 	},
+
+				// 	// formatter: function (a, b, c) {
+				// 	// 	const position = (titleIndex?.[a.value?.[1]])['tooltip'] || '';
+				// 	// 	return `${position}<br/>혼잡도 : ${a.value[2] * 10}%`;
+				// 	// },
+				// },
 			},
 		],
 	};
@@ -190,12 +208,37 @@ export default class Blood0Class extends BasicClass {
 			return [...a, ..._data];
 		}, []);
 
+		const _tooltipData = response.reduce((a, b, i) => {
+			const _data = [];
+			for (let index = 0; index < 4; index++) {
+				const elementData = { x: i, y: index, arr: b.tooltip[titleIndex[index].en] };
+				_data.push(elementData);
+			}
+			return [...a, ..._data];
+		}, []);
+
+		const _tooltipSeries = {
+			tooltip: {
+				formatter: function (params) {
+					const position = (titleIndex?.[params.value?.[1]])['tooltip'] || '';
+
+					const graphElementArray = _tooltipData.find((el) => {
+						return el.x === params.value[0] && el.y === params.value[1];
+					}).arr;
+
+					return `<div style="display:flex; flex-direction: column;"><div>${position}<br/>혼잡도 : ${
+						params.value[2] * 10
+					}%</div>${generateSVGPathQuadratic(graphElementArray)}`;
+				},
+			},
+		};
+
 		const _seriesData = Blood0Class.BASE_OPTIONS.series.map((el, i) => {
 			if (i <= 2) {
 				const title = Blood0Class.NAME_INFO[el.name || '신환'];
 				return { ...el, data: response.map((el) => ({ name: el.time, value: el.data1[title] })) };
 			} else {
-				return { ...el, data: _heatmapData };
+				return { ...el, data: _heatmapData, ..._tooltipSeries };
 			}
 		});
 
