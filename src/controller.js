@@ -123,12 +123,14 @@ export default class Controller {
 		gridItems.forEach((item) => {
 			item.addEventListener('dragstart', () => {
 				draggedItem = item;
-				item.classList.add('dragging');
+				item.classList.add('dragging-item');
+				item.parentElement.classList.add('dragging-container');
 			});
 
 			item.addEventListener('dragend', () => {
 				draggedItem = null;
-				item.classList.remove('dragging');
+				item.classList.remove('dragging-item');
+				item.parentElement.classList.remove('dragging-container');
 			});
 
 			item.addEventListener('dragover', (e) => {
