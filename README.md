@@ -81,7 +81,9 @@ src
    현재 이미지 저장 기능에서는 이미지 저장 시 browser가 Chrome, Firefox, New Edge일 때만 정상적으로 작동할 것으로 보이는데 SaveAsImage 구조 참고해서 수정
    browser check는 userAgent 기반에서 확인 필요
 4. 드래그 앤 드롭에 따라서 DOM은 그대로이고 데이터만 변경되도록 하는 수정 필요
-5. 이미지 저장과 pdf 저장 시에 화면 크기에 영향을 받지 않고 항상 일정한 크기로 저장 되도록 수정 필요
+5. 외부에서 데이터를 통신해서 안으로 넣어보는 방법에 대한 고민
+   => DOM에 이벤트 리스너를 통해 통신하는 방법? 다른 방법은?
+7. 이미지 저장과 pdf 저장 시에 화면 크기에 영향을 받지 않고 항상 일정한 크기로 저장 되도록 수정 필요
 
 ```
 SaveAsImage.prototype.onclick = function (ecModel, api) {
