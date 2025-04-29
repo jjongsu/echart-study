@@ -111,7 +111,6 @@ export default class Controller {
 			// 이동현황 관련 highlight
 			if (key === 'graph-3' && !!this.repeat) classInstance?.setHighlight?.(this.repeat >= 10);
 			else classInstance.setData(this.graphData[key]);
-			// classInstance.setData(this.responseData[key]);
 		}
 	}
 
@@ -203,7 +202,6 @@ export default class Controller {
 				const target = this.connectInfo.find((el) => el.buttonId === buttonId);
 
 				if (!target) return;
-				// console.log(this.graphInstance[target.elementId].myChart.dispose());
 				this._setModal(target.sectionId);
 			}
 		}

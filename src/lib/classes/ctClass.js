@@ -2,7 +2,7 @@ import BasicClass from './basicClass.js';
 
 export default class CTClass extends BasicClass {
 	/** response data 기준으로 parsing하는데 도와주는 상수 */
-	static NAME_INFO = { 병동: 'wardPatients', 신환: 'newPatients', 재환: 'followUpPatients', 달성률: 'rate', '어제 대비': 'compareYesterday' };
+	static NAME_INFO = { 병동: 'wardPatients', 신환: 'newPatients', 재진: 'followUpPatients', 달성률: 'rate', '어제 대비': 'compareYesterday' };
 	/** 그래프에 들어가는 막대 옵션 */
 	static BAR_OPTIONS = { type: 'bar', stack: 'total', yAxisIndex: 0, barWidth: '100%' };
 	/** 그래프에 들어가는 어제 대비 막대 옵션 */
@@ -17,13 +17,14 @@ export default class CTClass extends BasicClass {
 				const title = data[0].axisValue;
 				const parsingText = data.reduce((a, b) => {
 					if (b.seriesName === '달성률') return a;
-					return a + `<br/>${b.seriesName} : ${b.value}${b.seriesName === '어제 대비' ? '%' : ''}`;
+					const seriesName = b.seriesName === '신환' ? '신환초진' : b.seriesName;
+					return a + `<br/>${seriesName} : ${b.value}${b.seriesName === '어제 대비' ? '%' : ''}`;
 				}, '');
 				return `${title}${parsingText}`;
 			},
 		},
 		legend: {
-			data: ['병동', '신환', '재환', '달성률'],
+			data: ['병동', '신환', '재진', '달성률'],
 			textStyle: { color: '#FFFFFF' },
 		},
 		yAxis: [
@@ -74,7 +75,7 @@ export default class CTClass extends BasicClass {
 			},
 			{
 				...CTClass.BAR_OPTIONS,
-				name: '재환',
+				name: '재진',
 				data: [],
 			},
 			{
