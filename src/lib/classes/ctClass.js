@@ -37,6 +37,9 @@ export default class CTClass extends BasicClass {
 				show: false,
 			},
 			data: [],
+			axisTick: {
+				show: false,
+			},
 		},
 		grid: {
 			top: '15%',

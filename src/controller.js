@@ -235,7 +235,7 @@ export default class Controller {
 				const graph = new config.classInstance({ elementId: newDiv.id });
 
 				this.currentModalGraph = graph;
-				graph.setData(this.graphData[config.elementId]);
+				graph.setData(this.responseData[config.elementId]);
 			});
 		}
 	}

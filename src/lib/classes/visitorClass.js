@@ -43,6 +43,9 @@ export default class VisitorClass extends BasicClass {
 				show: false,
 			},
 			data: [],
+			axisTick: {
+				show: false,
+			},
 		},
 		yAxis: {
 			type: 'value',

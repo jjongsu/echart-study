@@ -24,6 +24,9 @@ export default class OperateClass extends BasicClass {
 				show: false,
 			},
 			data: [],
+			axisTick: {
+				show: false,
+			},
 		},
 		yAxis: [
 			{
@@ -53,7 +56,7 @@ export default class OperateClass extends BasicClass {
 				// data: response.map((el) => ({ name: el.name, value: el.data.expectNum })),
 				itemStyle: {
 					color: '#47575c',
-					borderRadius: [5, 5, 0, 0],
+					borderRadius: [50, 50, 0, 0],
 				},
 			},
 			{
@@ -64,7 +67,7 @@ export default class OperateClass extends BasicClass {
 				// data: response.map((el) => ({ name: el.name, value: el.data.operateNum })),
 				itemStyle: {
 					color: '#21c8ff',
-					borderRadius: [5, 5, 0, 0],
+					borderRadius: [50, 50, 0, 0],
 				},
 			},
 			{

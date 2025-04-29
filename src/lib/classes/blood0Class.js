@@ -41,6 +41,9 @@ export default class Blood0Class extends BasicClass {
 					show: false,
 				},
 				data: [],
+				axisTick: {
+					show: false,
+				},
 			},
 			{
 				gridIndex: 1,
@@ -48,6 +51,9 @@ export default class Blood0Class extends BasicClass {
 				data: [],
 				splitArea: {
 					show: true,
+				},
+				axisTick: {
+					show: false,
 				},
 			},
 		],
@@ -94,6 +100,9 @@ export default class Blood0Class extends BasicClass {
 					},
 					// color: '#FFFFFF',
 					fontSize: 8,
+				},
+				axisTick: {
+					show: false,
 				},
 			},
 		],

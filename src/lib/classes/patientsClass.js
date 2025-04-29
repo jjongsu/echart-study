@@ -20,6 +20,9 @@ export default class PatientsClass extends BasicClass {
 				boundaryGap: false,
 				data: [],
 				axisLabel: {},
+				axisTick: {
+					show: false,
+				},
 			},
 			{
 				type: 'value',
@@ -31,6 +34,9 @@ export default class PatientsClass extends BasicClass {
 				},
 				min: 8 * 60,
 				max: 22 * 60,
+				axisTick: {
+					show: false,
+				},
 			},
 		],
 		yAxis: {
@@ -42,6 +48,9 @@ export default class PatientsClass extends BasicClass {
 				formatter: function (value) {
 					return `${value}`;
 				},
+			},
+			axisTick: {
+				show: false,
 			},
 		},
 		grid: {

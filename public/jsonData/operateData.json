@@ -1,243 +1,123 @@
 {
   "response": [
     {
-      "time": "2025-04-28 08:00",
+      "time": "2025-04-29 08:00",
       "data": {
-        "rate": 32.22,
-        "expectNum": 26.28,
-        "operateNum": 21.43
+        "rate": 32.17,
+        "expectNum": 25.72,
+        "operateNum": 21.85
       }
     },
     {
-      "time": "2025-04-28 08:30",
+      "time": "2025-04-29 09:00",
       "data": {
-        "rate": 34.84,
-        "expectNum": 28.6,
-        "operateNum": 23.56
+        "rate": 34,
+        "expectNum": 27.34,
+        "operateNum": 23.81
       }
     },
     {
-      "time": "2025-04-28 09:00",
+      "time": "2025-04-29 10:00",
       "data": {
-        "rate": 37.26,
-        "expectNum": 30.98,
-        "operateNum": 26.07
+        "rate": 34.33,
+        "expectNum": 27.9,
+        "operateNum": 25.75
       }
     },
     {
-      "time": "2025-04-28 09:30",
+      "time": "2025-04-29 11:00",
       "data": {
-        "rate": 39.85,
-        "expectNum": 33.78,
-        "operateNum": 27.04
+        "rate": 36.04,
+        "expectNum": 28.84,
+        "operateNum": 28.02
       }
     },
     {
-      "time": "2025-04-28 10:00",
+      "time": "2025-04-29 12:00",
       "data": {
-        "rate": 40.06,
-        "expectNum": 34.67,
-        "operateNum": 29.93
+        "rate": 36.86,
+        "expectNum": 31.75,
+        "operateNum": 29.9
       }
     },
     {
-      "time": "2025-04-28 10:30",
+      "time": "2025-04-29 13:00",
       "data": {
-        "rate": 40.77,
-        "expectNum": 35.33,
-        "operateNum": 30.47
+        "rate": 38.66,
+        "expectNum": 33.71,
+        "operateNum": 30.22
       }
     },
     {
-      "time": "2025-04-28 11:00",
+      "time": "2025-04-29 14:00",
       "data": {
-        "rate": 43.68,
-        "expectNum": 37.48,
-        "operateNum": 31.59
+        "rate": 40.54,
+        "expectNum": 35.69,
+        "operateNum": 30.76
       }
     },
     {
-      "time": "2025-04-28 11:30",
+      "time": "2025-04-29 15:00",
       "data": {
-        "rate": 46.2,
-        "expectNum": 39.39,
-        "operateNum": 32.85
+        "rate": 42.2,
+        "expectNum": 36.54,
+        "operateNum": 32.44
       }
     },
     {
-      "time": "2025-04-28 12:00",
+      "time": "2025-04-29 16:00",
       "data": {
-        "rate": 49.17,
-        "expectNum": 40.59,
-        "operateNum": 34.36
+        "rate": 43.75,
+        "expectNum": 37.05,
+        "operateNum": 34.54
       }
     },
     {
-      "time": "2025-04-28 12:30",
+      "time": "2025-04-29 17:00",
       "data": {
-        "rate": 50.75,
-        "expectNum": 41.57,
-        "operateNum": 37.31
+        "rate": 43.94,
+        "expectNum": 38.87,
+        "operateNum": 36.75
       }
     },
     {
-      "time": "2025-04-28 13:00",
+      "time": "2025-04-29 18:00",
       "data": {
-        "rate": 53.19,
-        "expectNum": 41.64,
-        "operateNum": 37.79
+        "rate": 45.6,
+        "expectNum": 39.53,
+        "operateNum": 37.01
       }
     },
     {
-      "time": "2025-04-28 13:30",
+      "time": "2025-04-29 19:00",
       "data": {
-        "rate": 54.46,
-        "expectNum": 43.12,
-        "operateNum": 39.2
+        "rate": 48.59,
+        "expectNum": 42.51,
+        "operateNum": 37.43
       }
     },
     {
-      "time": "2025-04-28 14:00",
+      "time": "2025-04-29 20:00",
       "data": {
-        "rate": 55.8,
-        "expectNum": 45.09,
-        "operateNum": 39.57
+        "rate": 51.34,
+        "expectNum": 43.11,
+        "operateNum": 39.07
       }
     },
     {
-      "time": "2025-04-28 14:30",
+      "time": "2025-04-29 21:00",
       "data": {
-        "rate": 57.07,
-        "expectNum": 46.63,
-        "operateNum": 41.8
+        "rate": 52.96,
+        "expectNum": 44.28,
+        "operateNum": 39.54
       }
     },
     {
-      "time": "2025-04-28 15:00",
+      "time": "2025-04-29 22:00",
       "data": {
-        "rate": 57.79,
-        "expectNum": 47.15,
-        "operateNum": 44.23
-      }
-    },
-    {
-      "time": "2025-04-28 15:30",
-      "data": {
-        "rate": 59.41,
-        "expectNum": 49.36,
-        "operateNum": 46
-      }
-    },
-    {
-      "time": "2025-04-28 16:00",
-      "data": {
-        "rate": 61.68,
-        "expectNum": 49.64,
-        "operateNum": 46.21
-      }
-    },
-    {
-      "time": "2025-04-28 16:30",
-      "data": {
-        "rate": 62.99,
-        "expectNum": 51.74,
-        "operateNum": 46.33
-      }
-    },
-    {
-      "time": "2025-04-28 17:00",
-      "data": {
-        "rate": 65.82,
-        "expectNum": 53.7,
-        "operateNum": 48.34
-      }
-    },
-    {
-      "time": "2025-04-28 17:30",
-      "data": {
-        "rate": 67.56,
-        "expectNum": 55.16,
-        "operateNum": 48.56
-      }
-    },
-    {
-      "time": "2025-04-28 18:00",
-      "data": {
-        "rate": 69.42,
-        "expectNum": 55.66,
-        "operateNum": 49.53
-      }
-    },
-    {
-      "time": "2025-04-28 18:30",
-      "data": {
-        "rate": 71.39,
-        "expectNum": 55.84,
-        "operateNum": 49.53
-      }
-    },
-    {
-      "time": "2025-04-28 19:00",
-      "data": {
-        "rate": 72.93,
-        "expectNum": 58.42,
-        "operateNum": 51.28
-      }
-    },
-    {
-      "time": "2025-04-28 19:30",
-      "data": {
-        "rate": 74.5,
-        "expectNum": 59.3,
-        "operateNum": 51.33
-      }
-    },
-    {
-      "time": "2025-04-28 20:00",
-      "data": {
-        "rate": 77.44,
-        "expectNum": 60.34,
-        "operateNum": 51.53
-      }
-    },
-    {
-      "time": "2025-04-28 20:30",
-      "data": {
-        "rate": 80.23,
-        "expectNum": 60.44,
-        "operateNum": 52.17
-      }
-    },
-    {
-      "time": "2025-04-28 21:00",
-      "data": {
-        "rate": 80.29,
-        "expectNum": 60.79,
-        "operateNum": 54.94
-      }
-    },
-    {
-      "time": "2025-04-28 21:30",
-      "data": {
-        "rate": 83.19,
-        "expectNum": 63.57,
-        "operateNum": 57.93
-      }
-    },
-    {
-      "time": "2025-04-28 22:00",
-      "data": {
-        "rate": 85.93,
-        "expectNum": 64.78,
-        "operateNum": 58.26
-      }
-    },
-    {
-      "time": "2025-04-28 22:30",
-      "data": {
-        "rate": 86.33,
-        "expectNum": 67.09,
-        "operateNum": 58.82
+        "rate": 55.77,
+        "expectNum": 47.03,
+        "operateNum": 41.15
       }
     }
   ]

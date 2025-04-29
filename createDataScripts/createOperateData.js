@@ -5,8 +5,8 @@ startTime.setHours(8);
 startTime.setMinutes(0);
 startTime.setMilliseconds(0);
 
-const intervalMinutes = 30;
-const totalCount = 30;
+const intervalMinutes = 60;
+const totalCount = 15;
 
 const response = [];
 
