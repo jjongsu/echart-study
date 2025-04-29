@@ -17,8 +17,8 @@
 - jspdf
 
 ### html2pdf.js vs jspdf
-> html2pdf.js converts any webpage or element into a printable PDF entirely client-side using html2canvas and jsPDF.
->
+> html2pdf.js converts any webpage or element into a printable PDF entirely client-side using html2canvas and jsPDF. (https://ekoopmans.github.io/html2pdf.js/)
+> 
 > 내부적으로 jspdf를 통해서 pdf생성하고 있기 때문에 굳이 html2pdf 사용하지 않았고, 지금 현재 imgElement를 통해서 pdf를 생성하기에 jspdf로 충분
 
 ## 폴더 구조
