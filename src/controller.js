@@ -14,7 +14,7 @@ import { filterJsonData } from './lib/utils/helper.js';
 export default class Controller {
 	/** graph를 새로 생성해서 해당 데이터를 넣어주기 위한 class들 모음 */
 	graphInstance = {};
-	/** 받아온 전체 fetch data */
+	/** 받아온 전체 fetch data (모달에서 전체 데이터 기준으로 그림) */
 	responseData = {};
 	/** 대시보드에서 그리는 graph data */
 	graphData = {};
@@ -73,7 +73,6 @@ export default class Controller {
 		const compayClass = new classInstance({ elementId });
 
 		this.graphData[elementId] = response;
-		// [TODO] 1초마다 데이터 통신에 따라서 변경이 필요한 부분
 		this.responseData[elementId] = response;
 		this.graphInstance[elementId] = compayClass;
 
@@ -99,6 +98,17 @@ export default class Controller {
 	setData() {
 		for (const [key, classInstance] of Object.entries(this.graphInstance)) {
 			this.graphData[key] = filterJsonData(this.responseData[key], this.repeat, key === 'graph-5');
+
+			// 검사/수술 운영 관련 data filter
+			if (key === 'graph-4' && this.repeat < 10) {
+				this.graphData[key] = this.graphData[key].map((el, i) => {
+					if (this.graphData[key].length - 1 === i) {
+						return { ...el, data: { expectNum: el.data.expectNum } };
+					}
+					return el;
+				});
+			}
+			// 이동현황 관련 highlight
 			if (key === 'graph-3' && !!this.repeat) classInstance?.setHighlight?.(this.repeat >= 10);
 			else classInstance.setData(this.graphData[key]);
 			// classInstance.setData(this.responseData[key]);
@@ -258,15 +268,14 @@ export default class Controller {
 	makeSaveImgEvent() {
 		const saveImgBtn = document.getElementById('save-img');
 		saveImgBtn.addEventListener('click', () => {
-			this.currentModalGraph.getImage({});
+			this.currentModalGraph?.getImage({});
 		});
 	}
 
 	makeSavePdfEvent() {
 		const savePdfBtn = document.getElementById('save-pdf');
 		savePdfBtn.addEventListener('click', () => {
-			console.log('save btn click!!');
-			this.currentModalGraph.getPdf();
+			this.currentModalGraph?.getPdf();
 		});
 	}
 }
