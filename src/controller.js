@@ -225,6 +225,7 @@ export default class Controller {
 			const graphGroup = document.getElementById('modal-graph-group');
 			graphGroup.innerText = '';
 
+			// modal 띄운 상태에서 추가한 resize 이벤트 제거
 			this.removeResizeModalEvent();
 		} else {
 			// 모달 열기
@@ -252,6 +253,7 @@ export default class Controller {
 				graph.setData(this.responseData[config.elementId]);
 			});
 
+			// modal 띄운 상태에서 resize 이벤트 추가
 			this.createResizeModalEvent();
 		}
 	}

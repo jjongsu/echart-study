@@ -24,6 +24,7 @@ export default class CTClass extends BasicClass {
 		},
 		legend: {
 			data: ['병동', '신환', '재환', '달성률'],
+			textStyle: { color: '#FFFFFF' },
 		},
 		yAxis: [
 			{
@@ -32,6 +33,9 @@ export default class CTClass extends BasicClass {
 				min: 0,
 				max: 1000,
 				interval: 500,
+				splitLine: {
+					show: false,
+				},
 			},
 			{
 				type: 'value',

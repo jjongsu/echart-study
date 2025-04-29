@@ -30,6 +30,7 @@ export default class VisitorClass extends BasicClass {
 		legend: {
 			data: ['year', 'month', 'week', 'day'],
 			icon: 'circle',
+			textStyle: { color: '#FFFFFF' },
 		},
 		grid: {
 			top: '10%',

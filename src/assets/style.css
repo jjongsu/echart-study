@@ -13,9 +13,9 @@ body {
 	grid-auto-flow: column;
 	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: repeat(3, 1fr);
-	gap: 10px;
+	gap: 5px;
 	height: 100vh;
-	padding: 10px;
+	padding: 5px;
 	box-sizing: border-box;
 }
 .grid-container.dragging-container > .grid-item {
@@ -23,8 +23,9 @@ body {
 }
 
 .grid-item {
-	border: 1px solid #ccc;
-	background-color: #f9f9f9;
+	/* border: 1px solid #ccc; */
+	/* background-color: #f9f9f9; */
+	background-color: #101143;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -55,6 +56,7 @@ body {
 	align-items: center;
 	padding: 0px 5px;
 	box-sizing: border-box;
+	color: #ffffff;
 }
 
 .graph-item {
@@ -80,7 +82,9 @@ body {
 	height: 100%;
 	top: 0px;
 	left: 0px;
-	background-color: #ffffff;
+	padding: 5px;
+	/* background-color: #ffffff; */
+	background-color: #101143;
 	box-sizing: border-box;
 }
 
@@ -92,6 +96,7 @@ body {
 	align-items: center;
 	padding: 0px 5px;
 	box-sizing: border-box;
+	color: #ffffff;
 }
 
 #modal-graph-group {
@@ -103,7 +108,6 @@ body {
 	box-sizing: border-box;
 }
 
-.graph-title > p {
-	/* color: #ffffff; */
-	color: black;
-}
+/* .graph-title > p {
+	color: #ffffff;
+} */

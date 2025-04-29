@@ -36,6 +36,7 @@ export default class PatientsClass extends BasicClass {
 		legend: {
 			data: ['본관', '별관', '암병원', '양성자센터'],
 			icon: 'circle',
+			textStyle: { color: '#FFFFFF' },
 		},
 		xAxis: [
 			{

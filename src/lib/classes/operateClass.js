@@ -17,6 +17,7 @@ export default class OperateClass extends BasicClass {
 			icon: 'circle',
 			itemGap: 3,
 			itemWidth: 10,
+			textStyle: { color: '#FFFFFF' },
 		},
 		xAxis: {
 			type: 'category',

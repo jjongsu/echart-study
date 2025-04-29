@@ -98,7 +98,7 @@ export default class Blood0Class extends BasicClass {
 						const text = value.replaceAll(' ', '\n');
 						return text;
 					},
-					// color: '#FFFFFF',
+					color: '#FFFFFF',
 					fontSize: 8,
 				},
 				axisTick: {
