@@ -5,7 +5,8 @@ export default class CTClass extends BasicClass {
 	static NAME_INFO = { 병동: 'wardPatients', 신환: 'newPatients', 재환: 'followUpPatients', 달성률: 'rate', '어제 대비': 'compareYesterday' };
 	/** 그래프에 들어가는 막대 옵션 */
 	static BAR_OPTIONS = { type: 'bar', stack: 'total', yAxisIndex: 0, barWidth: '100%' };
-	static NONE_OPTIONS = { type: 'bar', yAxisIndex: 0, show: false };
+	/** 그래프에 들어가는 어제 대비 막대 옵션 */
+	static NONE_OPTIONS = { type: 'bar', yAxisIndex: 0, itemStyle: { color: 'transparent' } };
 	/** 그래프에 들어가는 라인 옵션 */
 	static LINE_OPTIONS = { type: 'line', yAxisIndex: 1, symbol: 'none' };
 	/** 기본 옵션 */

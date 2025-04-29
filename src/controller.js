@@ -224,6 +224,8 @@ export default class Controller {
 			// graph 넣기
 			const graphGroup = document.getElementById('modal-graph-group');
 			graphGroup.innerText = '';
+
+			this.removeResizeModalEvent();
 		} else {
 			// 모달 열기
 			const modalElement = document.getElementById('modal');
@@ -249,6 +251,8 @@ export default class Controller {
 				this.currentModalGraph = graph;
 				graph.setData(this.responseData[config.elementId]);
 			});
+
+			this.createResizeModalEvent();
 		}
 	}
 
@@ -265,6 +269,18 @@ export default class Controller {
 
 	removeResizeEvent() {
 		window.removeEventListener('resize', this.resizeWindowEvent);
+	}
+
+	createResizeModalEvent() {
+		this.resizeModalEvent = () => {
+			this.currentModalGraph?.resize();
+		};
+
+		window.addEventListener('resize', this.resizeModalEvent);
+	}
+
+	removeResizeModalEvent() {
+		window.removeEventListener('resize', this.resizeModalEvent);
 	}
 
 	makeSaveImgEvent() {
