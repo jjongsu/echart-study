@@ -8,6 +8,9 @@ const titleIndex = {
 };
 const title = Object.values(titleIndex).map((el) => el.ko);
 
+/**
+ * 사용 X
+ */
 export default class Blood2Class extends BasicClass {
 	/** 기본 옵션 */
 	static BASE_OPTIONS = {

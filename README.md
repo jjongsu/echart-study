@@ -12,13 +12,16 @@
 7. 그래프 pdf 저장 기능 구현
 
 ---
+
 ## 사용한 라이브러리
-- Echarts
-- jspdf
+
+-   Echarts
+-   jspdf
 
 ### html2pdf.js vs jspdf
+
 > html2pdf.js converts any webpage or element into a printable PDF entirely client-side using html2canvas and jsPDF. (https://ekoopmans.github.io/html2pdf.js/)
-> 
+>
 > 내부적으로 jspdf를 통해서 pdf생성하고 있기 때문에 굳이 html2pdf 사용하지 않았고, 지금 현재 imgElement를 통해서 pdf를 생성하기에 jspdf로 충분
 
 ## 폴더 구조
@@ -169,3 +172,15 @@ SaveAsImage.prototype.onclick = function (ecModel, api) {
     }
   };
 ```
+
+---
+
+## 피드백
+
+-   static으로 option에 들어가는 변수를 구성한 이유?
+-   현재 순환참조가 발생할 가능성
+-   상호충돌 방지하기 위해 getter과 setter를 이용 고려
+-   tooltip 내에 그래프를 그리는 방법 (외부에서 그리고 뗐다가 붙이는 형식, 새로 그리는 과정에 대한 고민)
+    => 현재는 svg파일을 통해 그리고 있어서 Echarts 라이브러리를 사용하고 있지 않음
+-   js를 줄이고 html을 더 사용하는 방법을 고민
+-   class 내에 render기능도 함께 들고 있게 구성하는 방안 고려

@@ -1,5 +1,8 @@
 import BasicClass from './basicClass.js';
 
+/**
+ * 사용 X
+ */
 export default class Blood1Class extends BasicClass {
 	/** response data 기준으로 parsing하는데 도와주는 상수 */
 	static NAME_INFO = { 신환: 'newPatients', 재환: 'followUpPatients', 달성률: 'rate' };
