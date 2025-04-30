@@ -5,7 +5,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 }
 
 .grid-container {
@@ -16,7 +15,6 @@ body {
 	gap: 5px;
 	height: 100vh;
 	padding: 5px;
-	box-sizing: border-box;
 }
 .grid-container.dragging-container > .grid-item {
 	overflow: hidden;
@@ -30,7 +28,6 @@ body {
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	box-sizing: border-box;
 }
 .dragging-item {
 	z-index: 10;
@@ -55,13 +52,12 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 5px;
-	box-sizing: border-box;
+
 	color: #ffffff;
 }
 
 .graph-item {
 	flex: 1;
-	box-sizing: border-box;
 }
 
 #section-2 {
@@ -85,7 +81,6 @@ body {
 	padding: 5px;
 	/* background-color: #ffffff; */
 	background-color: #101143;
-	box-sizing: border-box;
 }
 
 .modal-title {
@@ -95,7 +90,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 5px;
-	box-sizing: border-box;
+
 	color: #ffffff;
 }
 
@@ -105,7 +100,6 @@ body {
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	box-sizing: border-box;
 }
 
 /* .graph-title > p {
