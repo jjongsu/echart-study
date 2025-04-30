@@ -157,10 +157,18 @@ export default class Controller {
 		if (el2Target.id === 'movementStatus') this.graphInstance[el2Target.id].setData(this.graphData[el2Target.id]);
 
 		this.setData();
-		if (el2Target.currentIndex === 3) {
-			this.graphInstance[el1Target.id]?.setType?.('big');
-			this.graphInstance[el2Target.id]?.setType?.('small');
-		}
+
+		// setType에 따라서 크기 설정
+		this.info.forEach((el) => {
+			if (el.id === el1Target.id) {
+				if (el1Target.currentIndex === 3) this.graphInstance[el2Target.id]?.setType?.('big');
+				else this.graphInstance[el2Target.id]?.setType?.('small');
+			}
+			if (el.id === el2Target.id) {
+				if (el2Target.currentIndex === 3) this.graphInstance[el1Target.id]?.setType?.('big');
+				else this.graphInstance[el1Target.id]?.setType?.('small');
+			}
+		});
 	}
 
 	makeBiggerEvent() {
