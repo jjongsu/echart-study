@@ -44,9 +44,6 @@ export default class BasicClass {
 			link.download = 'chart.png';
 			link.click();
 			link.remove();
-
-			// img element 제거
-			img.remove();
 		} else {
 			return img;
 		}
@@ -77,8 +74,5 @@ export default class BasicClass {
 		const doc = new jsPDF(options);
 		doc.addImage(imgElement, 'PNG', 10, 10, clientWidth, clientHeight);
 		doc.save('chart.pdf');
-
-		// img element 제거
-		imgElement?.remove();
 	}
 }
