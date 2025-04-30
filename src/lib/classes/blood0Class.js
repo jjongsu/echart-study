@@ -228,7 +228,7 @@ export default class Blood0Class extends BasicClass {
 
 					return `<div style="display:flex; flex-direction: column;"><div>${position}<br/>혼잡도 : ${
 						params.value[2] * 10
-					}%</div>${generateSVGPathQuadratic(graphElementArray)}`;
+					}%</div>${generateSVGPathQuadratic({ points: graphElementArray, color: params.color })}`;
 				},
 			},
 		};
