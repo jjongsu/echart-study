@@ -26,7 +26,7 @@ export const filterJsonData = (json, repeat, isAdd = false) => {
 	return filteredData;
 };
 
-export function generateSVGPathQuadratic(points, width = 100, height = 60) {
+export function generateSVGPathQuadratic({ points, width = 100, height = 60, color = '#5470C6' }) {
 	// 정규화
 	const maxX = Math.max(...points.map((p) => p[0]));
 	const maxY = Math.max(...points.map((p) => p[1]));
@@ -53,7 +53,7 @@ export function generateSVGPathQuadratic(points, width = 100, height = 60) {
 
 	return `
 	  <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-		<path d="${d}" fill="none" stroke="#5470C6" stroke-width="2"/>
+		<path d="${d}" fill="none" stroke=${color} stroke-width="2"/>
 	  </svg>
 	`;
 }
