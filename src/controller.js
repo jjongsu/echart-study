@@ -1,14 +1,4 @@
-import {
-	Blood0Class,
-	Blood1Class,
-	Blood2Class,
-	CompanyOrgClass,
-	CTClass,
-	OperateClass,
-	PatientsClass,
-	SankeyClass,
-	VisitorClass,
-} from './lib/classes/index.js';
+import { Blood0Class, CompanyOrgClass, CTClass, OperateClass, PatientsClass, SankeyClass, VisitorClass } from './lib/classes/index.js';
 import { filterJsonData } from './lib/utils/helper.js';
 
 export default class Controller {
@@ -25,62 +15,37 @@ export default class Controller {
 	/** 현재 모달로 띄워서 그리고 있는 graph */
 	currentModalGraph;
 
-	static _preFixSrc = '../public/jsonData';
-	static info = [
-		{ src: `${this._preFixSrc}/treemap.json`, elementId: 'graph-0', classInstance: CompanyOrgClass, sectionId: 'section-0' },
-		{ src: `${this._preFixSrc}/cttest.json`, elementId: 'graph-1', classInstance: CTClass, sectionId: 'section-1' },
-		{ src: `${this._preFixSrc}/blood0test.json`, elementId: 'graph-2', classInstance: Blood0Class, sectionId: 'section-2' },
-		// { src: `${this._preFixSrc}/bloodtest.json`, elementId: 'graph-2-1', classInstance: Blood1Class, sectionId: 'section-2' },
-		// { src: `${this._preFixSrc}/blood2test.json`, elementId: 'graph-2-2', classInstance: Blood2Class, sectionId: 'section-2' },
-		{ src: `${this._preFixSrc}/sankey.json`, elementId: 'graph-3', classInstance: SankeyClass, sectionId: 'section-3' },
-		{ src: `${this._preFixSrc}/operateData.json`, elementId: 'graph-4', classInstance: OperateClass, sectionId: 'section-4' },
-		{ src: `${this._preFixSrc}/patients.json`, elementId: 'graph-5', classInstance: PatientsClass, sectionId: 'section-5' },
-		{ src: `${this._preFixSrc}/visitors.json`, elementId: 'graph-6', classInstance: VisitorClass, sectionId: 'section-6' },
-	];
-	static titleName = {
-		'section-0': '조직도',
-		'section-1': 'CT검사',
-		'section-2': '채혈검사',
-		'section-3': '이동현황',
-		'section-4': '검사/수술 운영',
-		'section-5': '병동별 환자 유입/유출',
-		'section-6': '방문 환자 수',
-	};
+	constructor() {
+		const _preFixSrc = '../public/jsonData';
+		this.info = [
+			{ src: `${_preFixSrc}/treemap.json`, classInstance: CompanyOrgClass, title: '조직도', currentIndex: 0, id: 'orgChart' },
+			{ src: `${_preFixSrc}/cttest.json`, classInstance: CTClass, title: 'CT검사', currentIndex: 1, id: 'ctScan' },
+			{ src: `${_preFixSrc}/blood0test.json`, classInstance: Blood0Class, title: '채혈검사', currentIndex: 2, id: 'bloodTest' },
+			{ src: `${_preFixSrc}/sankey.json`, classInstance: SankeyClass, title: '이동현황', currentIndex: 3, id: 'movementStatus' },
+			{ src: `${_preFixSrc}/operateData.json`, classInstance: OperateClass, title: '검사/수술 운영', currentIndex: 4, id: 'testSurgeryOps' },
+			{ src: `${_preFixSrc}/patients.json`, classInstance: PatientsClass, title: '병동별 환자 유입/유출', currentIndex: 5, id: 'wardPatientFlow' },
+			{ src: `${_preFixSrc}/visitors.json`, classInstance: VisitorClass, title: '방문 환자 수', currentIndex: 6, id: 'visitorCount' },
+		];
+	}
 
-	/** 연결 관계를 통해서 확대 클릭 시 해당 text와 그래프 넣기 */
-	connectInfo = Controller.info.reduce((a, b) => {
-		const target = a.find((el) => el.sectionId.includes(b.sectionId));
-
-		if (target) {
-			return a.map((el) => {
-				if (el.sectionId === b.sectionId) {
-					return { ...target, elementId: [...target.elementId, b.elementId] };
-				}
-				return el;
-			});
-		}
-
-		return [...a, { elementId: [b.elementId], sectionId: b.sectionId, buttonId: 'button-' + b.sectionId.split('-')[1] }];
-	}, []);
-
-	async _fetchData({ src, elementId, classInstance }) {
+	async _fetchData({ src, currentIndex, classInstance, id }) {
 		const res = await fetch(src);
 		if (!res.ok) {
 			throw new Error(`${src} 파일 읽기 실패!`);
 		}
 
 		const { response } = await res.json();
-		const compayClass = new classInstance({ elementId });
+		const companyClass = new classInstance({ elementId: `graph-${currentIndex}` });
 
-		this.graphData[elementId] = response;
-		this.responseData[elementId] = response;
-		this.graphInstance[elementId] = compayClass;
+		this.graphData[id] = response;
+		this.responseData[id] = response;
+		this.graphInstance[id] = companyClass;
 
-		return compayClass;
+		return companyClass;
 	}
 
 	async getData() {
-		await Promise.all(Controller.info.map((config) => this._fetchData(config)));
+		await Promise.all(this.info.map((config) => this._fetchData(config)));
 		this.isFetching = false;
 	}
 
@@ -97,10 +62,10 @@ export default class Controller {
 
 	setData() {
 		for (const [key, classInstance] of Object.entries(this.graphInstance)) {
-			this.graphData[key] = filterJsonData(this.responseData[key], this.repeat, key === 'graph-5');
+			this.graphData[key] = filterJsonData(this.responseData[key], this.repeat, key === 'wardPatientFlow');
 
 			// 검사/수술 운영 관련 data filter
-			if (key === 'graph-4' && this.repeat < 10) {
+			if (key === 'testSurgeryOps' && this.repeat < 10) {
 				this.graphData[key] = this.graphData[key].map((el, i) => {
 					if (this.graphData[key].length - 1 === i) {
 						return { ...el, data: { expectNum: el.data.expectNum } };
@@ -109,7 +74,7 @@ export default class Controller {
 				});
 			}
 			// 이동현황 관련 highlight
-			if (key === 'graph-3' && !!this.repeat) classInstance?.setHighlight?.(this.repeat >= 10);
+			if (key === 'movementStatus' && !!this.repeat) classInstance?.setHighlight?.(this.repeat >= 10);
 			else classInstance.setData(this.graphData[key]);
 		}
 	}
@@ -161,30 +126,55 @@ export default class Controller {
 	}
 
 	_dragSwap(el1, el2) {
-		const parent = el1.parentNode;
-		const el1Next = el1.nextSibling === el2 ? el1 : el1.nextSibling;
-		parent.insertBefore(el1, el2);
-		parent.insertBefore(el2, el1Next);
+		const el1Target = this.info.find((el) => el.currentIndex === Number(el1.id.split('-')[1]));
+		const el2Target = this.info.find((el) => el.currentIndex === Number(el2.id.split('-')[1]));
 
-		if (el2.classList.contains('center-section')) {
-			el2.classList.remove('center-section');
-			el1.classList.add('center-section');
-			this.setDraggable();
+		if (!el1Target || !el2Target) return;
 
-			const graph1 = `graph-${el1.id.split('-')[1]}`;
-			const graph2 = `graph-${el2.id.split('-')[1]}`;
-			this.graphInstance?.[graph1]?.setType?.('big');
-			this.graphInstance?.[graph2]?.setType?.('small');
+		this.info = this.info.map((el) => {
+			if (el.id === el1Target.id) return { ...el, currentIndex: el2Target.currentIndex };
+			if (el.id === el2Target.id) return { ...el, currentIndex: el1Target.currentIndex };
+			return el;
+		});
 
-			this.resizeWindowEvent();
-		}
+		this.graphInstance[el1Target.id].myChart.dispose();
+		this.graphInstance[el2Target.id].myChart.dispose();
+
+		delete this.graphInstance[el1Target.id];
+		delete this.graphInstance[el2Target.id];
+
+		// title 변경
+		const newEl1 = document.getElementById(`section-${el2Target.currentIndex}`);
+		newEl1.querySelector('.graph-title').querySelector('p').innerText = el1Target.title;
+		const newEl2 = document.querySelector(`#section-${el1Target.currentIndex}`);
+		newEl2.querySelector('p').innerText = el2Target.title;
+
+		// graph 변경
+		this.graphInstance[el1Target.id] = new el1Target.classInstance({ elementId: 'graph-' + el2Target.currentIndex });
+		this.graphInstance[el2Target.id] = new el2Target.classInstance({ elementId: 'graph-' + el1Target.currentIndex });
+
+		if (el1Target.id === 'movementStatus') this.graphInstance[el1Target.id].setData(this.graphData[el1Target.id]);
+		if (el2Target.id === 'movementStatus') this.graphInstance[el2Target.id].setData(this.graphData[el2Target.id]);
+
+		this.setData();
+
+		// setType에 따라서 크기 설정
+		this.info.forEach((el) => {
+			if (el.id === el1Target.id) {
+				if (el1Target.currentIndex === 3) this.graphInstance[el2Target.id]?.setType?.('big');
+				else this.graphInstance[el2Target.id]?.setType?.('small');
+			}
+			if (el.id === el2Target.id) {
+				if (el2Target.currentIndex === 3) this.graphInstance[el1Target.id]?.setType?.('big');
+				else this.graphInstance[el1Target.id]?.setType?.('small');
+			}
+		});
 	}
 
 	makeBiggerEvent() {
 		if (this.isFetching) return;
 		const gridItems = document.querySelectorAll('.grid-item');
 		gridItems.forEach((element) => {
-			const title = element.querySelector('p')?.innerText || '';
 			const buttonElement = element.querySelector('button');
 
 			buttonElement.addEventListener('click', (e) => this._biggerClick(e));
@@ -197,18 +187,15 @@ export default class Controller {
 	_biggerClick(e) {
 		if (e instanceof MouseEvent) {
 			if (e.target instanceof HTMLButtonElement) {
-				const buttonId = e.target.id;
+				const buttonId = e.target.id.split('-')[1];
 
-				const target = this.connectInfo.find((el) => el.buttonId === buttonId);
-
-				if (!target) return;
-				this._setModal(target.sectionId);
+				this._setModal(Number(buttonId));
 			}
 		}
 	}
 
-	_setModal(sectionId) {
-		if (!sectionId) {
+	_setModal(currentIndex) {
+		if (typeof currentIndex === 'undefined') {
 			// 모달 닫기
 			const modalElement = document.getElementById('modal');
 
@@ -233,23 +220,20 @@ export default class Controller {
 			modalElement.classList.add('modal-open');
 
 			// title 넣기
-			const innerText = Controller.titleName[sectionId] || '';
+			const target = this.info.find((el) => el.currentIndex === currentIndex);
+			const innerText = target?.title || '';
 			document.getElementById('modal-text').innerText = innerText;
 
 			// graph 넣기
 			const graphGroup = document.getElementById('modal-graph-group');
-			const _info = Controller.info.filter((el) => el.sectionId === sectionId);
-			_info.forEach((config, i) => {
-				const newDiv = document.createElement('div');
-				newDiv.id = 'modal-graph-' + i;
-				newDiv.classList.add('graph-item');
-				graphGroup.appendChild(newDiv);
+			const newDiv = document.createElement('div');
+			newDiv.id = 'modal-graph-0';
+			newDiv.classList.add('graph-item');
+			graphGroup.appendChild(newDiv);
 
-				const graph = new config.classInstance({ elementId: newDiv.id });
-
-				this.currentModalGraph = graph;
-				graph.setData(this.responseData[config.elementId]);
-			});
+			const graph = new target.classInstance({ elementId: newDiv.id });
+			this.currentModalGraph = graph;
+			graph.setData(this.responseData[target.id]);
 
 			// modal 띄운 상태에서 resize 이벤트 추가
 			this.createResizeModalEvent();
@@ -294,6 +278,21 @@ export default class Controller {
 		const savePdfBtn = document.getElementById('save-pdf');
 		savePdfBtn.addEventListener('click', () => {
 			this.currentModalGraph?.getPdf();
+		});
+	}
+
+	createEventListener() {
+		window.addEventListener('graph:clear', () => {
+			for (const [key, classInstance] of Object.entries(this.graphInstance)) {
+				classInstance.clear();
+				delete this.graphInstance[key];
+			}
+		});
+
+		window.addEventListener('graph:all', () => {
+			for (const [key, classInstance] of Object.entries(this.graphInstance)) {
+				classInstance.setData(this.responseData[key]);
+			}
 		});
 	}
 }

@@ -8,3 +8,4 @@ controller.createResizeEvent();
 controller.makeSaveImgEvent();
 controller.makeSavePdfEvent();
 controller.createIntervalEvent();
+controller.createEventListener();
