@@ -26,6 +26,10 @@ export default class BasicClass {
 		this.myChart.resize();
 	}
 
+	clear() {
+		this.myChart.dispose();
+	}
+
 	/**
 	 * isPdf의 값에 띠리서 png형태의 이미지 저장하는 함수 / pdf 저장에서 필요한 img element 생성하는 함수
 	 */

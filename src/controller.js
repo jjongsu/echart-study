@@ -175,7 +175,6 @@ export default class Controller {
 		if (this.isFetching) return;
 		const gridItems = document.querySelectorAll('.grid-item');
 		gridItems.forEach((element) => {
-			const title = element.querySelector('p')?.innerText || '';
 			const buttonElement = element.querySelector('button');
 
 			buttonElement.addEventListener('click', (e) => this._biggerClick(e));
@@ -279,6 +278,21 @@ export default class Controller {
 		const savePdfBtn = document.getElementById('save-pdf');
 		savePdfBtn.addEventListener('click', () => {
 			this.currentModalGraph?.getPdf();
+		});
+	}
+
+	createEventListener() {
+		window.addEventListener('graph:clear', () => {
+			for (const [key, classInstance] of Object.entries(this.graphInstance)) {
+				classInstance.clear();
+				delete this.graphInstance[key];
+			}
+		});
+
+		window.addEventListener('graph:all', () => {
+			for (const [key, classInstance] of Object.entries(this.graphInstance)) {
+				classInstance.setData(this.responseData[key]);
+			}
 		});
 	}
 }
