@@ -2,7 +2,7 @@
     "response" : 
         [
             {
-                "name" : "기획운영본부",
+                "name" : "기획본부",
                 "value" : 61,
                 "children" : [
                     {
@@ -11,7 +11,7 @@
                     },
                     {
                         "value": 28,
-                        "name": "사업개발기획센터",
+                        "name": "사업기획센터",
                         "children" : [
                             {
                                 "name": "센터장",
@@ -47,7 +47,7 @@
                                         "name": "사업기획Cell",
                                         "value": 4
                                     },{
-                                        "name": "반려동물사업Cell",
+                                        "name": "사업발전Cell",
                                         "value": 2
                                     }
                                 ]
@@ -82,51 +82,51 @@
                                 "name": "공공사업Cell",
                                 "value": 2
                             },{
-                                "name": "프로젝트관리Cell",
+                                "name": "공공관리Cell",
                                 "value": 2
                             }
                         ]
                     },{
                         "value": 10,
-                        "name": "영업지원/정산Unit",
+                        "name": "영업지원Unit",
                         "children" : [
                             {
                                 "name": "Unit장",
                                 "value": 1
                             },{
-                                "name": "정산Cell",
+                                "name": "지원Cell",
                                 "value": 6
                             },{
-                                "name": "사업관리지원Cell",
+                                "name": "관리Cell",
                                 "value": 3
                             }
                         ]
                     },
                     {
                         "value": 7,
-                        "name": "의료사업Unit",
+                        "name": "식음료사업Unit",
                         "children" : [
                             {
                                 "name": "Unit장",
                                 "value": 1
                             },{
-                                "name": "의료사업Cell",
+                                "name": "마케팅Cell",
                                 "value": 3
                             },{
-                                "name": "의료기획Cell",
+                                "name": "기획Cell",
                                 "value": 3
                             }
                         ]
                     },
                     {
                         "value": 6,
-                        "name": "고객서비스혁신Unit",
+                        "name": "고객서비스Unit",
                         "children" : [
                             {
                                 "name": "Unit장",
                                 "value": 1
                             },{
-                                "name": "디지털전환지원Cell",
+                                "name": "디지털전환서비스Cell",
                                 "value": 5
                             }
                         ]
@@ -134,14 +134,14 @@
                 ]
             },
             {
-                "name" : "WEHAGO개발센터",
+                "name" : "플랫폼개발센터",
                 "value" : 71,
                 "children" : [
                     {
                         "name": "센터장",
                         "value": 1
                     },{
-                        "name": "WEHAGO개발1Unit",
+                        "name": "플랫폼개발1Unit",
                         "value": 11,
                         "children" : [
                             {
@@ -153,7 +153,7 @@
                             }
                         ]  
                     },{
-                        "name": "WEHAGO개발2Unit",
+                        "name": "플랫폼개발2Unit",
                         "value": 15,
                         "children" : [
                             {
@@ -174,7 +174,7 @@
                             }
                         ]  
                     },{
-                        "name": "WEHAGO개발3Unit",
+                        "name": "플랫폼개발3Unit",
                         "value": 15,
                         "children" : [
                             {
@@ -225,7 +225,7 @@
                 ]
             },
             {
-                "name" : "SmartA개발본부",
+                "name" : "LMS개발본부",
                 "value" : 52,
                 "children" : [
                     {
@@ -234,7 +234,7 @@
                     },
                     {
                         "value": 34,
-                        "name": "SmartA개발센터",
+                        "name": "LMS개발센터",
                         "children" : [
                             {
                                 "name": "센터장",
@@ -281,7 +281,7 @@
                         ]
                     },{
                         "value": 18,
-                        "name": "SmartA설계센터",
+                        "name": "LMS설계센터",
                         "children" : [
                             {
                                 "name": "센터장",
@@ -330,7 +330,7 @@
                 ]
             },
             {
-                "name" : "고객지원QA센터",
+                "name" : "QA센터",
                 "value" : 66,
                 "children" : [
                     {
@@ -341,31 +341,31 @@
                         "value": 50,
                         "children" : [
                             {
-                                "name": "중부스마트컨택1Cell",
+                                "name": "중부스마트1Cell",
                                 "value": 5
                             },{
-                                "name": "중부스마트컨택2Cell",
+                                "name": "중부스마트2Cell",
                                 "value": 6
                             },{
-                                "name": "강촌스마트컨택Cell",
+                                "name": "강촌스마트Cell",
                                 "value": 5
                             },{
-                                "name": "대구스마트컨택Cell",
+                                "name": "대구스마트Cell",
                                 "value": 8
                             },{
-                                "name": "부산스마트컨택1Cell",
+                                "name": "부산스마트1Cell",
                                 "value": 6
                             },{
-                                "name": "부산스마트컨택2Cell",
+                                "name": "부산스마트2Cell",
                                 "value": 7
                             },{
-                                "name": "서비스고객지원1Cell",
+                                "name": "서비스지원1Cell",
                                 "value": 8
                             },{
-                                "name": "서비스고객지원2Cell",
+                                "name": "서비스지원2Cell",
                                 "value": 5
                             },{
-                                "name": "헬스케어고객지원Cell",
+                                "name": "플랫폼지원Cell",
                                 "value": 1
                             }
                         ]  
@@ -428,7 +428,7 @@
                 ]
             },
             {
-                "name" : "헬스케어솔루션개발본부",
+                "name" : "식음료개발본부",
                 "value" : 64,
                 "children" : [
                     {
@@ -437,25 +437,25 @@
                     },
                     {
                         "value": 14,
-                        "name": "헬스케어기획Unit",
+                        "name": "식음료기획Unit",
                         "children" : [
                             {
-                                "name": "헬스케어기획1Cell",
+                                "name": "식음료기획1Cell",
                                 "value": 4
                             },{
-                                "name": "헬스케어기획2Cell",
+                                "name": "식음료기획2Cell",
                                 "value": 4
                             },{
-                                "name": "헬스케어기획3Cell",
+                                "name": "식음료기획3Cell",
                                 "value": 4
                             },{
-                                "name": "헬스케어기획4Cell",
+                                "name": "식음료기획4Cell",
                                 "value": 2
                             }
                         ]  
                     },{
                         "value": 8,
-                        "name": "헬스케어개발1Unit",
+                        "name": "식음료개발1Unit",
                         "children" : [
                             {
                                 "name": "Unit장",
@@ -470,7 +470,7 @@
                         ]  
                     },{
                         "value": 13,
-                        "name": "헬스케어개발2Unit",
+                        "name": "식음료개발2Unit",
                         "children" : [
                             {
                                 "name": "Unit장",
@@ -485,7 +485,7 @@
                         ]  
                     },{
                         "value": 13,
-                        "name": "헬스케어개발3Unit",
+                        "name": "식음료개발3Unit",
                         "children" : [
                             {
                                 "name": "Unit장",
@@ -503,7 +503,7 @@
                         ]  
                     },{
                         "value": 14,
-                        "name": "헬스케어개발4Unit",
+                        "name": "식음료개발4Unit",
                         "children" : [
                             {
                                 "name": "Unit장",
@@ -535,7 +535,7 @@
                 ]
             },
             {
-                "name" : "플랫폼개발센터",
+                "name" : "플랫폼Korea개발센터",
                 "value" : 62,
                 "children" : [
                     {
@@ -546,7 +546,7 @@
                         "value": 17,
                         "children" : [
                             {
-                                "name": "데이터사이언스Cell",
+                                "name": "빅데이터Cell",
                                 "value": 10
                             },{
                                 "name": "데이터시각화Cell",
@@ -554,7 +554,7 @@
                             }
                         ]  
                     },{
-                        "name": "데이터플랫폼개발Unit",
+                        "name": "데이터플랫폼Korea개발Unit",
                         "value": 15,
                         "children" : [
                             {
@@ -575,7 +575,7 @@
                             }
                         ]   
                     },{
-                        "name": "WEHAGO공통Unit",
+                        "name": "디자인시스템공통Unit",
                         "value": 13,
                         "children" : [
                             {
@@ -587,7 +587,7 @@
                             }
                         ]   
                     },{
-                        "name": "플랫폼운영Unit",
+                        "name": "플랫폼Korea운영Unit",
                         "value": 8,
                         "children" : [
                             {
